@@ -28,6 +28,17 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+a {
+	color: #308B16;
+}
+
+.button {
+	background-color: #308B16;
+}
+
+/* fucker not working. todo fix this */
+.button.button-dark:hover { background-color: #75DB3C; }
+
 h1,
 h2,
 h3,
@@ -54,6 +65,22 @@ h6 {
 	margin-bottom: 4px;
 }
 
+.dark #header.transparent-header.full-header:not(.sticky-header) #header-wrap:not(.not-dark) #logo,
+#header.transparent-header.full-header.dark:not(.sticky-header) #header-wrap:not(.not-dark) #logo {
+	border-right: 0px;
+}
+
+
 #logo {
 	font-family: 'Roboto-slab', sans-serif;
+}
+
+#header.full-header #logo {
+	border-right: 0px;
+}
+
+#header.full-header #primary-menu > ul {
+	padding-right: 15px;
+	margin-right: 0px;
+	border-right: 0px;
 }
