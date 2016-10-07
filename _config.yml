@@ -2,14 +2,11 @@
 title: String Labs
 email: gustav.simonsson@gmail.com
 description: "string labs"
-baseurl: ""
-url: "http://yourdomain.com"
 github_username: string-labs
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-destination: docs
 
 # Serve settings
 host: 0.0.0.0
