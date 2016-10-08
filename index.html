@@ -10,7 +10,9 @@ hero: true
 hero-title: Advanced Decentralized Protocols &amp; DApps
 hero-subtitle: String Labs is a crypto studio, incubator and investor.
 ---
-{% include base.html %}
+
+{% include required-fragment-initialization-scripts.html %}
+
         <!-- Content
 		============================================= -->
 		<section id="content">
@@ -133,7 +135,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
 
 								<div class="team team-list clearfix">
 									<div class="team-image">
-										<img src="/images/team/tom-head1.jpg" alt="Tom Ding">
+										<img src="{{ base }}/images/team/tom-head1.jpg" alt="Tom Ding">
 									</div>
 									<div class="team-desc">
 										<div class="team-title"><h4>Tom Ding</h4><span>CEO</span></div>
@@ -197,7 +199,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
 
 								<div class="team team-list clearfix">
 									<div class="team-image">
-										<img src="/images/team/gustav-head1.jpg" alt="Gustav Simonsson">
+										<img src="{{ base }}/images/team/gustav-head1.jpg" alt="Gustav Simonsson">
 									</div>
 									<div class="team-desc">
 										<div class="team-title"><h4>Gustav Simonsson</h4><span>Principal Engineer</span></div>
