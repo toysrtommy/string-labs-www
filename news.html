@@ -5,7 +5,110 @@ projects-link: "/#section-work"
 team-link: "/#section-team"
 investors-link: "/#section-investors"
 contact-link: "/#section-contact"
+disable-news-link: true
 hero: false
 ---
 
 {% include required-fragment-initialization-scripts.html %}
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+
+					<!-- Post Content
+					============================================= -->
+					<div class="postcontent nobottommargin clearfix">
+
+						<!-- Posts
+						============================================= -->
+						<div id="posts" class="post-timeline clearfix">
+
+							<div class="timeline-border"></div>
+
+							{% for post in site.posts %}
+
+							<div class="entry clearfix">
+
+								{% if post.blog-format-1 %}
+								<div class="entry-timeline">
+									{{ post.day }}<span>{{ post.month }}</span>
+									<div class="timeline-divider"></div>
+								</div>
+								<div class="entry-title">
+									<h2>{{ post.title }}</h2>
+								</div>
+								<ul class="entry-meta clearfix">
+									<li><a href="{{ post.author-link }}"><i class="icon-user"></i> {{ post.author }}</a></li>
+									<li><i class="icon-folder-open"></i> {{ post.tags }}</li>
+								</ul>
+								<div class="entry-content">
+									{{ post.content }}
+								</div>								
+								{% endif %}
+
+								{% if post.blog-format-2 %}
+								<div class="entry-timeline">
+									{{ post.day }}<span>{{ post.month }}</span>
+									<div class="timeline-divider"></div>
+								</div>
+								<div class="entry-image">
+									<iframe src="{{ post.youtube }}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								</div>
+								<div class="entry-title">
+									<h2>{{ post.title }}</h2>
+								</div>
+								<ul class="entry-meta clearfix">
+									<li><a href="{{ post.author-link }}"><i class="icon-user"></i> {{ post.author }}</a></li>
+									<li><i class="icon-folder-open"></i> {{ post.tags }}</li>
+									<li><i class="icon-film"></i></li>									
+								</ul>								
+								<div class="entry-content">
+									{{ post.content }}
+								</div>								
+								{% endif %}
+
+								{% if post.blog-format-3 %}
+								<div class="entry-timeline">
+									{{ post.day }}<span>{{ post.month }}</span>
+									<div class="timeline-divider"></div>
+								</div>
+								<div class="entry-image">
+									<div class="fslider" data-arrows="false" data-lightbox="gallery">
+										<div class="flexslider">
+											<div class="slider-wrap">
+												{% assign imgs = post.slides | split: ',' %}
+												{% for img in imgs %}
+													<div class="slide"><a href="{{ base }}/images/archive/shanghai/{{ img }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ base }}/images/archive/shanghai/{{ img }}" alt="Standard Post with Gallery"></a></div>
+												{% endfor %}
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="entry-title">
+									<h2>{{ post.title }}</h2>
+								</div>
+								<ul class="entry-meta clearfix">
+									<li><a href="{{ post.author-link }}"><i class="icon-user"></i> {{ post.author }}</a></li>
+									<li><i class="icon-folder-open"></i> {{ post.tags }}</li>
+								</ul>
+								<div class="entry-content">
+									{{ post.content }}
+								</div>								
+								{% endif %}							
+							</div>
+							{% endfor %}
+
+						</div><!-- #posts end -->
+
+					</div><!-- #post content end -->
+			
+				</div>
+			
+			</div>
+
+		</section><!-- #content end -->
+

@@ -1,0 +1,12 @@
+---
+layout: blog-post
+blog-format-1: true
+title: "Yay, new website format"
+day: 07
+month: Oct
+author: Dom Williams
+author-link: https://twitter.com/dominic_w
+tags: news
+---
+
+Admittedly, this was a long time coming. Hope you enjoy our shiny new website backed by github and Jekyll :-)
