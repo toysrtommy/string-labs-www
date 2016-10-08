@@ -10,3 +10,6 @@ permalink: pretty
 
 # Serve settings
 host: 0.0.0.0
+
+
+relative_permalinks: false

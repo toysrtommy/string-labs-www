@@ -1,0 +1,26 @@
+---
+layout: outer
+---
+{% if page.hero %}
+      <!-- Hero
+		============================================= -->
+        <section id="slider" class="slider-parallax force-full-screen full-screen">
+
+            <div class="slider-parallax-inner">
+
+                <div class="force-full-screen full-screen dark" style="background: url('/images/string/reactor.jpg') center center;">
+
+                    <div class="container clearfix">
+                        <div class="slider-caption slider-caption-center">
+                            <h2 data-animate="fadeInDown">{{ page.hero-title }}</h2>
+                            <p data-animate="fadeInUp" data-delay="400">{{ page.hero-subtitle }}</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+{% endif %}
+        {{ content }}
