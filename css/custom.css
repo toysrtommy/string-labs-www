@@ -11,7 +11,8 @@
 }
 
 .dark .feature-box h3 span.subtitle {
-	font-family: 'Crete Round';
+	font-family: 'Crete Round', serif;
+	font-style: italic;
 }
 
 .feature-box h3 {
