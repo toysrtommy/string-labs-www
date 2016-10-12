@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-
-{% include required-fragment-initialization-scripts.html %}
+<!DOCTYPE html> {% include required-fragment-initialization-scripts.html %}
 
 <html dir="ltr" lang="en-US">
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="String Labs is a crypto studio, incubator and investor based in Palo Alto">
@@ -68,13 +67,33 @@
 					============================================= -->
                     <nav id="primary-menu" class="not-dark one-page-menu">
 
-						<ul>
-							<li><a href="{{ page.projects-link }}" {% if page.menu-data-href %} data-href="#section-work" {% endif %}><div>Projects</div></a></li>
-							<li><a href="{{ page.team-link }}" {% if page.menu-data-href %} data-href="#section-team" {% endif %}><div>Team</div></a></li>
-							<li><a href="{{ page.investors-link }}" {% if page.menu-data-href %} data-href="#section-investors" {% endif %}><div>Investors</div></a></li>
-							<li><a href="{{ page.contact-link }}" {% if page.menu-data-href %} data-href="#section-contact" {% endif %}><div>Contact</div></a></li>
-							<li><a href="news/" {% if !page.disable-news-link %} class="disabled" {% endif %}><div>News...</div></a></li>
-						</ul>
+                        <ul>
+                            <li>
+                                <a href="{{ page.projects-link }}" {% if page.menu-data-href %} data-href="#section-work" {% endif %}>
+                                    <div>Projects</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ page.team-link }}" {% if page.menu-data-href %} data-href="#section-team" {% endif %}>
+                                    <div>Team</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ page.investors-link }}" {% if page.menu-data-href %} data-href="#section-investors" {% endif %}>
+                                    <div>Investors</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ page.contact-link }}" {% if page.menu-data-href %} data-href="#section-contact" {% endif %}>
+                                    <div>Contact</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news/" {% if !page.disable-news-link %} class="disabled" {% endif %}>
+                                    <div>News...</div>
+                                </a>
+                            </li>
+                        </ul>
 
                     </nav>
                     <!-- #primary-menu end -->
@@ -86,7 +105,7 @@
         </header>
         <!-- #header end -->
 
- 		{{ content }}
+        {{ content }}
 
         <!-- Footer
 		============================================= -->
@@ -172,5 +191,7 @@
     </script>
     <!-- Google Map End -->
 
+    {% include analytics.html %}
 </body>
+
 </html>
