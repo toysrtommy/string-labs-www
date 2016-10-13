@@ -1,5 +1,9 @@
 ---
 layout: blog-post-slides
+projects-link: "#section-work"
+team-link: "#section-team"
+investors-link: "#section-investors"
+contact-link: "#section-contact"
 blog-format-slides: true
 title: "Dfinity launch party, Shanghai in Salon de Ning @ the Peninsula Hotel"
 day: 24

@@ -1,5 +1,9 @@
 ---
 layout: blog-post-video
+projects-link: "#section-work"
+team-link: "#section-team"
+investors-link: "#section-investors"
+contact-link: "#section-contact"
 blog-format-video: true
 title: "Introducing random becaons using threshold relay chains"
 day: 14
