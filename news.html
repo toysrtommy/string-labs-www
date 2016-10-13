@@ -34,70 +34,15 @@ hero: false
 							<div class="entry clearfix">
 
 								{% if post.blog-format-1 %}
-								<div class="entry-timeline">
-									{{ post.day }}<span>{{ post.month }}</span>
-									<div class="timeline-divider"></div>
-								</div>
-								<div class="entry-title">
-									<h2>{{ post.title }}</h2>
-								</div>
-								<ul class="entry-meta clearfix">
-									<li><a href="{{ post.author-link }}"><i class="icon-user"></i> {{ post.author }}</a></li>
-									<li><i class="icon-folder-open"></i> {{ post.tags }}</li>
-								</ul>
-								<div class="entry-content">
-									{{ post.content }}
-								</div>								
+									{% include blog-post-simple.html %}
 								{% endif %}
 
 								{% if post.blog-format-2 %}
-								<div class="entry-timeline">
-									{{ post.day }}<span>{{ post.month }}</span>
-									<div class="timeline-divider"></div>
-								</div>
-								<div class="entry-image">
-									<iframe src="{{ post.youtube }}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-								</div>
-								<div class="entry-title">
-									<h2>{{ post.title }}</h2>
-								</div>
-								<ul class="entry-meta clearfix">
-									<li><a href="{{ post.author-link }}"><i class="icon-user"></i> {{ post.author }}</a></li>
-									<li><i class="icon-folder-open"></i> {{ post.tags }}</li>
-									<li><i class="icon-film"></i></li>									
-								</ul>								
-								<div class="entry-content">
-									{{ post.content }}
-								</div>								
+									{% include blog-post-video.html %}							
 								{% endif %}
 
 								{% if post.blog-format-3 %}
-								<div class="entry-timeline">
-									{{ post.day }}<span>{{ post.month }}</span>
-									<div class="timeline-divider"></div>
-								</div>
-								<div class="entry-image">
-									<div class="fslider" data-arrows="false" data-lightbox="gallery">
-										<div class="flexslider">
-											<div class="slider-wrap">
-												{% assign imgs = post.slides | split: ',' %}
-												{% for img in imgs %}
-													<div class="slide"><a href="{{ base }}/images/archive/shanghai/{{ img }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ base }}/images/archive/shanghai/{{ img }}" alt="Standard Post with Gallery"></a></div>
-												{% endfor %}
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="entry-title">
-									<h2>{{ post.title }}</h2>
-								</div>
-								<ul class="entry-meta clearfix">
-									<li><a href="{{ post.author-link }}"><i class="icon-user"></i> {{ post.author }}</a></li>
-									<li><i class="icon-folder-open"></i> {{ post.tags }}</li>
-								</ul>
-								<div class="entry-content">
-									{{ post.content }}
-								</div>								
+									{% include blog-post-slides.html %}									
 								{% endif %}							
 							</div>
 							{% endfor %}

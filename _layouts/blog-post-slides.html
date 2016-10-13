@@ -1,0 +1,77 @@
+---
+layout: blog-post
+---
+
+{% include required-fragment-initialization-scripts.html %}
+
+
+								<!-- Entry Title
+								============================================= -->
+								<div class="entry-title">
+									<h2>{{ page.title }}</h2>
+								</div><!-- .entry-title end -->
+
+								<!-- Entry Meta
+								============================================= -->
+								<ul class="entry-meta clearfix">
+									<li><i class="icon-calendar3"></i> {{ page.day }} {{ page.month }} {{ page.year }}</li>
+									<li><a href="{{ page.author-link }}"><i class="icon-user"></i> {{ page.author }}</a></li>
+									<li><i class="icon-folder-open"></i> {{ page.tags }}</li>
+								</ul><!-- .entry-meta end -->
+
+								<!-- Entry Image
+								============================================= -->
+								<div class="entry-image">
+									<div class="fslider" data-arrows="false" data-lightbox="gallery">
+										<div class="flexslider">
+											<div class="slider-wrap">
+												{% assign imgs = page.slides | split: ',' %}
+												{% for img in imgs %}
+													<div class="slide"><a href="{{ base }}/images/archive/shanghai/{{ img }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ base }}/images/archive/shanghai/{{ img }}" alt="Standard Post with Gallery"></a></div>
+												{% endfor %}
+											</div>
+										</div>
+									</div>
+								</div><!-- .entry-image end -->
+
+								<!-- Entry Content
+								============================================= -->
+								<div class="entry-content notopmargin">
+									{{ content }}
+
+									<!-- Post Single - Content End -->
+									<div class="clear"></div>
+
+									<!-- Post Single - Share
+									============================================= -->
+									<div class="si-share noborder clearfix">
+										<span>Share this Post:</span>
+										<div>
+											<a href="#" class="social-icon si-borderless si-facebook">
+												<i class="icon-facebook"></i>
+												<i class="icon-facebook"></i>
+											</a>
+											<a href="#" class="social-icon si-borderless si-twitter">
+												<i class="icon-twitter"></i>
+												<i class="icon-twitter"></i>
+											</a>
+											<a href="#" class="social-icon si-borderless si-pinterest">
+												<i class="icon-pinterest"></i>
+												<i class="icon-pinterest"></i>
+											</a>
+											<a href="#" class="social-icon si-borderless si-gplus">
+												<i class="icon-gplus"></i>
+												<i class="icon-gplus"></i>
+											</a>
+											<a href="#" class="social-icon si-borderless si-rss">
+												<i class="icon-rss"></i>
+												<i class="icon-rss"></i>
+											</a>
+											<a href="#" class="social-icon si-borderless si-email3">
+												<i class="icon-email3"></i>
+												<i class="icon-email3"></i>
+											</a>
+										</div>
+									</div><!-- Post Single - Share End -->
+
+								</div>
