@@ -1,6 +1,6 @@
 ---
 layout: blog-post-slides
-blog-format-3: true
+blog-format-slides: true
 title: "Dfinity launch party, Shanghai in Salon de Ning @ the Peninsula Hotel"
 day: 24
 month: Sep

@@ -1,6 +1,6 @@
 ---
 layout: blog-post-simple
-blog-format-1: true
+blog-format-simple: true
 title: "Yay, new website format"
 day: 07
 month: Oct
@@ -8,6 +8,10 @@ author: Dom Williams
 author-link: https://twitter.com/dominic_w
 author-bio: Dominic is President/CTO of String Labs
 tags: news
+projects-link: "#section-work"
+team-link: "#section-team"
+investors-link: "#section-investors"
+contact-link: "#section-contact"
 ---
 
 Admittedly, this was a long time coming. Hope you enjoy our shiny new website backed by github and Jekyll :-)

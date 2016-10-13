@@ -1,6 +1,6 @@
 ---
 layout: blog-post-video
-blog-format-2: true
+blog-format-video: true
 title: "Introducing random becaons using threshold relay chains"
 day: 14
 month: Sep

@@ -1,10 +1,10 @@
 ---
 layout: default
 home-link: ".."
-projects-link: "/#section-work"
-team-link: "/#section-team"
-investors-link: "/#section-investors"
-contact-link: "/#section-contact"
+projects-link: "#section-work"
+team-link: "#section-team"
+investors-link: "#section-investors"
+contact-link: "#section-contact"
 disable-news-link: true
 hero: false
 ---
@@ -33,15 +33,15 @@ hero: false
 
 							<div class="entry clearfix">
 
-								{% if post.blog-format-1 %}
+								{% if post.blog-format-simple %}
 									{% include blog-post-simple.html %}
 								{% endif %}
 
-								{% if post.blog-format-2 %}
+								{% if post.blog-format-video %}
 									{% include blog-post-video.html %}							
 								{% endif %}
 
-								{% if post.blog-format-3 %}
+								{% if post.blog-format-slides %}
 									{% include blog-post-slides.html %}									
 								{% endif %}							
 							</div>
