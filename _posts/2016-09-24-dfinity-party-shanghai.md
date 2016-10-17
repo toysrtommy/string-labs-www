@@ -14,7 +14,7 @@ author-bio: Dominic is President/CTO of String Labs
 tags: Devcon2,&nbsp;DFINITY,&nbsp;Shanghai,&nbsp;party
 imagesFolder: archive/shanghai
 imagesType: jpg
-slides: IMG_0802.jpg,IMG_0814.JPG,IMG_20160924_181909.jpg,IMG_20160924_194741.jpg,IMG_0818.jpg,IMG_20160924_201931.jpg,IMG_20160924_201959.jpg,IMG_20160924_220137.jpg
+slides: IMG_0802.jpg,IMG_0814.jpg,IMG_20160924_181909.jpg,IMG_20160924_194741.jpg,IMG_0818.jpg,IMG_20160924_201931.jpg,IMG_20160924_201959.jpg,IMG_20160924_220137.jpg
 ---
 
 After a long Devcon2 and Blockchain Summit, we ran a DFINITY launch party.
