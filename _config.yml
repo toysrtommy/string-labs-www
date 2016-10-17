@@ -1,3 +1,7 @@
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
 # Site settings
 title: String Labs
 email: gustav.simonsson@gmail.com
@@ -6,10 +10,15 @@ github_username: string-labs
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+# GFM = GitHub Flavored Markdown
+highlighter: rouge
+
 permalink: pretty
 
 # Serve settings
 host: 0.0.0.0
 
-
-relative_permalinks: false
+paginate: 5
+paginate_path: "/news/page-:num/"

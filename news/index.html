@@ -28,7 +28,7 @@ hero: false
 
 							<div class="timeline-border"></div>
 
-							{% for post in site.posts %}
+							{% for post in paginator.posts %}
 
 							<div class="entry clearfix">
 
@@ -48,8 +48,24 @@ hero: false
 
 						</div><!-- #posts end -->
 
+						{% if paginator.total_pages > 1 %}
+						<ul class="pagination nobottommargin">
+							<li {% unless paginator.previous_page %} class="disabled" {% endunless %}><a href="{{ paginator.previous_page_path }}">«</a></li>
+							{% for page in (1..paginator.total_pages) %}
+						    {% if page == paginator.page %}
+							<li class="active"><a href="#">{{ page }}</a></li>
+						    {% elsif page == 1 %}
+						    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+						    {% else %}
+						    <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+						    {% endif %}
+							{% endfor %}
+							<li {% unless paginator.next_page %} class="disabled" {% endunless %}><a href="{{ paginator.next_page_path }}">»</a></li>
+						</ul>
+						{% endif %}						
+
 					</div><!-- #post content end -->
-			
+
 				</div>
 			
 			</div>
