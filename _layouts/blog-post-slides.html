@@ -27,7 +27,7 @@ layout: blog-post
 											<div class="slider-wrap">
 												{% assign imgs = page.slides | split: ',' %}
 												{% for img in imgs %}
-													<div class="slide"><a href="{{ base }}/images/archive/shanghai/{{ img }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ base }}/images/archive/shanghai/{{ img }}" alt="Standard Post with Gallery"></a></div>
+													<div class="slide"><a href="{{ base }}/images/{{ page.imagesFolder }}/{{ img }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ base }}/images/{{ page.imagesFolder }}/{{ img }}" alt="Standard Post with Gallery"></a></div>
 												{% endfor %}
 											</div>
 										</div>

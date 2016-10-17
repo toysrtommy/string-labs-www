@@ -11,8 +11,10 @@ month: Sep
 author: Dom Williams
 author-link: https://twitter.com/dominic_w
 author-bio: Dominic is President/CTO of String Labs
-tags: Devcon2, DFINITY, Shanghai, party
-slides: IMG_20160924_181909.jpg,IMG_20160924_194741.jpg,IMG_20160924_201931.jpg,IMG_20160924_201959.jpg,IMG_20160924_220137.jpg
+tags: Devcon2,&nbsp;DFINITY,&nbsp;Shanghai,&nbsp;party
+imagesFolder: archive/shanghai
+imagesType: jpg
+slides: IMG_0814-hres.JPG,IMG_0802-hres.jpg,IMG_20160924_181909.jpg,IMG_20160924_194741.jpg,IMG_0818.jpg,IMG_20160924_201931.jpg,IMG_20160924_201959.jpg,IMG_20160924_220137.jpg
 ---
 
 After a long Devcon2 and Blockchain Summit, we ran a DFINITY launch party.

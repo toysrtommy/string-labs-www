@@ -11,7 +11,7 @@ month: Sep
 author: Dom Williams
 author-link: https://twitter.com/dominic_w
 author-bio: Dominic is President/CTO of String Labs
-tags: randomness, random beacons, threshold relay, BLS, DFINITY
+tags: randomness,&nbsp;random-beacon,&nbsp;threshold-relay,&nbsp;BLS,&nbsp;DFINITY
 youtube: https://www.youtube.com/embed/xf1dql4Zoqw
 ---
 
