@@ -22,3 +22,23 @@ host: 0.0.0.0
 
 paginate: 5
 paginate_path: "/news/page-:num/"
+# Build settings
+authors:
+    dominicw:
+        display_name: Dom Williams
+        email: dominic@string.technology
+        twitter: dominic_w
+        avatar: dom-head2.jpg
+
+    Dom Williams:
+        display_name: Dom Williams
+        email: dominic@string.technology
+        twitter: dominic_w
+        avatar: dom-head2.jpg
+    Tom Ding:
+        display_name: Tom Ding
+        email: tom@lostdecadegames.com
+        twitter: tom_ding
+        avatar: tom-head1.jpg
+
+
