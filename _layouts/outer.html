@@ -96,23 +96,19 @@
                             <li class="sub-menu ">
                                <a href="#"><div class="subtitle" style="color:#75DB3C;">
 
-{% if site.lang == "en" %}
+
  {% t global.english %}
-{% elsif site.lang == "cn" %}
-{% t global.chinese %}
-{% elsif site.lang == "ja" %}
-{% t global.japanese %}
-{% endif %}
 
                                </div></a>
                                <ul>
                                  <li class="sub-menu-content">
-                                        <a href="/">EN</a>
+                                        <a href="/"> {% t global.english %}</a>
                                     
                                  </li>
                                                                   <li class="sub-menu-content">
 
-                                     <a href="/cn">中文</a>
+                                     <a href="/cn"> {% t global.chinese %}
+</a>
                                      </li>
                                            
                             </li>
