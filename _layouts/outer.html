@@ -70,31 +70,56 @@
                         <ul>
                             <li>
                                 <a href="{{ base }}/{{ page.projects-link }}" {% if page.menu-data-href %} data-href="#section-work" {% endif %}>
-                                    <div>Projects</div>
+                                    <div>{% t index.navbar-projects %}</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ base }}/{{ page.team-link }}" {% if page.menu-data-href %} data-href="#section-team" {% endif %}>
-                                    <div>Team</div>
+                                    <div>{% t index.navbar-team %}</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ base }}/{{ page.investors-link }}" {% if page.menu-data-href %} data-href="#section-investors" {% endif %}>
-                                    <div>Investors</div>
+                                    <div>{% t index.navbar-investors %}</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ base }}/{{ page.contact-link }}" {% if page.menu-data-href %} data-href="#section-contact" {% endif %}>
-                                    <div>Contact</div>
+                                    <div>{% t index.navbar-contact %}</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ base }}/news/" {% if !page.disable-news-link %} class="disabled" {% endif %}>
-                                    <div>News...</div>
+                                <a href="/news/" {% if !page.disable-news-link %} class="disabled" {% endif %}>
+                                    <div>{% t index.navbar-news %}...</div>
                                 </a>
                             </li>
-                        </ul>
+                            <li class="sub-menu ">
+                               <a href="#"><div class="subtitle" style="color:#75DB3C;">
 
+{% if site.lang == "en" %}
+ {% t global.english %}
+{% elsif site.lang == "cn" %}
+{% t global.chinese %}
+{% elsif site.lang == "ja" %}
+{% t global.japanese %}
+{% endif %}
+
+                               </div></a>
+                               <ul>
+                                 <li class="sub-menu-content">
+                                        <a href="/">EN</a>
+                                    
+                                 </li>
+                                                                  <li class="sub-menu-content">
+
+                                     <a href="/cn">中文</a>
+                                     </li>
+                                           
+                            </li>
+
+                        </ul>
+                       
+                         
                     </nav>
                     <!-- #primary-menu end -->
 

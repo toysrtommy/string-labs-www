@@ -1,0 +1,17 @@
+global:
+    body: "Some text goes here"
+index:
+    title: "ADVANCED DECENTRALIZED PROTOCOLS & DAPPS"
+    stringis: "String Labs is a crypto studio, incubator and investor."
+navbar:
+    projects: "PROJECTS"
+    team: "TEAM"
+    investors: "INVESTORS"
+    contact: "CONTACTS"
+    news: "NEWS..."
+    
+
+
+
+
+
