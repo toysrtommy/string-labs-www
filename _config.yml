@@ -3,12 +3,17 @@ gems:
   - jekyll-gist
   - jekyll-multiple-languages-plugin
 
+global:
+    chinese: "中文"
+    english: "English"
+    japanese: "日本語"
+    
 # Site settings
 title: String Labs
 email: gustav.simonsson@gmail.com
 description: "string labs"
 lang: en
-languages: ["en", "cn"]
+languages: ["en", "cn", "ja"]
 exclude_from_localizations: ["_posts"]
 github_username: string-labs
 
