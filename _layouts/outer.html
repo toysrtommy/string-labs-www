@@ -43,7 +43,7 @@
 
 </head>
 
-<body class="stretched dark">
+<body class="stretched dark " data-loader-timeout="1500">
 
     <!-- Document Wrapper
 	============================================= -->
@@ -102,17 +102,17 @@
                                </div></a>
                                <ul>
                                  <li class="sub-menu-content">
-                                        <a href="/"> {% t global.english %}</a>
+                                        <a href="/?no-autolang=true"> {% t global.english %}</a>
                                     
                                  </li>
                                                                   <li class="sub-menu-content">
 
-                                     <a href="/cn"> {% t global.chinese %}
+                                     <a href="/cn?no-autolang=true"> {% t global.chinese %}
 </a>
                                      </li>
                                        <li class="sub-menu-content">
 
-                                     <a href="/ja"> {% t global.japanese %}
+                                     <a href="/ja?no-autolang=true"> {% t global.japanese %}
 </a>
                                      </li>
                                            
@@ -185,11 +185,8 @@
     <!-- Footer Scripts
 	============================================= -->
     <script type="text/javascript" src="{{ base }}/js/functions.js"></script>
-
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCmivtC_tSletvuNhL5GFclOB00P1pOzSk"></script>
-    <script type="text/javascript" src="{{ base }}/js/jquery.gmap.js"></script>
-
     <script type="text/javascript">
+        function initMap() {
         $('#google-map').gMap({
             address: 'Ramona Street, Palo Alto, California',
             maptype: 'SATELLITE',
@@ -214,10 +211,17 @@
             }
 
         });
+        }
+
     </script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCmivtC_tSletvuNhL5GFclOB00P1pOzSk&callback=initMap"  async defer></script>
+    <script type="text/javascript" src="{{ base }}/js/jquery.gmap.js"></script>
+
+
     <!-- Google Map End -->
 
     {% include analytics.html %}
+    {% include i18n.html %}
 </body>
 
 </html>
