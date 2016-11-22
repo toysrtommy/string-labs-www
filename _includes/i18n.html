@@ -1,0 +1,39 @@
+<script>
+
+// function currLang() {
+// 	var url = window.location.href;
+// 	results = url.split("?")
+// 	if (!results) {
+// 		results.split("/");
+// 	}
+
+    
+// }
+function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+    
+    var language = window.navigator.userLanguage || window.navigator.language;
+    var noAutolang = getParameterByName("no-autolang");
+    if (!noAutolang) {
+    	// window.alert(language);
+    if (language == "zh-cn" || language=="zh-tw" || language=="zh-hk")
+        window.location.replace("/cn?no-autolang=true");
+    else if (language == "en-us")
+    	    window.location.replace("/?no-autolang=true");
+    else if (language == "ja-jp")
+    	    window.location.replace("/ja/?no-autolang=true");
+}
+    
+
+
+</script>
