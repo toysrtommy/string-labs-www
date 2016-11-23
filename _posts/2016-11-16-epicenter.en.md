@@ -19,16 +19,10 @@ On this Epicenter episode, Tom and Dominic shared our quest for building a massi
 
 Highlights:
 
-02:00 How did they get involved in the Crypto and blockchain industry, and the journey of String Labs
-
-14:12 Differentiation between Ethereum and Dfinity 
-
-16:57 Reasoning behind Dfinity building everything into one core system
-
-20:59 How does Dfinity accomplish "infinite scaleable" cloud 
-
-25:40 Proof of Work and Randomness in a Decentralized Cloud
-
-38:34 Mechanics of Dfinity Governance System
-
-1:01:07 Business Model of Dfinity and String Labs
+  * 02:00 How did they get involved in the Crypto and blockchain industry, and the journey of String Labs
+  * 14:12 Differentiation between Ethereum and Dfinity 
+  * 16:57 Reasoning behind Dfinity building everything into one core system
+  * 20:59 How does Dfinity accomplish "infinite scaleable" cloud 
+  * 25:40 Proof of Work and Randomness in a Decentralized Cloud
+  * 38:34 Mechanics of Dfinity Governance System
+  * 1:01:07 Business Model of Dfinity and String Labs
