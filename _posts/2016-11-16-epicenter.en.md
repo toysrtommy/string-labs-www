@@ -15,7 +15,7 @@ tags: blockchain;threshold relay;fintech,&nbsp;smart-contract,&nbsp;autonomous-f
 youtube: https://www.youtube.com/embed/fzG9L4Ry6O4
 ---
 
-Our CEO, Tom, and our CTO, Dominic, were invited for a podcast episode on Epicenter. They discussed how String Labs started, along with the technology behind our project, Dfinity. Dfinity is the world's first infinitely scaleable cloud, utilizing the "Blockchain Nervous System" and Threshold Relay Chains. Tom and Dominic also explained why it's important for private and public blockchains to be able to work together.
+On this Epicenter episode, Tom and Dominic shared our quest for building a massively scalable decentralized cloud - from the underlying crypto:3 protocol techniques such as Threshold Relay Chain that forms the basis of DFINITY, why governance issues matter, and how “Blockchain Nervous System” could offer rapid protocol upgrades without danger of fragmentation. Finally, they discussed why it’s crucial for private and public blockchains to be able to work together.
 
 Highlights:
 
