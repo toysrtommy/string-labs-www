@@ -163,6 +163,31 @@
 
 
 
+<style>
+.dfinity-deck {
+	/*max-width:85%;*/
+	margin-left:auto;
+	margin-right:auto;
+}
+.right-aligned {
+	margin-right:0;
+	margin-left:auto;
+	text-align:right;
+}
+.center-aligned {
+text-align:center;	
+}
+#deck-container {
+		max-width:90%;
+	margin-left:auto;
+	
+	margin-right:auto;
+}
+.hidden {
+	display:none;
+}
+</style>
+
         <!-- Content
 		============================================= -->
 		<section id="content">
@@ -170,6 +195,7 @@
 			<div class="content-wrap nopadding">
 
 				<section id="section-work" class="page-section section nomargin dark"  style="background-color: #222;">
+				<a name="projects"></a>
 
 					<div class="container clearfix">
 						<div class="heading-block center">
@@ -186,12 +212,7 @@
 									<h3>DFINITY<span class="subtitle">无限度可信任计算</span></h3>
 									<p>DFINITY 是一个开放式的虚拟区块链计算机和技术。她延伸了Etheruem 以太坊生态链到广泛的商业应用场景中。我们的创新包括公链上首创的智能治理机制 - “区块链神经系统”，私链智能合约可直接调用公链合约，以及第三代区块链协议技术 - 比上一代（以太坊）提升二十倍以上的确认速度和无限吞吐扩容能力。<br/>
 									
-									<a target="_blank" href="https://speakerdeck.com/stringlabs/a-brief-tour-of-dfinity">
-DFINITY平台之旅<br>
-									</a> (
-									<a target="_blank" href="https://speakerdeck.com/stringlabs/a-brief-tour-of-dfinity">English</a> |
-									<a target="_blank" href="https://speakerdeck.com/stringlabs/dfinityshang-ye-qu-kuai-lian-fa-bu-hui-zhong-wen-ban-at-quan-qiu-qu-kuai-lian-feng-hui">中文</a> | 
-									<a target="_blank" href="https://speakerdeck.com/stringlabs/dfinity-business-blockchain-jp-at-blockchain-global-summit">日本語</a>)<br/>
+									
 									<a target="_blank" href="/2016/09/14/threshold-relay-random-beacon.en/"><i class="icon-film"></i> 技术视频：阀值接力链</a><br/>
 									<a href="http://dfinity.network/">http://dfinity.network</a>
 									</p>
@@ -236,8 +257,51 @@ DFINITY平台之旅<br>
 					</div>
 
 				</section>
+		
+				<section id="section-work" class="page-section section nomargin ">
+<a name="dfinity"></a>
+					<div class="container clearfix">
+						<div class="heading-block center">
+															<!-- 	<img src="./images/string/dfinity-logo.png" width="50px" height="50px" alt="DFINITY"> -->
 
-				<section id="section-team" class="page-section section nomargin">
+							<h2>A Brief Tour of DFINITY</h2>
+							<!-- <span>World Compute Platform</span> -->
+						</div>
+
+						<div id="deck-container" class="fbox-media" >
+						<div class="right-aligned">
+						<a href="javascript:dfinityDeckLang('en');">English | </a>
+						<a href="javascript:dfinityDeckLang('cn');">中文 | </a>
+						
+						<a href="javascript:dfinityDeckLang('jp');">日本語 </a>
+						</div>
+					
+						<div class="dfinity-deck" id="dfinity-deck-en" >
+						<script async class="speakerdeck-embed" data-id="d80f248627634dcd941bdc3ba535aefe" data-ratio="1.9" src="//speakerdeck.com/assets/embed.js"></script>
+						</div>
+						<div class="dfinity-deck hidden" id="dfinity-deck-cn" >
+						<script async class="speakerdeck-embed" data-id="1c6a98793e1e416080f540272c8e7809" data-ratio="1.9" src="//speakerdeck.com/assets/embed.js"></script>
+						</div>
+							<div class="dfinity-deck hidden" id="dfinity-deck-jp" >
+					<script async class="speakerdeck-embed" data-id="f6edc508384f4d508b850d63b15ffc4a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+						</div>
+
+						 <!-- <div class="center-aligned"> 
+						 	<a href="youtube.com">
+						 		<img width="28px" height="28px"src="http://www.screenulator.com/static_images/next_icon.png">&nbsp;
+						 		<b>Watch tech talk: A Brief Tour of DFINITY </b>
+						 	</a>
+						 </div> -->
+
+						</div>
+
+							
+						<div class="clear"></div>
+
+					</div>
+
+				</section>
+				<section id="section-team" class="page-section section nomargin dark"   style="background-color: #222;">
 
 					<div class="heading-block center">
 						<h2>团队</h2>
@@ -609,6 +673,24 @@ DFINITY平台之旅<br>
             </div>
 
         </section>
+        <script>
+    
+
+          function dfinityDeckLang(lang) {
+          	// Hide all other languages first
+          	$(".dfinity-deck").hide();
+          	console.log("#dfinity-deck-" + lang);
+
+			// Show the correct lang vesion
+          	$("#dfinity-deck-" + lang).removeClass("hidden");
+          	$("#dfinity-deck-" + lang).show();
+          	
+			// Workdaround: Force redraw the deck widget by firing a resize event
+			window.dispatchEvent(new Event('resize'));
+		
+
+          }          
+        </script>
         <!-- #content end -->
 
 
