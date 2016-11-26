@@ -77,9 +77,13 @@ text-align:center;
 								<div class="fbox-desc center">
 									<h3>PHI<span class="subtitle">{% t index.projects-phi-subtitle %}</span></h3>
 									<p>{% t index.projects-phi-intro %}<br/>
-										<a target="_blank" href="https://speakerdeck.com/stringlabs/phi-decentralized-commercial-banking-at-ethereum-devcon-2">{% t index.projects-phi-deck-en %}</a> (
-										<a target="_blank" href="https://speakerdeck.com/stringlabs/phi-decentralized-commercial-banking-at-ethereum-devcon-2">{% t global.english %}</a> | 
-										<a target="_blank" href="https://speakerdeck.com/stringlabs/phi-qu-zhong-xin-hua-shang-ye-yin-xing-and-wen-ding-huo-bi-at-ethereum-devcon-2">{% t global.chinese %}</a>) <br>
+										<!-- <a target="_blank" href="https://speakerdeck.com/stringlabs/phi-decentralized-commercial-banking-at-ethereum-devcon-2">
+ -->
+ 								<a target="_blank" class="popup" href="#phiDeckModal" data-lightbox="inline">
+
+										{% t index.projects-phi-deck-en %}</a> (
+										<a target="_blank" class="popup" href="#phiDeckModal" data-lightbox="inline">{% t global.english %}</a> | 
+										<a target="_blank" class="popup" href="#phiDeckCnModal" data-lightbox="inline">{% t global.chinese %}</a>) <br>
 										<a href="{{ site.baseurl_root }}/2016/09/21/phi-devcon2.en/"><i class="icon-film"></i> {% t index.projects-phi-video %}</a>
 										</p>
 								</div>
@@ -205,6 +209,31 @@ text-align:center;
 								</div>
 							</div>
 						</div>
+
+							<div class="modal1 mfp-hide" id="phiDeckModal">
+								<div class="block divcenter" style="background-color: #282828;max-width:80%;max-height:80%;">
+									<div class="center clearfix" >
+										<div class="fluid-width-video-wrapper" style="padding-top: 62%;" >
+
+											<script async class="speakerdeck-embed" data-id="008bd5281af04adcaf50fafe76d64495" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+											</div>
+										
+									</div>
+								</div>
+							</div>
+
+
+							<div class="modal1 mfp-hide" id="phiDeckCnModal">
+								<div class="block divcenter" style="background-color: #282828;max-width:80%;max-height:80%;">
+									<div class="center clearfix" >
+										<div class="fluid-width-video-wrapper" style="padding-top: 62%;" >
+
+										<script async class="speakerdeck-embed" data-id="d8a106300b1843fa8b287ae54437ad1e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+											</div>
+										
+									</div>
+								</div>
+							</div>
 						
 
 						</div>
@@ -594,7 +623,8 @@ text-align:center;
 
         </section>
         <script>
-    
+
+
 
           function dfinityDeckLang(lang) {
           	// Hide all other languages first
