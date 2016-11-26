@@ -5,6 +5,7 @@ projects-link: "#"
 team-link: "#"
 investors-link: "#"
 contact-link: "#"
+dfinity-link: "#"
 menu-data-href: true
 hero: true
 hero-title: index.title 
@@ -41,9 +42,7 @@ text-align:center;
         <!-- Content
 		============================================= -->
 		<section id="content">
-
 			<div class="content-wrap nopadding">
-
 				<section id="section-work" class="page-section section nomargin dark"  style="background-color: #222;">
 				<a name="projects"></a>
 
@@ -63,7 +62,7 @@ text-align:center;
 									<p>{% t index.projects-dfinity-intro %}<br/>
 									
 									
-									<a target="_blank" href="{{ site.baseurl_root }}/2016/09/14/threshold-relay-random-beacon.en/"><i class="icon-film"></i> {% t index.projects-dfinity-video-1 %}</a><br/>
+								
 									<a href="http://dfinity.network/">http://dfinity.network</a>
 									</p>
 								</div>
@@ -108,14 +107,17 @@ text-align:center;
 
 				</section>
 		
-				<section id="section-work" class="page-section section nomargin ">
+				<section id="section-dfinity" class="page-section section nomargin ">
 <a name="dfinity"></a>
 					<div class="container clearfix">
 						<div class="heading-block center">
 															<!-- 	<img src="{{ base }}/images/string/dfinity-logo.png" width="50px" height="50px" alt="DFINITY"> -->
 
-							<h2>A Brief Tour of DFINITY</h2>
-							<!-- <span>World Compute Platform</span> -->
+							<h2>{% t index.dfinity-title %}
+							</h2>
+							<span> 
+							{% t index.dfinity-subtitle %}
+							</span>
 						</div>
 
 						<div id="deck-container" class="fbox-media" >
@@ -143,6 +145,74 @@ text-align:center;
 						 	</a>
 						 </div> -->
 
+
+						 <p>
+						 <h3>{% t index.dfinity-watch-video %}</h3>
+						 </p>
+						 <div>
+						 	<div class="col_one_fourth ">
+								<div style="display:inline" class="feature-box media-box">
+							 		<a target="_blank"  href="#randomBeaconModal" data-lightbox="inline">
+									<img src="https://img.youtube.com/vi/xf1dql4Zoqw/hqdefault.jpg">
+
+							 		<!-- <iframe width="180" height="100" src="https://www.youtube.com/embed/xf1dql4Zoqw" frameborder="0" allowfullscreen></iframe> -->
+									<p style="text-align:center;">
+							 			<a href="#randomBeaconModal" data-lightbox="inline">
+							 		{% t index.dfinity-random-beacon-video %}
+
+							 		</a></p>
+							 		</a>
+							 											
+							 	</div>
+						 	</div>
+
+						 	<div class="col_one_fourth ">
+								<div style="display:inline" class="feature-box media-box">
+								<a href="#vrfModal" data-lightbox="inline">
+									<img src="https://img.youtube.com/vi/v0fq_u5C1so/hqdefault.jpg">
+<!-- 
+
+									<iframe width="180" height="100" src="https://www.youtube.com/embed/v0fq_u5C1so" frameborder="0" allowfullscreen></iframe> -->
+									<p style="text-align:center;">
+									<a target="_blank"  href="#vrfModal" data-lightbox="inline">
+									{% t index.dfinity-vrf-video %}
+									</a>
+									</p>
+								</a>
+								</div>
+
+							</div>
+						<div class="modal1 mfp-hide" id="randomBeaconModal">
+							<div class="block divcenter" style="background-color: #282828;max-width:80%;max-height:80%;">
+								<div class="center clearfix" >
+									<div class="fluid-width-video-wrapper" style="padding-top: 42%;">
+										<iframe src="https://www.youtube.com/embed/xf1dql4Zoqw" frameborder="0" allowfullscreen></iframe>
+
+										</div>
+									
+								</div>
+							</div>
+						</div>
+
+						<div class="modal1 mfp-hide" id="vrfModal">
+							<div class="block divcenter" style="background-color: #282828;max-width:80%;max-height:80%;">
+								<div class="center clearfix" >
+									<div class="fluid-width-video-wrapper" style="padding-top: 42%;">
+										<iframe src="https://www.youtube.com/embed/v0fq_u5C1so" frameborder="0" allowfullscreen></iframe>
+
+										</div>
+									
+								</div>
+							</div>
+						</div>
+						
+
+						</div>
+</div>
+<!-- 						 	<a target="_blank" href="{{ site.baseurl_root }}/2016/09/14/threshold-relay-random-beacon.en/"><i class="icon-film"></i> Stanford Computer Forum: Application of Verifiable Random Function</a><br/>
+
+						 	<a target="_blank" href="{{ site.baseurl_root }}/2016/09/14/threshold-relay-random-beacon.en/"><i class="icon-film"></i> A Brief Tour of DFINITY</a><br/>
+ -->
 						</div>
 
 							
