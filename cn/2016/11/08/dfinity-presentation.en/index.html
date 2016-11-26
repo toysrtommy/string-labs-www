@@ -76,6 +76,12 @@
                                 </a>
                             </li>
                             <li>
+                                <a href="/" >
+                                    <div>DFINITY</div>
+                                </a>
+                            </li>
+                            
+                            <li>
                                 <a href="/#section-team" >
                                     <div>团队</div>
                                 </a>
@@ -359,6 +365,23 @@ of DFINITY: 1) Governance by Blockchain Nervous System  2) Public/Private DFINIT
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCmivtC_tSletvuNhL5GFclOB00P1pOzSk&callback=initMap"  async defer></script>
     <script type="text/javascript" src="/js/jquery.gmap.js"></script>
 
+<script> 
+            $(document).ready(
+                function() {
+                    console.log("init event");
+                      $('.popup').magnificPopup({
+                      type : 'inline',
+                      callbacks : {
+                        open : function(){
+                            console.log("popup open event triggered!");
+                            window.dispatchEvent(new Event('resize'));
+
+                        }
+                      }
+                    });
+                }
+            );
+            </script>
 
     <!-- Google Map End -->
 
