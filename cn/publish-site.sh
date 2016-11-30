@@ -1,3 +1,6 @@
+cd _site
+git pull
+cd ..
 bundle exec jekyll build
 if [ $? -eq 0 ]; then
     cd _site
