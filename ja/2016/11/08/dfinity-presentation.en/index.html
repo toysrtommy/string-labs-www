@@ -110,17 +110,17 @@
                                </div></a>
                                <ul>
                                  <li class="sub-menu-content">
-                                        <a href="/?no-autolang=true"> English</a>
+                                        <a href="/#"> English</a>
                                     
                                  </li>
                                                                   <li class="sub-menu-content">
 
-                                     <a href="/cn?no-autolang=true"> 中文
+                                     <a href="/cn"> 中文
 </a>
                                      </li>
                                        <li class="sub-menu-content">
 
-                                     <a href="/ja?no-autolang=true"> 日本語
+                                     <a href="/ja"> 日本語
 </a>
                                      </li>
                                            
@@ -432,24 +432,30 @@ function getParameterByName(name, url) {
 }
 
     
-    var userLang = window.navigator.useruserLang || window.navigator.userLang;
+    var userLang = navigator.language || navigator.userLanguage; 
+
+            console.log(userLang);
+
     if (userLang == null)
         userLang = "";
     userLang = userLang.toLowerCase();
 
     var url = window.location.href;
-    var currLang = url.substr(url.lastIndexOf('/') + 1);
-    var langSpecified = false;
-    if (currLang.includes("cn") || currLang.includes("ja")) {
-        langSpecified = true;
+    
+
+    // Detect if there's any target. Make sure we don't redirect language if there's a target specified.
+    var targetSpecified = true;
+    var isRoot = location.pathname == "/"; //Equals true if we're at the root
+    if (isRoot && !url.includes("#")) {
+        targetSpecified = false;
+        console.log("targetSpecified = false");
     }
 
-    if (!langSpecified) {
-        window.alert(userLang);
+    if (!targetSpecified) {
+        // window.alert(userLang);
+        console.log(userLang);
      if (userLang == "zh-cn" || userLang=="zh-tw" || userLang=="zh-hk")
         window.location.replace("/cn");
-     else if (userLang == "en-us")
-    	window.location.replace("/");
      else if (userLang == "ja-jp")
     	window.location.replace("/ja");
     }
