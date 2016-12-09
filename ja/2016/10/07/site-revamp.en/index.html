@@ -110,17 +110,17 @@
                                </div></a>
                                <ul>
                                  <li class="sub-menu-content">
-                                        <a href="/?no-autolang=true"> English</a>
+                                        <a href="/#"> English</a>
                                     
                                  </li>
                                                                   <li class="sub-menu-content">
 
-                                     <a href="/cn?no-autolang=true"> 中文
+                                     <a href="/cn"> 中文
 </a>
                                      </li>
                                        <li class="sub-menu-content">
 
-                                     <a href="/ja?no-autolang=true"> 日本語
+                                     <a href="/ja"> 日本語
 </a>
                                      </li>
                                            
@@ -355,6 +355,23 @@
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCmivtC_tSletvuNhL5GFclOB00P1pOzSk&callback=initMap"  async defer></script>
     <script type="text/javascript" src="/js/jquery.gmap.js"></script>
 
+<script> 
+            $(document).ready(
+                function() {
+                    console.log("init event");
+                      $('.popup').magnificPopup({
+                      type : 'inline',
+                      callbacks : {
+                        open : function(){
+                            console.log("popup open event triggered!");
+                            window.dispatchEvent(new Event('resize'));
+
+                        }
+                      }
+                    });
+                }
+            );
+            </script>
 
     <!-- Google Map End -->
 
@@ -405,21 +422,38 @@ function getParameterByName(name, url) {
 }
 
     
-    var language = window.navigator.userLanguage || window.navigator.language;
-    var noAutolang = getParameterByName("no-autolang");
-    if (!noAutolang) {
-    	// window.alert(language);
-    if (language == "zh-cn" || language=="zh-tw" || language=="zh-hk")
-        window.location.replace("/cn?no-autolang=true");
-    else if (language == "en-us")
-    	    window.location.replace("/?no-autolang=true");
-    else if (language == "ja-jp")
-    	    window.location.replace("/ja/?no-autolang=true");
-}
+    var userLang = navigator.language || navigator.userLanguage; 
+
+            console.log(userLang);
+
+    if (userLang == null)
+        userLang = "";
+    userLang = userLang.toLowerCase();
+
+    var url = window.location.href;
+    
+
+    // Detect if there's any target. Make sure we don't redirect language if there's a target specified.
+    var targetSpecified = true;
+    var isRoot = location.pathname == "/"; //Equals true if we're at the root
+    if (isRoot && !url.includes("#")) {
+        targetSpecified = false;
+        console.log("targetSpecified = false");
+    }
+
+    if (!targetSpecified) {
+        // window.alert(userLang);
+        console.log(userLang);
+     if (userLang == "zh-cn" || userLang=="zh-tw" || userLang=="zh-hk")
+        window.location.replace("/cn");
+     else if (userLang == "ja-jp")
+    	window.location.replace("/ja");
+    }
     
 
 
 </script>
+
 </body>
 
 </html>
