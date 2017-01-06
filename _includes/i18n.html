@@ -1,0 +1,55 @@
+<script>
+
+// function currLang() {
+// 	var url = window.location.href;
+// 	results = url.split("?")
+// 	if (!results) {
+// 		results.split("/");
+// 	}
+
+    
+// }
+function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+    
+    var userLang = navigator.language || navigator.userLanguage; 
+
+            console.log(userLang);
+
+    if (userLang == null)
+        userLang = "";
+    userLang = userLang.toLowerCase();
+
+    var url = window.location.href;
+    
+
+    // Detect if there's any target. Make sure we don't redirect language if there's a target specified.
+    var targetSpecified = true;
+    var isRoot = location.pathname == "/"; //Equals true if we're at the root
+    if (isRoot && !url.includes("#")) {
+        targetSpecified = false;
+        console.log("targetSpecified = false");
+    }
+
+    if (!targetSpecified) {
+        // window.alert(userLang);
+        console.log(userLang);
+     if (userLang == "zh-cn" || userLang=="zh-tw" || userLang=="zh-hk")
+        window.location.replace("/cn");
+     else if (userLang == "ja-jp")
+    	window.location.replace("/ja");
+    }
+    
+
+
+</script>

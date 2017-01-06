@@ -43,7 +43,7 @@
 
 </head>
 
-<body class="stretched dark">
+<body class="stretched dark " data-loader-timeout="1500">
 
     <!-- Document Wrapper
 	============================================= -->
@@ -70,31 +70,63 @@
                         <ul>
                             <li>
                                 <a href="{{ base }}/{{ page.projects-link }}" {% if page.menu-data-href %} data-href="#section-work" {% endif %}>
-                                    <div>Projects</div>
+                                    <div>{% t index.navbar-projects %}</div>
                                 </a>
                             </li>
                             <li>
+                                <a href="{{ base }}/{{ page.dfinity-link }}" {% if page.menu-data-href %} data-href="#section-dfinity" {% endif %}>
+                                    <div>DFINITY</div>
+                                </a>
+                            </li>
+                            
+                            <li>
                                 <a href="{{ base }}/{{ page.team-link }}" {% if page.menu-data-href %} data-href="#section-team" {% endif %}>
-                                    <div>Team</div>
+                                    <div>{% t index.navbar-team %}</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ base }}/{{ page.investors-link }}" {% if page.menu-data-href %} data-href="#section-investors" {% endif %}>
-                                    <div>Investors</div>
+                                    <div>{% t index.navbar-investors %}</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ base }}/{{ page.contact-link }}" {% if page.menu-data-href %} data-href="#section-contact" {% endif %}>
-                                    <div>Contact</div>
+                                    <div>{% t index.navbar-contact %}</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ base }}/news/" {% if !page.disable-news-link %} class="disabled" {% endif %}>
-                                    <div>News...</div>
+                                <a href="/news/" {% if !page.disable-news-link %} class="disabled" {% endif %}>
+                                    <div>{% t index.navbar-news %}...</div>
                                 </a>
                             </li>
-                        </ul>
+                            <li class="sub-menu ">
+                               <a href="#"><div class="subtitle" style="color:#75DB3C;">
 
+
+ 🌐&nbsp; {% t global.english %}
+
+                               </div></a>
+                               <ul>
+                                 <li class="sub-menu-content">
+                                        <a href="/#"> {% t global.english %}</a>
+                                    
+                                 </li>
+                                                                  <li class="sub-menu-content">
+
+                                     <a href="/cn"> {% t global.chinese %}
+</a>
+                                     </li>
+                                       <li class="sub-menu-content">
+
+                                     <a href="/ja"> {% t global.japanese %}
+</a>
+                                     </li>
+                                           
+                            </li>
+
+                        </ul>
+                       
+                         
                     </nav>
                     <!-- #primary-menu end -->
 
@@ -159,11 +191,8 @@
     <!-- Footer Scripts
 	============================================= -->
     <script type="text/javascript" src="{{ base }}/js/functions.js"></script>
-
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCmivtC_tSletvuNhL5GFclOB00P1pOzSk"></script>
-    <script type="text/javascript" src="{{ base }}/js/jquery.gmap.js"></script>
-
     <script type="text/javascript">
+        function initMap() {
         $('#google-map').gMap({
             address: 'Ramona Street, Palo Alto, California',
             maptype: 'SATELLITE',
@@ -188,10 +217,34 @@
             }
 
         });
+        }
+
     </script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCmivtC_tSletvuNhL5GFclOB00P1pOzSk&callback=initMap"  async defer></script>
+    <script type="text/javascript" src="{{ base }}/js/jquery.gmap.js"></script>
+
+<script> 
+            $(document).ready(
+                function() {
+                    console.log("init event");
+                      $('.popup').magnificPopup({
+                      type : 'inline',
+                      callbacks : {
+                        open : function(){
+                            console.log("popup open event triggered!");
+                            window.dispatchEvent(new Event('resize'));
+
+                        }
+                      }
+                    });
+                }
+            );
+            </script>
+
     <!-- Google Map End -->
 
     {% include analytics.html %}
+    {% include i18n.html %}
 </body>
 
 </html>

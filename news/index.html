@@ -27,9 +27,10 @@ hero: false
 						<div id="posts" class="post-timeline clearfix">
 
 							<div class="timeline-border"></div>
-
 							{% for post in paginator.posts %}
 
+							<!-- This is a workaround to not hide posts of other language translations. Jekyll i18n plugin currently doesn't support proper pagination of multi languages -->
+							{% if post.url contains ".en" %}
 							<div class="entry clearfix">
 
 								{% if post.blog-format-simple %}
@@ -44,7 +45,10 @@ hero: false
 									{% include blog-post-slides.html %}									
 								{% endif %}							
 							</div>
+							{% endif %}
+
 							{% endfor %}
+
 
 						</div><!-- #posts end -->
 
