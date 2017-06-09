@@ -92,7 +92,127 @@ h6 {
     opacity: 0.3;
 }
 
-/* Redesign */
+/*
+	Redesign (Benny)
+	Table of Contents:
+	1. Theme Overrides
+	2. Layout
+	3.
+*/
+
+/* Theme Overrides
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.dark .feature-box p {
+	color: white;
+}
+
+.dark .heading-block:not(.not-dark):after {
+	border: none;
+}
+
+#slider.with-header .dark .slider-caption h2,
+.page-section .heading-block h2 {
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.6);
+	text-align: left;
+}
+
+.page-section .heading-block h2 {
+	width: 25%;
+	margin: 0 auto;
+}
+
+.page-section .heading-block + div {
+	clear: both;
+}
+
+#slider.with-header .dark .slider-caption h2:before,
+.page-section .heading-block h2:before {
+	content: "";
+	float: left;
+	width: 0.25rem;
+	height: 128px;
+	background: linear-gradient(to bottom, rgb(254, 254, 0), transparent);
+	margin-right: 4rem;
+}
+
+.page-section .heading-block h2:before {
+	height: 64px;
+}
+
+#slider.with-header .dark .slider-caption p {
+	font: 100 normal 0.75em 'Raleway', sans-serif;
+	letter-spacing: 0.05em;
+	text-align: left;
+	text-transform: lowercase;
+	text-shadow: none;
+}
+
+#section-work .feature-box.media-box {
+	position: relative;
+	background: rgba(0, 0, 0, 0.25);
+	padding: 1rem;
+	margin: 5rem;
+	min-height: 30rem;
+	transition: height 0.4s ease;
+}
+
+#section-work .feature-box.media-box .link {
+	position: absolute;
+	bottom: 2rem;
+	left: 2rem;
+	width: 100%;
+}
+
+#section-work .feature-box.media-box.expanded .link {
+	display: none;
+}
+
+#section-work .feature-box.media-box .fbox-desc {
+	height: 0;
+	overflow: hidden;
+}
+
+#section-work .feature-box.media-box.expanded .fbox-desc {
+	height: auto;
+}
+
+#section-work .feature-box.media-box .fbox-media img {
+	width: 20rem;
+	margin: 0 auto;
+}
+
+#primary-menu-trigger {
+	display: block;
+	opacity: 1;
+	pointer-events: auto;
+	float: right;
+	position: static;
+	top: auto;
+  margin: 0;
+	width: auto;
+	height: auto;
+	line-height: 10rem;
+}
+
+#primary-menu-trigger i.icon-reorder {
+	color: rgb(254, 254, 0);
+	font-size: 3em;
+}
+
+#header-wrap,
+#primary-menu {
+	clear: both;
+}
+
+#primary-menu {
+	display: none;
+}
+
+
+
+/* Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .bg-stringlabs {
 	background: linear-gradient(to bottom left, rgb(48, 48, 88), rgb(0, 252, 252));
@@ -103,18 +223,11 @@ h6 {
 	background: linear-gradient(to bottom left, rgb(28, 28, 68), rgb(0, 232, 232));
 }
 
-#slider.with-header .dark .slider-caption h2 {
-  font-weight: 100;
-  color: rgba(255, 255, 255, 0.6);
-	text-align: left;
-	clear: both;
-}
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#slider.with-header .dark .slider-caption h2:before {
-	content: "";
-	float: left;
-	width: 0.25rem;
-	height: 128px;
-	background: linear-gradient(to bottom, rgb(254, 254, 0), transparent);
-	margin-right: 4rem;
+a,
+.link {
+	color: rgb(254, 254, 0);
+	cursor: pointer;
 }
