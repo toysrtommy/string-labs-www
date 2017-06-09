@@ -11,7 +11,7 @@
 }
 
 .dark .feature-box h3 span.subtitle {
-	font-family: 'Crete Round', serif;
+	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 }
 
@@ -19,14 +19,14 @@
 	font-size: 19px;
 }
 
-.font-body { font-family: 'Roboto', sans-serif !important; }
+.font-body { font-family: 'Raleway', sans-serif !important; }
 
-.font-primary { font-family: 'Roboto-slab', sans-serif !important; }
+.font-primary { font-family: 'Raleway', sans-serif !important; }
 
-.font-secondary { font-family: 'Crete Round', serif !important; }
+.font-secondary { font-family: 'Raleway', sans-serif !important; }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -46,11 +46,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Roboto-slab', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #primary-menu ul li > a {
-	font-family: 'Roboto-slab', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #logo #string-vector {
@@ -73,7 +73,7 @@ h6 {
 
 
 #logo {
-	font-family: 'Roboto-slab', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #header.full-header #logo {
@@ -90,4 +90,31 @@ h6 {
     pointer-events: none;
     cursor: default;
     opacity: 0.3;
+}
+
+/* Redesign */
+
+.bg-stringlabs {
+	background: linear-gradient(to bottom left, rgb(48, 48, 88), rgb(0, 252, 252));
+	height: 100vh;
+}
+
+.bg-stringlabs-dark {
+	background: linear-gradient(to bottom left, rgb(28, 28, 68), rgb(0, 232, 232));
+}
+
+#slider.with-header .dark .slider-caption h2 {
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.6);
+	text-align: left;
+	clear: both;
+}
+
+#slider.with-header .dark .slider-caption h2:before {
+	content: "";
+	float: left;
+	width: 0.25rem;
+	height: 128px;
+	background: linear-gradient(to bottom, rgb(254, 254, 0), transparent);
+	margin-right: 4rem;
 }
