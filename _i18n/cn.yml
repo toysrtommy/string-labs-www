@@ -2,7 +2,7 @@ global:
     chinese: "中文"
     english: "English"
     japanese: "日本語"
-index: 
+index:
     hero-title: "高级分布式协议与应用"
     hero-subtitle: "String实验室一个密码学和分布式计算的研发、孵化和投资机构."
     navbar-projects: "我们的项目"
@@ -17,7 +17,7 @@ index:
     dfinity-subtitle: "世界计算平台"
     dfinity-random-beacon-video: "随机数灯塔介绍"
     dfinity-vrf-video: "Stanford计算机论坛: 可验证随机函数的应用：分布式网络和自治银行系统"
-    dfinity-watch-video: "观看DFINITY技术视频"    
+    dfinity-watch-video: "观看DFINITY技术视频"
     projects-dfinity-subtitle: "无限度可信任计算"
     projects-dfinity-intro: "DFINITY 是一个开放式的虚拟区块链计算机和技术。她延伸了Etheruem 以太坊生态链到广泛的商业应用场景中。我们的创新包括公链上首创的智能治理机制 - “区块链神经系统”，私链智能合约可直接调用公链合约，以及第三代区块链协议技术 - 比上一代（以太坊）提升二十倍以上的确认速度和无限吞吐扩容能力。"
     projects-dfinity-deck-en: "DFINITY平台之旅"
@@ -52,13 +52,13 @@ index:
     team-tom-intro: "连续创业者、区块链大学(Blockchain University) 创始人、以及之前在eBay担任高级经理，来自上海的Tom (丁磊) 从2013年踏上了区块链行业大潮后一无反顾的开始了他的创业征程。更早之前，他14岁成为最年轻的获得计算机专业学士学位者之一，并在20岁获得商学院MBA学位。Tom时常受邀在各个创业及区块链论坛进行演讲。"
     team-gustav-intro: "来自瑞典斯德哥尔摩的Gustav在Ericsson爱立信研发部门的分布式系统开始他的职业生涯，随后转战SumUp柏林，欧洲著名的支付系统公司，并在比特币大潮中心全心投入了新一代数字货币系统开发，并随后成为以太坊Etheruem的早期核心开发人员，负责Go客户端及安全策略。"
     team-henry-intro: "Henry是香港一家知名的律所的合伙人（专注金融法律），之前曾在ICBC工银国际担任执行总监(合规事务）。早期参与数字货币行业的经历促使他加入了String，目前他负责亚洲商务拓展及法律合规事宜。"
-    team-timo-intro: "曾经在德国Aachen大学担任数学及密码学教授多年，Timo在比特币和以太坊等去中心化系统崛起后，彻底的迷上了这个新的技术浪潮。之前他曾在多个领先的区块链产品和公司担任技术负责人，之前前他曾发明了著名的AsicBoost(http://asicboost.com)技术并获得专利。在String, 他目前负责第三代密码学分布式系统的研发。"  
-    team-tomomi-intro: "充满活力的Tomomi是String的项目协调负责人，游刃有余地穿梭在String多个大型技术工程和商务拓展活动之间。她之前工作位于硅谷Menlo Park的女性创业实验室，并能流利的说英语和日语。她以优等生的荣誉毕业于Santa Clara大学的通讯专业。" 
+    team-timo-intro: "曾经在德国Aachen大学担任数学及密码学教授多年，Timo在比特币和以太坊等去中心化系统崛起后，彻底的迷上了这个新的技术浪潮。之前他曾在多个领先的区块链产品和公司担任技术负责人，之前前他曾发明了著名的AsicBoost(http://asicboost.com)技术并获得专利。在String, 他目前负责第三代密码学分布式系统的研发。"
+    team-tomomi-intro: "充满活力的Tomomi是String的项目协调负责人，游刃有余地穿梭在String多个大型技术工程和商务拓展活动之间。她之前工作位于硅谷Menlo Park的女性创业实验室，并能流利的说英语和日语。她以优等生的荣誉毕业于Santa Clara大学的通讯专业。"
     team-jon-intro: "作为一名享誉国际和拥有高度影响力的设计师，Jon之前为无数个国际著名顶尖品牌创造过一系列具有独特原创风格的设计作品，从印刷品，数字设计到视频创作。Jon和Dominic在之前的大型游戏项目中就有过成功合作创造了一款爆发性增长的产品。"
     team-shigeo-intro: "Shigeo是一名高级密码学研究者和工程师，擅长包括配对(Pairing)实现，x86/x64优化及机器学习等，并发表了多篇学术作品。他目前与Timo合作开发基于BLS阀值签名算法库，这个算法库也是DFINITY阀值接力链（ Threshold Relay Chain)的核心。毫无争议的C++之星！"
     team-will-intro: "Will目前担任芝加哥大学Booth商学院的教授之外，之前还获得过斯坦福大学经济政策研究院的George Shultz学者奖，Shumel Kandel金融经济奖，以及多个国际和国家级的数学竞赛大奖等，金融经济界冉冉升起的巨星。"
     team-houman-intro: "作为纽约法学院教授以及金融法学的负责人，Houman教授是全世界知名的法学学者，尤其擅长前沿的金融科技领域，对冲基金以及资产证券化等。由于他的深厚学术功底，多次受邀在国会及CFTC（大宗商品期货监管委员会）作为专家提供证词和政策建议。"
-    
+
     investors-title: "我们的投资人"
     investors-subtitle: "推动下一个互联网时代的风险投资家"
 
