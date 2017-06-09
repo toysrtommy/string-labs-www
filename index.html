@@ -459,10 +459,12 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
     }
 
     function themeOverrides(event) {
-      $('#slider .swiper-slide').attr('style', $('#slider .swiper-slide').attr('style').replace(/^(.*?);/gi, ''));
+      // Remove inline heights added by jquery.swiper
+      $('#slider, #slider .swiper-slide, .slider-parallax-inner').attr('style', $('#slider .swiper-slide').attr('style').replace(/^(.*?);/gi, ''));
     }
 
     function DOMContentDidLoad(event) {
+        // Throttle until styles are available, timeout after 10 sec/20 attempts
         setTimeout(function() {
             return timeoutIndex++ > 20 ? false : $('#slider .swiper-slide').attr('style') ? themeOverrides() : DOMContentDidLoad();
         }, 500);
