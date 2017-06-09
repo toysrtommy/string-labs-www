@@ -102,8 +102,13 @@ h6 {
 
 /* Theme Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.dark .feature-box p {
+.dark .feature-box p,
+.team-content p {
 	color: white;
+}
+
+.team-desc {
+	display: none;
 }
 
 .dark .heading-block:not(.not-dark):after {
@@ -182,19 +187,6 @@ h6 {
 	margin: 0 auto;
 }
 
-#primary-menu-trigger {
-	display: block;
-	opacity: 1;
-	pointer-events: auto;
-	float: right;
-	position: static;
-	top: auto;
-  margin: 0;
-	width: auto;
-	height: auto;
-	line-height: 10rem;
-}
-
 #primary-menu-trigger i.icon-reorder {
 	color: rgb(254, 254, 0);
 	font-size: 3em;
@@ -205,22 +197,18 @@ h6 {
 	clear: both;
 }
 
-#primary-menu {
-	display: none;
-}
-
-
-
 /* Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.bg-stringlabs {
-	background: linear-gradient(to bottom left, rgb(48, 48, 88), rgb(0, 252, 252));
+.bg-stringlabs,
+.bg-stringlabs-dark.full-height {
+	background: linear-gradient(to bottom right, rgb(48, 48, 88), rgb(0, 252, 252));
 	height: 100vh;
 }
 
-.bg-stringlabs-dark {
-	background: linear-gradient(to bottom left, rgb(28, 28, 68), rgb(0, 232, 232));
+.bg-stringlabs-dark,
+.bg-stringlabs-dark.full-height {
+	background: linear-gradient(to bottom right, rgb(4, 16, 48), rgb(40, 172, 172));
 }
 
 /* Typography
@@ -230,4 +218,11 @@ a,
 .link {
 	color: rgb(254, 254, 0);
 	cursor: pointer;
+}
+
+/* Responsive
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#primary-menu-trigger {
+	display: none;
 }
