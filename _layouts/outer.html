@@ -153,47 +153,6 @@
     	============================================= -->
         <script type="text/javascript" src="{{ base }}/js/jquery.js"></script>
 
-        <!-- Footer Scripts
-    	============================================= -->
-        <script>
-            // Implement an anonymous component to manage the page when the DOM is ready
-            document.addEventListener('DOMContentLoaded', function(e) {
-                return {
-
-                    config: {
-                      responsiveBreakpoint: 1000
-                    },
-
-                    events: [
-                      {
-                          listener: '.primary-menu-item > a',
-                          type: 'click',
-                          handler: 'scrollToAnchor'
-                      }
-                    ],
-
-                    isMobile() {
-                      return (window.innerWidth < this.config.responsiveBreakpoint);
-                    },
-
-                    scrollToAnchor(staticArgs, event) {
-                        return $('html, body').animate({ scrollTop: $($(event.target).data().href).offset().top }, 'slow');
-                    },
-
-                    // must return `this`
-                    didLoad() {
-                        this.events.forEach(event => {
-                            document.querySelectorAll(event.listener).forEach(selector => {
-                                selector['on' + event.type] = this[event.handler].bind(this, event.staticArgs);
-                            }, this);
-                        }, this);
-                        return this;
-                    }
-                }.didLoad();
-            });
-        </script>
-        <!-- Google Map End -->
-
         {% include analytics.html %}
         {% include i18n.html %}
     </body>
