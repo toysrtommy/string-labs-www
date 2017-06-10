@@ -57,32 +57,32 @@
                     <nav id="primary-menu" class="not-dark one-page-menu pull-left">
 
                         <ul>
-                            <li>
+                            <li class="primary-menu-item">
                                 <a href="{{ base }}/{{ page.projects-link }}" {% if page.menu-data-href %} data-href="#section-work" {% endif %}>
-                                    <div>{% t index.navbar-projects %}</div>
+                                    {% t index.navbar-projects %}
                                 </a>
                             </li>
-                            <li>
+                            <li class="primary-menu-item">
+                                <a href="{{ base }}/{{ page.dfinity-link }}" {% if page.menu-data-href %} data-href="#section-research" {% endif %}>
+                                    {% t index.navbar-research %}
+                                </a>
+                            </li>
+                            <li class="primary-menu-item">
                                 <a href="{{ base }}/{{ page.dfinity-link }}" {% if page.menu-data-href %} data-href="#section-dfinity" {% endif %}>
-                                    <div>{% t index.navbar-research %}</div>
+                                    {% t index.dfinity-title %}
                                 </a>
                             </li>
-                            <li>
-                                <a href="{{ base }}/{{ page.dfinity-link }}" {% if page.menu-data-href %} data-href="#section-dfinity" {% endif %}>
-                                    <div>{% t index.dfinity-title %}</div>
-                                </a>
-                            </li>
-                            <li>
+                            <li class="primary-menu-item">
                                 <a href="{{ base }}/{{ page.team-link }}" {% if page.menu-data-href %} data-href="#section-team" {% endif %}>
-                                    <div>{% t index.navbar-team %}</div>
+                                    {% t index.navbar-team %}
                                 </a>
                             </li>
-                            <li>
+                            <li class="primary-menu-item">
                                 <a href="{{ base }}/{{ page.investors-link }}" {% if page.menu-data-href %} data-href="#section-investors" {% endif %}>
-                                    <div>{% t index.navbar-investment %}</div>
+                                    {% t index.navbar-investment %}
                                 </a>
                             </li>
-                            <li class="sub-menu ">
+                            <li class="sub-menu">
                                <a href="#">
                                    <div class="subtitle">language&nbsp;&bull;&nbsp;{% t global.english %}</div>
                                </a>
@@ -155,7 +155,43 @@
 
         <!-- Footer Scripts
     	============================================= -->
+        <script>
+            // Implement an anonymous component to manage the page when the DOM is ready
+            document.addEventListener('DOMContentLoaded', function(e) {
+                return {
 
+                    config: {
+                      responsiveBreakpoint: 1000
+                    },
+
+                    events: [
+                      {
+                          listener: '.primary-menu-item > a',
+                          type: 'click',
+                          handler: 'scrollToAnchor'
+                      }
+                    ],
+
+                    isMobile() {
+                      return (window.innerWidth < this.config.responsiveBreakpoint);
+                    },
+
+                    scrollToAnchor(staticArgs, event) {
+                        return $('html, body').animate({ scrollTop: $($(event.target).data().href).offset().top }, 'slow');
+                    },
+
+                    // must return `this`
+                    didLoad() {
+                        this.events.forEach(event => {
+                            document.querySelectorAll(event.listener).forEach(selector => {
+                                selector['on' + event.type] = this[event.handler].bind(this, event.staticArgs);
+                            }, this);
+                        }, this);
+                        return this;
+                    }
+                }.didLoad();
+            });
+        </script>
         <!-- Google Map End -->
 
         {% include analytics.html %}
