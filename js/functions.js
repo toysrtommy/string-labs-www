@@ -136,12 +136,12 @@ var SEMICOLON = SEMICOLON || {};
 		init: function(){
 
 			SEMICOLON.initialize.responsiveClasses();
-			SEMICOLON.initialize.imagePreload( '.portfolio-item:not(:has(.fslider)) img' );
-			SEMICOLON.initialize.stickyElements();
+			//SEMICOLON.initialize.imagePreload( '.portfolio-item:not(:has(.fslider)) img' );
+			//SEMICOLON.initialize.stickyElements();
 			SEMICOLON.initialize.goToTop();
 			SEMICOLON.initialize.lazyLoad();
-			SEMICOLON.initialize.fullScreen();
-			SEMICOLON.initialize.verticalMiddle();
+			//SEMICOLON.initialize.fullScreen();
+			//SEMICOLON.initialize.verticalMiddle();
 			SEMICOLON.initialize.lightbox();
 			SEMICOLON.initialize.resizeVideos();
 			SEMICOLON.initialize.imageFade();
@@ -1057,7 +1057,7 @@ var SEMICOLON = SEMICOLON || {};
 	SEMICOLON.header = {
 
 		init: function(){
-
+		/*
 			SEMICOLON.header.superfish();
 			SEMICOLON.header.menufunctions();
 			SEMICOLON.header.fullWidthMenu();
@@ -1071,7 +1071,7 @@ var SEMICOLON = SEMICOLON || {};
 			SEMICOLON.header.logo();
 			SEMICOLON.header.topsearch();
 			SEMICOLON.header.topcart();
-
+		*/
 		},
 
 		superfish: function(){
@@ -1212,6 +1212,7 @@ var SEMICOLON = SEMICOLON || {};
 		},
 
 		stickyMenu: function( headerOffset ){
+			console.log('tick')
 			if ($window.scrollTop() > headerOffset) {
 				if( $body.hasClass('device-lg') || $body.hasClass('device-md') ) {
 					$('body:not(.side-header) #header:not(.no-sticky)').addClass('sticky-header');
@@ -3536,7 +3537,7 @@ var SEMICOLON = SEMICOLON || {};
 			if( $slider.length > 0 ) { SEMICOLON.slider.init(); }
 			if( $portfolio.length > 0 ) { SEMICOLON.portfolio.init(); }
 			SEMICOLON.widget.init();
-			SEMICOLON.documentOnReady.windowscroll();
+			//SEMICOLON.documentOnReady.windowscroll();
 		},
 
 		windowscroll: function(){

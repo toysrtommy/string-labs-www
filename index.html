@@ -14,39 +14,16 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
 
 {% include required-fragment-initialization-scripts.html %}
 
-<style>
-    .dfinity-deck {
-        /*max-width:85%;*/
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .right-aligned {
-        margin-right: 0;
-        margin-left: auto;
-        text-align: right;
-    }
-
-    .center-aligned {
-        text-align: center;
-    }
-
-    #deck-container {
-        max-width: 90%;
-        margin-left: auto;
-
-        margin-right: auto;
-    }
-
-    .hidden {
-        display: none;
-    }
-</style>
-
 <!-- Content
 ============================================= -->
-<section id="content">
-    <div class="content-wrap nopadding">
+<section>
+    <div>
+        <section id="section-hero" class="page-section section nomargin dark bg-stringlabs">
+            <div class="heading-block">
+                <h2>{% t index.hero-title %}</h2>
+                <p>{% t index.hero-subtitle %}</p>
+            </div>
+        </section>
         <section id="section-work" class="page-section section nomargin dark bg-stringlabs">
             <a name="projects"></a>
             <div class="container clearfix">
@@ -120,7 +97,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
         <section id="section-research-2" class="page-section section nomargin dark bg-stringlabs-dark full-height">
             [research section 2]
         </section>
-        <section id="section-dfinity" class="page-section section nomargin bg-stringlabs-dark full-height">
+        <section id="section-dfinity" class="page-section section nomargin bg-stringlabs-dark dark full-height">
             <a name="dfinity"></a>
             <div class="container clearfix">
                 <div class="heading-block center">

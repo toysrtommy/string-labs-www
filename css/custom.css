@@ -97,10 +97,11 @@ h6 {
 	Table of Contents:
 	1. Theme Overrides
 	2. Layout
-	3.
+	3. Typography
+	4.
 */
 
-/* Theme Overrides
+/* 1. Theme Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .dark .feature-box p,
 .team-content p {
@@ -115,15 +116,15 @@ h6 {
 	border: none;
 }
 
-#slider.with-header .dark .slider-caption h2,
-.page-section .heading-block h2 {
+.page-section.dark .heading-block h2 {
   font-weight: 100;
   color: rgba(255, 255, 255, 0.6);
 	text-align: left;
 }
 
-.page-section .heading-block h2 {
-	width: 25%;
+.page-section.dark .heading-block h2,
+.page-section.dark .heading-block p {
+	width: 50%;
 	margin: 0 auto;
 }
 
@@ -131,26 +132,34 @@ h6 {
 	clear: both;
 }
 
-#slider.with-header .dark .slider-caption h2:before,
-.page-section .heading-block h2:before {
+.page-section.dark .heading-block h2:before {
 	content: "";
 	float: left;
 	width: 0.25rem;
-	height: 128px;
+	height: 12rem;
 	background: linear-gradient(to bottom, rgb(254, 254, 0), transparent);
 	margin-right: 4rem;
 }
 
 .page-section .heading-block h2:before {
-	height: 64px;
+	height: 6rem;
 }
 
-#slider.with-header .dark .slider-caption p {
-	font: 100 normal 0.75em 'Raleway', sans-serif;
-	letter-spacing: 0.05em;
-	text-align: left;
-	text-transform: lowercase;
-	text-shadow: none;
+#wrapper {
+	background: auto;
+}
+
+#header {
+	background: transparent;
+	position: fixed;
+}
+
+#header .container {
+	position: static;
+}
+
+#header.transparent-header.full-header #header-wrap {
+	border-bottom: none;
 }
 
 #section-work .feature-box.media-box {
@@ -187,17 +196,21 @@ h6 {
 	margin: 0 auto;
 }
 
-#primary-menu-trigger i.icon-reorder {
-	color: rgb(254, 254, 0);
-	font-size: 3em;
-}
-
 #header-wrap,
 #primary-menu {
 	clear: both;
 }
 
-/* Layout
+#primary-menu ul li {
+	float: none;
+}
+
+#primary-menu ul li > a {
+	padding: 0;
+	font-weight: 200;
+}
+
+/* 2. Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .bg-stringlabs,
@@ -211,7 +224,7 @@ h6 {
 	background: linear-gradient(to bottom right, rgb(4, 16, 48), rgb(40, 172, 172));
 }
 
-/* Typography
+/* 3. Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a,
@@ -220,9 +233,16 @@ a,
 	cursor: pointer;
 }
 
-/* Responsive
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#section-hero .heading-block h2 {
+	font-size: 4em;
+}
 
-#primary-menu-trigger {
-	display: none;
+#section-hero .heading-block p {
+	font: 100 normal 1em 'Raleway', sans-serif;
+	letter-spacing: 0.05em;
+	text-align: left;
+	text-transform: lowercase;
+	text-shadow: none;
+	text-indent: 3.4em;
+	opacity: 0.75;
 }
