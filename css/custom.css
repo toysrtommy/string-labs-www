@@ -112,6 +112,11 @@ h6 {
 	display: none;
 }
 
+.team-image img {
+	width: 25%;
+	height: 25%;
+}
+
 .dark .heading-block:not(.not-dark):after {
 	border: none;
 }
@@ -251,15 +256,19 @@ h6 {
 /* 2. Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.page-section.dark {
+	border-bottom: solid 1rem #222;
+}
+
 .bg-stringlabs,
 .bg-stringlabs-dark.full-height {
-	background: linear-gradient(to bottom right, rgb(48, 48, 88), rgb(0, 252, 252));
+	background: url('../images/stringlabs-backdrop.png') 0 0 / cover no-repeat;
 	height: 100vh;
 }
 
 .bg-stringlabs-dark,
 .bg-stringlabs-dark.full-height {
-	background: linear-gradient(to bottom right, rgb(4, 16, 48), rgb(40, 172, 172));
+	background: url('../images/stringlabs-backdrop-dark.png') 0 0 / cover no-repeat;
 }
 
 /* 3. Typography
