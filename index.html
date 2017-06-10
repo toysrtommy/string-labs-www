@@ -92,10 +92,10 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
             </div>
         </section>
         <section id="section-research" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-            [research section]
+
         </section>
         <section id="section-research-2" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-            [research section 2]
+
         </section>
         <section id="section-dfinity" class="page-section section nomargin bg-stringlabs-dark dark full-height">
             <a name="dfinity"></a>
@@ -106,7 +106,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                 </div>
                 <div id="deck-container" class="fbox-media">
                     <div>
-                        <div class="col_one_fourth ">
+                        <div class="col_one_third">
                             <div style="display:inline" class="feature-box media-box">
                                 <a target="_blank" href="#briefTourModal" data-lightbox="inline">
                                     <img src="https://img.youtube.com/vi/DP8X-NuG4z0/hqdefault.jpg">
@@ -119,7 +119,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                                 </a>
                             </div>
                         </div>
-                        <div class="col_one_fourth ">
+                        <div class="col_one_third">
                             <div style="display:inline" class="feature-box media-box">
                                 <a target="_blank" href="#randomBeaconModal" data-lightbox="inline">
                                     <img src="https://img.youtube.com/vi/xf1dql4Zoqw/hqdefault.jpg">
@@ -132,7 +132,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                                 </a>
                             </div>
                         </div>
-                        <div class="col_one_fourth ">
+                        <div class="col_one_third">
                             <div style="display:inline" class="feature-box media-box">
                                 <a href="#vrfModal" data-lightbox="inline">
                                     <img src="https://img.youtube.com/vi/v0fq_u5C1so/hqdefault.jpg">
@@ -181,7 +181,6 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                                 </div>
                             </div>
                         </div>
-
                         <div class="modal1 mfp-hide" id="phiDeckModal">
                             <div class="block divcenter"
                                  style="background-color: #282828;max-width:80%;max-height:80%;">
@@ -221,10 +220,13 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
         </section>
     </div>
 </section>
+<section id="section-presentations-2" class="page-section section nomargin dark bg-stringlabs-dark full-height">
+
+</section>
 <section id="section-team" class="page-section section nomargin dark bg-stringlabs-dark">
 	<div class="heading-block center">
 		<h2>{% t index.team-title %}</h2>
-		<div>{% t index.team-subtitle %}</div>
+		<p>{% t index.team-subtitle %}</p>
 	</div>
 	<div class="container clearfix">
 		<div class="row">
@@ -435,20 +437,5 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
         window.dispatchEvent(new Event('resize'));
     }
 
-    function themeOverrides(event) {
-      // Remove inline heights added by jquery.swiper
-      $('#slider, #slider .swiper-slide, .slider-parallax-inner').attr('style', $('#slider .swiper-slide').attr('style').replace(/^(.*?);/gi, ''));
-    }
-
-    function DOMContentDidLoad(event) {
-        // Throttle until styles are available, timeout after 10 sec/20 attempts
-        setTimeout(function() {
-            return timeoutIndex++ > 20 ? false : $('#slider .swiper-slide').attr('style') ? themeOverrides() : DOMContentDidLoad();
-        }, 500);
-    }
-
-    var timeoutIndex = 0;
-
-    document.addEventListener('DOMContentLoaded', DOMContentDidLoad);
 </script>
 <!-- #content end -->

@@ -116,33 +116,44 @@ h6 {
 	border: none;
 }
 
-.page-section.dark .heading-block h2 {
-  font-weight: 100;
-  color: rgba(255, 255, 255, 0.6);
-	text-align: left;
+#section-dfinity .col_one_third {
+	width: calc(33.3% - 10rem);
+	margin: 5rem;
 }
 
 .page-section.dark .heading-block h2,
 .page-section.dark .heading-block p {
-	width: 50%;
+	text-align: center;
 	margin: 0 auto;
+}
+
+.page-section.dark .heading-block h2 {
+  font-weight: 100;
+  line-height: 1em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.page-section.dark .heading-block p {
+	padding-top: 2em;
 }
 
 .page-section .heading-block + div {
 	clear: both;
 }
 
-.page-section.dark .heading-block h2:before {
+#section-hero.page-section.dark .heading-block h2 {
+	text-align: left;
+	width: 50%;
+	max-width: 60rem;
+}
+
+#section-hero.page-section.dark .heading-block h2:before {
 	content: "";
 	float: left;
 	width: 0.25rem;
-	height: 12rem;
+	height: 20rem;
 	background: linear-gradient(to bottom, rgb(254, 254, 0), transparent);
 	margin-right: 4rem;
-}
-
-.page-section .heading-block h2:before {
-	height: 6rem;
 }
 
 #wrapper {
@@ -152,6 +163,7 @@ h6 {
 #header {
 	background: transparent;
 	position: fixed;
+	margin: 4rem;
 }
 
 #header .container {
@@ -160,6 +172,10 @@ h6 {
 
 #header.transparent-header.full-header #header-wrap {
 	border-bottom: none;
+}
+
+#section-hero {
+	padding-top: 13.75rem;
 }
 
 #section-work .feature-box.media-box {
@@ -196,18 +212,40 @@ h6 {
 	margin: 0 auto;
 }
 
+#logo {
+	padding: 0;
+	margin: 0;
+}
+
 #header-wrap,
 #primary-menu {
 	clear: both;
 }
 
-#primary-menu ul li {
+#primary-menu ul {
+	padding: 0;
+}
+
+#primary-menu ul > li {
 	float: none;
+	margin-left: 0;
+}
+
+#primary-menu ul > li.sub-menu {
+	position: fixed;
+	bottom: 1rem;
+}
+
+#primary-menu ul > li.sub-menu a .subtitle {
+	color: white;
+	text-transform: lowercase;
 }
 
 #primary-menu ul li > a {
 	padding: 0;
 	font-weight: 200;
+	font-size: 0.7em;
+	text-shadow: 0 1px 1rem rgba(0, 0, 20, 0.4);
 }
 
 /* 2. Layout
@@ -234,15 +272,14 @@ a,
 }
 
 #section-hero .heading-block h2 {
-	font-size: 4em;
+	font-size: 3.5em;
 }
 
 #section-hero .heading-block p {
-	font: 100 normal 1em 'Raleway', sans-serif;
+	font: 100 normal 1.1em 'Raleway', sans-serif;
 	letter-spacing: 0.05em;
 	text-align: left;
 	text-transform: lowercase;
 	text-shadow: none;
-	text-indent: 3.4em;
 	opacity: 0.75;
 }
