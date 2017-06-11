@@ -18,11 +18,11 @@ index:
     projects-title: "Our projects"
     projects-learn-more: "find out more"
     projects-dfinity-subtitle: "Infinite computing technology"
-    projects-dfinity-intro: DFINITY is an open virtual blockchain computer and technology that extends and refocuses the Ethereum ecosystem for business. Innovations include open chain governance using a "Blockchain Nervous System", private chains with smart contracts that can directly call into contracts on the public chain and Third Generation crypto and protocols that create a 20X faster virtual machine and provide a roadmap to infinite scalability.
+    projects-dfinity-intro: "DFINITY is an open virtual blockchain computer and technology that extends and refocuses the Ethereum ecosystem for business. Innovations include open chain governance using a Blockchain Nervous System, private chains with smart contracts that can directly call into contracts on the public chain and Third Generation crypto and protocols that create a 20X faster virtual machine and provide a roadmap to infinite scalability."
     projects-dfinity-deck-en: "A Brief Tour of DFINITY"
     projects-dfinity-deck-cn: "Chinese"
     projects-dfinity-deck-ja: "Japanese"
-    projects-dfinity-video-1: Video relating to "threshold relay" chains
+    projects-dfinity-video-1: "Video relating to threshold relay chains"
     projects-phi-subtitle: "Blockchain computer system"
     projects-phi-intro: "Today's commercial banking system faces critical challenges that it cannot solve. These include the vast costs of branches, staff, infrastructure and compliance processes, chronic bad judgement when originating loans that leads to hugely costly bailouts, and a monopolistic tendency to impede desperately needed socially impactful financial innovation. Imagine then if commercial banks could be entirely replaced with autonomous smart contracts that use algorithms and open networks of human validators to give out loans more reliably, and if this created stable, fiat-like cryptocurrency as a side effect."
     projects-phi-deck-en: "Brief introduction to PHI"
