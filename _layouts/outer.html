@@ -55,48 +55,37 @@
                     <!-- Primary Navigation
 					============================================= -->
                     <nav id="primary-menu" class="not-dark one-page-menu pull-left">
-
+                        <!-- todo: localize nav, resolve gh-pages ssue with {% t .. %} -->
                         <ul>
                             <li class="primary-menu-item">
                                 <a href="{{ base }}/{{ page.projects-link }}" data-href="#section-work">
-
+                                    <div>Our Projects</div>
                                 </a>
                             </li>
                             <li class="primary-menu-item">
                                 <a href="{{ base }}/{{ page.dfinity-link }}" data-href="#section-research">
-                                    <div>{% t index.navbar-research %}</div>
+                                    <div>Research</div>
                                 </a>
                             </li>
                             <li class="primary-menu-item">
                                 <a href="{{ base }}/{{ page.dfinity-link }}" data-href="#section-dfinity">
-                                    <div>{% t index.dfinity-title %}</div>
+                                    <div>Talks &amp; Presentations</div>
                                 </a>
                             </li>
                             <li class="primary-menu-item">
                                 <a href="{{ base }}/{{ page.team-link }}" data-href="#section-team">
-                                    <div>{% t index.navbar-team %}</div>
+                                    <div>The Team</div>
                                 </a>
                             </li>
                             <li class="primary-menu-item">
                                 <a href="{{ base }}/{{ page.investors-link }}" data-href="#section-investors">
-                                    <div>{% t index.navbar-investment %}</div>
+                                    <div>Investment</div>
                                 </a>
                             </li>
                             <li class="sub-menu">
                                <a href="#">
-                                   <div class="subtitle">language&nbsp;&bull;&nbsp;{% t global.english %}</div>
+                                   <div class="subtitle">language&nbsp;&bull;&nbsp;english</div>
                                </a>
-                               <ul>
-                                    <li class="sub-menu-content">
-                                        <a href="/#"> {% t global.english %}</a>
-                                    </li>
-                                    <li class="sub-menu-content">
-                                        <a href="/cn"> {% t global.chinese %}</a>
-                                    </li>
-                                    <li class="sub-menu-content">
-                                        <a href="/ja"> {% t global.japanese %}</a>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                     </nav>
