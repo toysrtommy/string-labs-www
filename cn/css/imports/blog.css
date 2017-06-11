@@ -61,7 +61,7 @@
 	line-height: 14px;
 	margin: 0 10px 15px 0;
 	color: #999;
-	font-family: 'Crete Round', serif;
+	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 }
 
@@ -131,7 +131,7 @@ body:not(.device-touch) .entry-link {
 .entry-link span {
 	display: block;
 	margin-top: 5px;
-	font-family: 'Crete Round', serif;
+	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	font-weight: normal;
 	text-transform: none;
@@ -144,7 +144,7 @@ body:not(.device-touch) .entry-link {
 
 .entry blockquote p {
 	font-weight: 400;
-	font-family: 'Crete Round', serif;
+	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 }
 
@@ -489,7 +489,7 @@ body:not(.device-touch) .entry-link {
 	display: inline-block;
 	border-bottom: 1px solid #1ABC9C;
 	padding: 0 2px;
-	font-family: 'Crete Round', serif;
+	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 }
 
@@ -759,7 +759,7 @@ body:not(.device-touch) .entry-link {
 .comment-content .comment-author span a {
 	font-size: 12px;
 	font-weight: normal;
-	font-family: 'Crete Round', serif;
+	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	color: #AAA;
 }

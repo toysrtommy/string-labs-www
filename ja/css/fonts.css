@@ -43,13 +43,13 @@ label,
 .team-title span,
 .before-heading,
 .wedding-head .first-name span,
-.wedding-head .last-name span { font-family: 'Crete Round', serif; }
+.wedding-head .last-name span { font-family: 'Raleway', sans-serif; }
 
 .font-body { font-family: 'Lato', sans-serif !important; }
 
 .font-primary { font-family: 'Raleway', sans-serif !important; }
 
-.font-secondary { font-family: 'Crete Round', serif !important; }
+.font-secondary { font-family: 'Raleway', sans-serif !important; }
 
 
 /* ----------------------------------------------------------------
