@@ -439,7 +439,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
 
             events: [
               {
-                  listener: '.primary-menu-item > a',
+                  listener: '.primary-menu-item > a > div',
                   type: 'click',
                   handler: 'scrollToAnchor'
               }
@@ -450,7 +450,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
             },
 
             scrollToAnchor(staticArgs, event) {
-                return $('html, body').animate({ scrollTop: $($(event.target).data().href).offset().top }, 'slow');
+                return $('html, body').animate({ scrollTop: $($(event.target).parent().data().href).offset().top }, 'slow');
             },
 
             initDeckLang(lang) {
