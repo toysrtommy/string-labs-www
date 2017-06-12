@@ -4,7 +4,6 @@ home-link: "#"
 projects-link: "#"
 team-link: "#"
 investors-link: "#"
-contact-link: "#"
 dfinity-link: "#"
 menu-data-href: true
 hero: true
@@ -45,7 +44,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                                 <a href="http://dfinity.network/">http://dfinity.network</a>
                             </p>
                         </div>
-                        <div class="subtitle link">{% t index.projects-learn-more %}</div>
+                        <div class="subtitle link"></div>
                     </div>
                 </div>
                 <div class="col_one_third nobottommargin">
@@ -71,7 +70,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                                     {% t index.projects-phi-video %}</a>
                             </p>
                         </div>
-                        <div class="subtitle link">{% t index.projects-learn-more %}</div>
+                        <div class="subtitle link"></div>
                     </div>
                 </div>
                 <div class="col_one_third nobottommargin col_last">
@@ -88,22 +87,22 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                                     %}</a>
                             </p>
                         </div>
-                        <div class="subtitle link">{% t index.projects-learn-more %}</div>
+                        <div class="subtitle link"></div>
                     </div>
                 </div>
                 <div class="clear"></div>
             </div>
-            <a class="section-link" href="{{ base }}/{{ page.projects-link }}" data-href="#section-research">
+            <a class="section-link" href="{{ base }}/{{ page.dfinity-link }}" data-href="#section-research">
                 <div>&darr;</div>
             </a>
         </section>
         <section id="section-research" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-            <a class="section-link" href="{{ base }}/{{ page.projects-link }}" data-href="#section-research-2">
+            <a class="section-link" href="{{ base }}/{{ page.dfinity-link }}" data-href="#section-research-2">
                 <div>&darr;</div>
             </a>
         </section>
         <section id="section-research-2" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-            <a class="section-link" href="{{ base }}/{{ page.projects-link }}" data-href="#section-dfinity">
+            <a class="section-link" href="{{ base }}/{{ page.dfinity-link }}" data-href="#section-dfinity">
                 <div>&darr;</div>
             </a>
         </section>
@@ -227,18 +226,18 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                  -->
             </div>
             <div class="clear"></div>
-            <a class="section-link" href="{{ base }}/{{ page.projects-link }}" data-href="#section-presentations-2">
+            <a class="section-link" href="{{ base }}/{{ page.dfinity-link }}" data-href="#section-presentations-2">
                 <div>&darr;</div>
             </a>
         </section>
     </div>
 </section>
 <section id="section-presentations-2" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-    <a class="section-link" href="{{ base }}/{{ page.projects-link }}" data-href="#section-team">
+    <a class="section-link" href="{{ base }}/{{ page.team-link }}" data-href="#section-team">
         <div>&darr;</div>
     </a>
 </section>
-<section id="section-team" class="page-section section nomargin dark bg-stringlabs-dark">
+<section id="section-team" class="page-section section nomargin dark bg-stringlabs-dark full-height">
 	<div class="heading-block center">
 		<h2>{% t index.team-title %}</h2>
 		<p>{% t index.team-subtitle %}</p>
@@ -375,73 +374,13 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
 			</div>
 		</div>
 		<div class="clear"></div>
-		<div class="row">
-			<div class="col-md-6 bottommargin">
-				<div class="team team-list clearfix">
-					<div class="team-image">
-						<img src="{{ base }}/images/team/shigeo-head1.jpg" alt="Shigeo Mitsunari" style="opacity: 0.5">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Shigeo Mitsunari</h4><span>Cryptography</span></div>
-						<div class="team-content">
-							<p>Shigeo is a talented cryptographer with interests in pairing implementations, x86/x64 optimization and machine learning, and the publisher of several academic works. He currently works with Timo evolving a BLS threshold signature library that sits at the core of the Dfinity "threshold relay chain" system. A C++ rockstar!</p>
-						</div>
-						<a href="https://github.com/herumi" class="social-icon si-rounded si-small si-github">
-							<i class="icon-github"></i>
-							<i class="icon-github"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 bottommargin">
-				<div class="team team-list clearfix">
-					<div class="team-image">
-						<img src="{{ base }}/images/team/will-head1.jpg" alt="Prof Will Cong">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Prof Will Cong</h4><span>Economics Advisor</span></div>
-						<div class="team-content">
-							<p>Assistant Professor of Finance at Chicago Booth, Will Cong holds positions such as George Shultz Scholar at the Stanford Institute for Economic Policy Research and prizes from the Shmuel Kandel Award in Financial Economics to gold medals in international and national Math contests: a bona fide financial economics maestro!</p>
-						</div>
-						<a href="https://www.linkedin.com/in/linwilliamcong" class="social-icon si-rounded si-small si-linkedin">
-							<i class="icon-linkedin"></i>
-							<i class="icon-linkedin"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="clear"></div>
-		<div class="row">
-			<div class="col-md-6 bottommargin">
-				<div class="team team-list clearfix">
-					<div class="team-image">
-						<img src="{{ base }}/images/team/houman-head1.jpg" alt="Prof Houman Shadab">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Prof Houman Shadab</h4><span>Legal Advisor</span></div>
-						<div class="team-content">
-							<p>Currently a Professor of Law at New York Law School, Houman is a world renowned expert on law relating to cutting-edge fintech, hedge funds and securitization. This has led him to testify to congress on hedge funds and the financial crisis, and to the CFTC on Bitcoin derivatives.</p>
-						</div>
-						<a href="https://twitter.com/HoumanShadab" class="social-icon si-rounded si-small si-twitter">
-							<i class="icon-twitter"></i>
-							<i class="icon-twitter"></i>
-						</a>
-						<a href="https://www.linkedin.com/in/houmanshadab" class="social-icon si-rounded si-small si-linkedin">
-							<i class="icon-linkedin"></i>
-							<i class="icon-linkedin"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
-    <a class="section-link" href="{{ base }}/{{ page.projects-link }}" data-href="#section-investors">
+    <a class="section-link" href="{{ base }}/{{ page.investors-link }}" data-href="#section-investors">
         <div>&darr;</div>
     </a>
 </section>
 <section id="section-investors" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-    <a class="section-link" href="{{ base }}/{{ page.projects-link }}" data-href="#section-hero">
+    <a class="section-link" href="{{ base }}/{{ page.home-link }}" data-href="#section-hero">
         <div>&uarr;</div>
     </a>
 </section>
@@ -461,7 +400,12 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
               {
                   listener: '.primary-menu-item > a > div, .section-link > div',
                   type: 'click',
-                  handler: 'scrollToAnchor'
+                  handler: 'didClickScrollToLink'
+              },
+              {
+                  listener: '.feature-box .subtitle.link',
+                  type: 'click',
+                  handler: 'didClickProjectLink'
               }
             ],
 
@@ -469,7 +413,11 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
               return (window.innerWidth < this.config.responsiveBreakpoint);
             },
 
-            scrollToAnchor(staticArgs, event) {
+            didClickProjectLink(staticArgs, event) {
+                return $(event.target).parent().toggleClass('expanded');
+            },
+
+            didClickScrollToLink(staticArgs, event) {
                 event.preventDefault();
                 $('html, body').animate({ scrollTop: $($(event.target).parent().data().href).offset().top }, 'slow');
                 return false;

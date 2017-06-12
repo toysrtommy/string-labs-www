@@ -95,12 +95,28 @@ h6 {
 /*
 	Redesign (Benny)
 	Table of Contents:
-	1. Theme Overrides
-	2. Layout
-	3. Typography
+	1. Reset
+	2. Theme Overrides
+	3. Layout
+	4. Typography
 */
 
-/* 1. Theme Overrides
+/* 1. Reset
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 100vw;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+/* 2. Theme Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .dark .feature-box p,
 .team-content p {
@@ -182,8 +198,19 @@ h6 {
 	background: rgba(0, 0, 0, 0.25);
 	padding: 1rem;
 	margin: 5rem;
-	min-height: 30rem;
+	height: 30rem;
+}
+
+#section-work .feature-box.media-box.expanded {
+	height: 60rem;
+}
+
+#section-work .feature-box.media-box.expanded {
 	transition: height 0.4s ease;
+}
+
+#section-work .feature-box.media-box.expanded .fbox-desc {
+	transition: opacity 0.4s linear, height 0.4s ease;
 }
 
 #section-work .feature-box.media-box .link {
@@ -194,16 +221,26 @@ h6 {
 }
 
 #section-work .feature-box.media-box.expanded .link {
-	display: none;
+	position: static;
+	margin: 2rem;
+}
+
+#section-work .feature-box.media-box .link:before {
+	content: "find out more";
+}
+
+#section-work .feature-box.media-box.expanded .link:before {
+	content: "collapse";
 }
 
 #section-work .feature-box.media-box .fbox-desc {
-	height: 0;
-	overflow: hidden;
+	opacity: 0;
+	height: 65%;
 }
 
 #section-work .feature-box.media-box.expanded .fbox-desc {
-	height: auto;
+  opacity: 1;
+  overflow-y: auto;
 }
 
 #section-work .feature-box.media-box .fbox-media img {
@@ -247,7 +284,7 @@ h6 {
 	text-shadow: 0 1px 1rem rgba(0, 0, 20, 0.4);
 }
 
-/* 2. Layout
+/* 3. Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .page-section.dark {
@@ -257,7 +294,7 @@ h6 {
 .bg-stringlabs,
 .bg-stringlabs-dark.full-height {
 	background: url('../images/stringlabs-backdrop.png') 0 0 / cover no-repeat;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .bg-stringlabs-dark,
@@ -290,7 +327,7 @@ h6 {
 	height: 100%;
 }
 
-/* 3. Typography
+/* 4. Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a,
