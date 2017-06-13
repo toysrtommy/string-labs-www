@@ -8,25 +8,43 @@
 /*
 	Redesign (Benny)
 	Table of Contents:
-	1. Reset
+	1. Base Styles
 	2. Theme Overrides
 	3. Layout
 	4. Typography
 */
 
-/* 1. Reset
+/* 1. Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ::-webkit-scrollbar {
 	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	border-radius: 100vw;
+	background: #222;
+	border-top-right-radius: 100vw;
+	border-top-right-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb {
 	border-radius: 100vw;
+	background: #777;
+}
+
+div ::-webkit-scrollbar {
+	width: 6px;
+}
+
+div ::-webkit-scrollbar-track {
 	background: rgba(0, 0, 0, 0.25);
+}
+
+div ::-webkit-scrollbar-thumb {
+	background: #eee;
+}
+
+html, body {
+	overflow-x: hidden;
 }
 
 /* 2. Theme Overrides
@@ -34,6 +52,8 @@
 .dark .feature-box p,
 .team-content p {
 	color: white;
+	padding-right: 1rem;
+	text-align: left;
 }
 
 .team-desc {
@@ -49,168 +69,92 @@
 	border: none;
 }
 
-.page-section.dark .heading-block h2,
-.page-section.dark .heading-block p {
-	text-align: center;
-	margin: 0 auto;
-}
-
-.page-section.dark .heading-block h2 {
-  font-weight: 100;
-  line-height: 1em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.page-section.dark .heading-block p {
-	padding-top: 2em;
-}
-
-.page-section .heading-block + div {
-	clear: both;
-}
-
-#section-hero.page-section.dark .heading-block h2 {
-	text-align: left;
-	width: 50%;
-	max-width: 60rem;
-}
-
-#section-hero.page-section.dark .heading-block h2:before {
-	content: "";
-	float: left;
-	width: 0.25rem;
-	height: 20rem;
-	background: linear-gradient(to bottom, rgb(254, 254, 0), transparent);
-	margin-right: 4rem;
-}
-
 #wrapper {
 	background: auto;
 }
 
-#header {
-	background: transparent;
-	position: fixed;
-	margin: 4rem;
-}
-
-#header .container {
-	position: static;
-	padding: 0;
-}
-
-#header.transparent-header.full-header #header-wrap {
-	border-bottom: none;
-}
-
-#section-hero {
-	padding-top: 13.75rem;
-}
-
-#section-work .feature-box.media-box {
-	position: relative;
+#header.full-header {
 	background: rgba(0, 0, 0, 0.25);
-	padding: 1rem;
-	margin: 5rem;
-	height: 30rem;
-}
-
-#section-work .feature-box.media-box.expanded {
-	height: 60rem;
-}
-
-#section-work .feature-box.media-box.expanded {
-	transition: height 0.4s ease;
-}
-
-#section-work .feature-box.media-box.expanded .fbox-desc {
-	transition: opacity 0.4s linear, height 0.4s ease;
-}
-
-#section-work .feature-box.media-box .link {
-	position: absolute;
-	bottom: 2rem;
-	left: 2rem;
-	width: 100%;
-}
-
-#section-work .feature-box.media-box.expanded .link {
-	position: static;
-	margin: 2rem;
-}
-
-#section-work .feature-box.media-box .link:before {
-	content: "find out more";
-}
-
-#section-work .feature-box.media-box.expanded .link:before {
-	content: "collapse";
-}
-
-#section-work .feature-box.media-box .fbox-desc {
-	opacity: 0;
-	height: 65%;
-}
-
-#section-work .feature-box.media-box.expanded .fbox-desc {
-  opacity: 1;
-  overflow-y: auto;
-}
-
-#section-work .feature-box.media-box .fbox-media img {
 	width: 20rem;
-	margin: 0 auto;
+	z-index: 1;
+	border: none;
+	transition: none;
 }
 
-#logo {
+#header.full-header,
+#header.full-header #header-wrap {
+	position: fixed;
+	height: 100vh;
+}
+
+#header.full-header,
+#header.full-header #header-wrap {
+	border-bottom: none;
+	padding: 2rem 2rem 2rem 1rem;
+	min-height: 18rem;
+	opacity: 0;
+	transition: opacity 0.9s linear, transform 0.9s ease;
+	transform: translate3d(-5rem, 0, 0);
+}
+
+#header.full-header.expanded,
+#header.full-header.expanded #header-wrap {
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
+}
+
+#header.full-header #header-wrap #logo {
 	padding: 0;
 	margin: 0;
+	border: none;
 }
 
-#header-wrap,
-#primary-menu {
+#header.full-header #header-wrap,
+#header.full-header #primary-menu {
 	clear: both;
 }
 
-#header #header-wrap #primary-menu > ul {
+#header.full-header #header-wrap #primary-menu > ul {
+	margin-top: 2rem;
 	padding: 0;
 	border: none;
 }
 
-#primary-menu > ul > li {
+#header.full-header #primary-menu > ul > li {
 	float: none;
 	margin-left: 0;
 }
 
-#primary-menu > ul > li.sub-menu {
+#header.full-header #primary-menu > ul > li.sub-menu {
 	position: fixed;
-	bottom: 1rem;
+	bottom: 4rem;
 }
 
-#primary-menu > ul > li.sub-menu a .subtitle {
+#header.full-header #primary-menu > ul > li.sub-menu a .subtitle {
 	color: white;
 	text-transform: lowercase;
 }
 
-#primary-menu > ul li > a {
+#header.full-header #primary-menu > ul li > a {
 	padding: 0;
 	font-weight: 200;
 	font-size: 0.7em;
 	text-shadow: 0 1px 1rem rgba(0, 0, 20, 0.4);
-}
-
-#header-wrap {
-	background: rgba(0, 0, 0, 0.25);
-	padding: 2rem;
-	min-height: 18rem;
-}
-
-#header #header-wrap #logo {
-	border: none;
+	color: white;
 }
 
 /* 3. Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.feature-list {
+	width: 72rem;
+	margin: 0 auto;
+}
+
+.feature-list > .feature-item {
+	width: 20rem;
+	margin: 2rem;
+}
 
 .page-section.dark {
 	border-bottom: solid 1rem #222;
@@ -252,6 +196,49 @@
 	height: 100%;
 }
 
+#header.full-header .container {
+	position: static;
+	padding: 0;
+}
+
+#section-hero {
+	padding-top: 13.75rem;
+}
+
+#section-work .feature-box.media-box {
+	position: relative;
+	background: rgba(0, 0, 0, 0.25);
+	padding: 1rem;
+	height: 30rem;
+}
+
+#section-work .feature-box.media-box.expanded {
+	height: 60rem;
+}
+
+#section-work .feature-box.media-box.expanded {
+	transition: height 0.4s ease;
+}
+
+#section-work .feature-box.media-box.expanded .fbox-desc {
+	transition: opacity 0.4s linear, height 0.4s ease;
+}
+
+#section-work .feature-box.media-box .fbox-desc {
+	opacity: 0;
+	height: 65%;
+}
+
+#section-work .feature-box.media-box.expanded .fbox-desc {
+  opacity: 1;
+  overflow-y: auto;
+}
+
+#section-work .feature-box.media-box .fbox-media img {
+	width: 18rem;
+	margin: 0 auto;
+}
+
 /* 4. Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -261,8 +248,24 @@ a,
 	cursor: pointer;
 }
 
-#section-hero .heading-block h2 {
-	font-size: 3.5em;
+.page-section.dark .heading-block h2,
+.page-section.dark .heading-block p {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.page-section.dark .heading-block h2 {
+  font-weight: 200;
+  line-height: 1em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.page-section.dark .heading-block p {
+	padding-top: 2em;
+}
+
+.page-section .heading-block + div {
+	clear: both;
 }
 
 #section-hero .heading-block p {
@@ -272,4 +275,49 @@ a,
 	text-transform: lowercase;
 	text-shadow: none;
 	opacity: 0.75;
+}
+
+#section-hero .heading-block p {
+	font: 100 normal 1.1em 'Raleway', sans-serif;
+	letter-spacing: 0.05em;
+	text-align: left;
+	text-transform: lowercase;
+	text-shadow: none;
+	opacity: 0.75;
+}
+
+#section-hero.page-section.dark .heading-block h2 {
+	text-align: left;
+	width: 60%;
+	max-width: 70rem;
+	font-size: 4.2em;
+}
+
+#section-hero.page-section.dark .heading-block h2:before {
+	content: "";
+	float: left;
+	width: 0.25rem;
+	height: 20rem;
+	background: linear-gradient(to bottom, rgb(254, 254, 0), transparent);
+	margin-right: 4rem;
+}
+
+#section-work .feature-box.media-box .link {
+	position: absolute;
+	bottom: 2rem;
+	left: 2rem;
+	width: 100%;
+}
+
+#section-work .feature-box.media-box.expanded .link {
+	position: static;
+	margin: 2rem;
+}
+
+#section-work .feature-box.media-box .link:before {
+	content: "find out more";
+}
+
+#section-work .feature-box.media-box.expanded .link:before {
+	content: "collapse";
 }
