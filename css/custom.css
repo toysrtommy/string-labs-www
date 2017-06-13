@@ -5,8 +5,6 @@
 	Overwriting Default Theme Styles for Better Hanlding Updates
 -----------------------------------------------------------------*/
 
-
-
 /*
 	Redesign (Benny)
 	Table of Contents:
@@ -98,6 +96,7 @@
 
 #header .container {
 	position: static;
+	padding: 0;
 }
 
 #header.transparent-header.full-header #header-wrap {
@@ -200,9 +199,10 @@
 	text-shadow: 0 1px 1rem rgba(0, 0, 20, 0.4);
 }
 
-#header-wrap > div {
+#header-wrap {
 	background: rgba(0, 0, 0, 0.25);
 	padding: 2rem;
+	min-height: 18rem;
 }
 
 #header #header-wrap #logo {
