@@ -28,11 +28,11 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
         </section>
         <section id="section-work" class="page-section section nomargin dark bg-stringlabs">
             <a name="projects"></a>
-            <div class="container clearfix">
-                <div class="heading-block center">
-                    <h2>{% t index.projects-title %}</h2>
-                </div>
-                <div class="col_one_third nobottommargin">
+            <div class="heading-block center">
+                <h2>{% t index.projects-title %}</h2>
+            </div>
+            <div class="feature-list clearfix">
+                <div class="feature-item pull-left">
                     <div class="feature-box media-box">
                         <div class="fbox-media">
                             <img src="{{ base }}/images/string/dfinity-logo.png" alt="DFINITY">
@@ -47,7 +47,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                         <div class="subtitle link"></div>
                     </div>
                 </div>
-                <div class="col_one_third nobottommargin">
+                <div class="feature-item pull-left">
                     <div class="feature-box media-box">
                         <div class="fbox-media">
                             <img src="{{ base }}/images/string/phi-logo.png" alt="PHI">
@@ -73,7 +73,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                         <div class="subtitle link"></div>
                     </div>
                 </div>
-                <div class="col_one_third nobottommargin col_last">
+                <div class="feature-item pull-left">
                     <div class="feature-box media-box">
                         <div class="fbox-media">
                             <img src="{{ base }}/images/string/other-logo.png" alt="Other" style="opacity:0.7">
@@ -406,7 +406,8 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                   listener: '.feature-box .subtitle.link',
                   type: 'click',
                   handler: 'didClickProjectLink'
-                }
+                },
+
             ],
 
             isMobile() {
@@ -433,6 +434,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
 
             // must return `this`
             didLoad() {
+                setTimeout(function() { $('#header').addClass('expanded'); }, 1000);
                 this.events.forEach(event => {
                     document.querySelectorAll(event.listener).forEach(selector => {
                         selector['on' + event.type] = this[event.handler].bind(this, event.staticArgs);

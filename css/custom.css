@@ -22,7 +22,7 @@
 
 ::-webkit-scrollbar-track {
 	background: #222;
-	border-top-left-radius: 100vw;
+	border-top-right-radius: 100vw;
 	border-top-right-radius: 100vw;
 }
 
@@ -74,20 +74,33 @@ html, body {
 }
 
 #header.full-header {
+	background: rgba(0, 0, 0, 0.25);
+	width: 20rem;
 	z-index: 1;
+	border: none;
+	transition: none;
 }
 
 #header.full-header,
 #header.full-header #header-wrap {
-	background: rgba(0, 0, 0, 0.25);
 	position: fixed;
 	height: 100vh;
-	min-height: 18rem;
 }
 
+#header.full-header,
 #header.full-header #header-wrap {
 	border-bottom: none;
-	padding: 2rem;
+	padding: 2rem 2rem 2rem 1rem;
+	min-height: 18rem;
+	opacity: 0;
+	transition: opacity 0.9s linear, transform 0.9s ease;
+	transform: translate3d(-5rem, 0, 0);
+}
+
+#header.full-header.expanded,
+#header.full-header.expanded #header-wrap {
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
 }
 
 #header.full-header #header-wrap #logo {
@@ -114,7 +127,7 @@ html, body {
 
 #header.full-header #primary-menu > ul > li.sub-menu {
 	position: fixed;
-	bottom: 1rem;
+	bottom: 4rem;
 }
 
 #header.full-header #primary-menu > ul > li.sub-menu a .subtitle {
@@ -132,6 +145,16 @@ html, body {
 
 /* 3. Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.feature-list {
+	width: 72rem;
+	margin: 0 auto;
+}
+
+.feature-list > .feature-item {
+	width: 20rem;
+	margin: 2rem;
+}
 
 .page-section.dark {
 	border-bottom: solid 1rem #222;
@@ -186,7 +209,6 @@ html, body {
 	position: relative;
 	background: rgba(0, 0, 0, 0.25);
 	padding: 1rem;
-	margin: 5rem;
 	height: 30rem;
 }
 
@@ -213,7 +235,7 @@ html, body {
 }
 
 #section-work .feature-box.media-box .fbox-media img {
-	width: 20rem;
+	width: 18rem;
 	margin: 0 auto;
 }
 
@@ -268,9 +290,7 @@ a,
 	text-align: left;
 	width: 60%;
 	max-width: 70rem;
-	font-size: 5em;
-  max-width: 60rem;
-  font-size: 4.25em;
+	font-size: 4.2em;
 }
 
 #section-hero.page-section.dark .heading-block h2:before {
