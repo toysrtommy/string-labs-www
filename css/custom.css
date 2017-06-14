@@ -192,13 +192,13 @@ html, body {
 
 .bg-stringlabs,
 .bg-stringlabs-dark.full-height {
-	background: url('../images/stringlabs-backdrop.png') 0 0 / cover no-repeat;
+	background: linear-gradient(to bottom right, rgb(48, 48, 88), rgb(0, 252, 252));
 	min-height: 100vh;
 }
 
 .bg-stringlabs-dark,
 .bg-stringlabs-dark.full-height {
-	background: url('../images/stringlabs-backdrop-dark.png') 0 0 / cover no-repeat;
+	background: linear-gradient(to bottom right, rgb(4, 16, 48), rgb(40, 172, 172));
 }
 
 #section-dfinity .col_one_third {
