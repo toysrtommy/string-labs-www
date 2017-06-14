@@ -143,6 +143,10 @@ html, body {
 	color: white;
 }
 
+#header.full-header #primary-menu > ul li > a.active {
+	color: rgb(254, 254, 0);
+}
+
 #footer {
 	position: fixed;
 	bottom: 0;

@@ -370,7 +370,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
     let Page;
 
     // Implement a Page component to manage the state of the page when the DOM is ready
-    document.addEventListener('DOMContentLoaded', function(e) {
+    document.addEventListener('DOMContentLoaded', (e) => {
         Page = {
 
             config: {
@@ -381,19 +381,24 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
 
             events: [
                 {
-                  listener: '.primary-menu-item > a > div, #string-vector',
-                  type: 'click',
-                  handler: 'didClickScrollToLink'
+                    listener: '.primary-menu-item > a > div, #string-vector',
+                    type: 'click',
+                    handler: 'didClickScrollToLink'
                 },
                 {
-                  listener: '.feature-box .subtitle.link',
-                  type: 'click',
-                  handler: 'didClickProjectLink'
+                    listener: '.feature-box .subtitle.link',
+                    type: 'click',
+                    handler: 'didClickProjectLink'
                 },
                 {
-                  listener: '#section-link',
-                  type: 'click',
-                  handler: 'didClickSectionLink'
+                    listener: '#section-link',
+                    type: 'click',
+                    handler: 'didClickSectionLink'
+                },
+                {
+                    listener: 'html, body',
+                    type: 'scroll',
+                    handler: 'didScroll'
                 }
             ],
 
@@ -416,21 +421,39 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                 return (window.innerWidth < this.config.responsiveBreakpoint);
             },
 
+            getVisibleSection(pageY) {
+                return this.state.sections.filter(s => { return (pageY > ($(s).offset().top - 1)); }).pop();
+            },
+
             scrollToPageY(pageY) {
                 return $('html, body').animate({ scrollTop: pageY }, 'slow');
             },
 
-            didClickSectionLink(staticArgs, event) {
-                let href = $(event.target).attr('data-href');
+            updateSectionLink(href) {
                 let isFirstLink = (href === this.state.sections[0]);
                 let isLastLink = (href === this.state.sections[this.state.sections.length - 1]);
                 this.state.sectionLinkArrowContent = (isFirstLink || !isLastLink ? this.config.sectionLinkArrowDown : this.config.sectionLinkArrowUp);
-                $(event.target).attr({
+                $('#section-link').attr({
                     'data-href': (isLastLink ? this.state.sections[0] : this.state.sections[(this.state.sections.indexOf(href) + 1)])
                 });
-                $(event.target).html(this.state.sectionLinkArrowContent);
-                console.log($('[data-href="' + href + '"] > .scrollto-link'));
-                return $('[data-href="' + href + '"] > .scrollto-link').click();
+                return $('#section-link').html(this.state.sectionLinkArrowContent);
+            },
+
+            didScroll(staticArgs, event) {
+                let section = this.getVisibleSection($(window).scrollTop());
+                this.state.sections.forEach(s => {
+                    $('[data-href="' + s + '"]').removeClass('active');
+                }, this);
+                requestAnimationFrame(ev => {
+                    $('[data-href="' + section + '"]').addClass('active');
+                });
+                return this.updateSectionLink(section);
+            },
+
+            didClickSectionLink(staticArgs, event) {
+                let href = $('#section-link').attr('data-href');
+                $('[data-href="' + href + '"] > .scrollto-link').click();
+                return this.updateSectionLink(href);
             },
 
             didClickProjectLink(staticArgs, event) {
@@ -459,8 +482,8 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                     }, this);
                 }, this);
                 $('#section-link').attr({ 'data-href': this.state.sections[1] });
-                requestAnimationFrame(function() { $('html, body').scrollTop(0); });
-                setTimeout(function() { $('#header').addClass('expanded'); }, 750);
+                requestAnimationFrame(event => { $('html, body').scrollTop(0); });
+                setTimeout(event => { $('#header').addClass('expanded'); }, 750);
                 return this;
             }
         }.didLoad();
