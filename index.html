@@ -15,228 +15,210 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
 
 <!-- Content
 ============================================= -->
-<section>
-    <div>
-        <section id="section-hero" class="page-section section nomargin dark bg-stringlabs">
-            <div class="heading-block">
-                <h2>{% t index.hero-title %}</h2>
-                <p>{% t index.hero-subtitle %}</p>
-            </div>
-            <a class="section-link" href="{{ base }}/{{ page.projects-link }}" data-href="#section-work">
-                <div>&darr;</div>
-            </a>
-        </section>
-        <section id="section-work" class="page-section section nomargin dark bg-stringlabs">
-            <a name="projects"></a>
-            <div class="heading-block center">
-                <h2>{% t index.projects-title %}</h2>
-            </div>
-            <div class="feature-list clearfix">
-                <div class="feature-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-media">
-                            <img src="{{ base }}/images/string/dfinity-logo.png" alt="DFINITY">
-                        </div>
-                        <div class="fbox-desc center">
-                            <h3>DFINITY</h3>
-                            <h4>{% t index.projects-dfinity-subtitle %}</h4>
-                            <p>{% t index.projects-dfinity-intro %}<br/>
-                                <a href="http://dfinity.network/">http://dfinity.network</a>
-                            </p>
-                        </div>
-                        <div class="subtitle link"></div>
-                    </div>
-                </div>
-                <div class="feature-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-media">
-                            <img src="{{ base }}/images/string/phi-logo.png" alt="PHI">
-                        </div>
-                        <div class="fbox-desc center">
-                            <h3>PHI</h3>
-                            <h4>{% t index.projects-phi-subtitle %}</h4>
-                            <p>{% t index.projects-phi-intro %}<br/>
-                                <!--
-                                    <a target="_blank" href="https://speakerdeck.com/stringlabs/phi-decentralized-commercial-banking-at-ethereum-devcon-2">
-                                -->
-                                <a href="{{ base }}/pdfs/viewer.html?file=../{{ base }}/library/PHI-DFINITY-Extended-17-12-16.pdf">PHI <i>extended</i> Edition (English only)</a><br/>
-                                <a target="_blank" class="popup" href="#phiDeckModal" data-lightbox="inline">
-                                    {% t index.projects-phi-deck-en %}</a> (
-                                <a target="_blank" class="popup" href="#phiDeckModal" data-lightbox="inline">{% t
-                                    global.english %}</a> |
-                                <a target="_blank" class="popup" href="#phiDeckCnModal" data-lightbox="inline">{% t
-                                    global.chinese %}</a>) <br/>
-                                <a href="{{ site.baseurl_root }}/2016/09/21/phi-devcon2.en/"><i class="icon-film"></i>
-                                    {% t index.projects-phi-video %}</a>
-                            </p>
-                        </div>
-                        <div class="subtitle link"></div>
-                    </div>
-                </div>
-                <div class="feature-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-media">
-                            <img src="{{ base }}/images/string/other-logo.png" alt="Other" style="opacity:0.7">
-                        </div>
-                        <div class="fbox-desc center">
-                            <h3>{% t index.projects-other-title %}</h3>
-                            <h4>{% t index.projects-other-subtitle %}</h4>
-                            <p>{% t index.projects-other-intro %}</br/>
-                                <a href="#section-contact">{% t index.projects-other-contact %}</a><br/>
-                                <a target="_blank" href="https://legalese.com/">{% t index.projects-other-grant-legalese
-                                    %}</a>
-                            </p>
-                        </div>
-                        <div class="subtitle link"></div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <a class="section-link" href="{{ base }}/{{ page.dfinity-link }}" data-href="#section-research">
-                <div>&darr;</div>
-            </a>
-        </section>
-        <section id="section-research" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-            <a class="section-link" href="{{ base }}/{{ page.dfinity-link }}" data-href="#section-research-2">
-                <div>&darr;</div>
-            </a>
-        </section>
-        <section id="section-research-2" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-            <a class="section-link" href="{{ base }}/{{ page.dfinity-link }}" data-href="#section-dfinity">
-                <div>&darr;</div>
-            </a>
-        </section>
-        <section id="section-dfinity" class="page-section section nomargin bg-stringlabs-dark dark full-height">
-            <a name="dfinity"></a>
-            <div class="container clearfix">
-                <div class="heading-block center">
-                    <!-- <img src="{{ base }}/images/string/dfinity-logo.png" width="50px" height="50px" alt="DFINITY"> -->
-                    <h2>{% t index.dfinity-title %}</h2>
-                </div>
-                <div id="deck-container" class="fbox-media">
-                    <div>
-                        <div class="col_one_third">
-                            <div style="display:inline" class="feature-box media-box">
-                                <a target="_blank" href="#briefTourModal" data-lightbox="inline">
-                                    <img src="https://img.youtube.com/vi/DP8X-NuG4z0/hqdefault.jpg">
-                                    <!-- <iframe width="180" height="100" src="https://www.youtube.com/embed/xf1dql4Zoqw" frameborder="0" allowfullscreen></iframe> -->
-                                    <p style="text-align:center;">
-                                        <a href="#briefTourModal" data-lightbox="inline">
-                                            {% t index.dfinity-brief-tour-video %}
-                                        </a>
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col_one_third">
-                            <div style="display:inline" class="feature-box media-box">
-                                <a target="_blank" href="#randomBeaconModal" data-lightbox="inline">
-                                    <img src="https://img.youtube.com/vi/xf1dql4Zoqw/hqdefault.jpg">
-                                    <!-- <iframe width="180" height="100" src="https://www.youtube.com/embed/xf1dql4Zoqw" frameborder="0" allowfullscreen></iframe> -->
-                                    <p style="text-align:center;">
-                                        <a href="#randomBeaconModal" data-lightbox="inline">
-                                            {% t index.dfinity-random-beacon-video %}
-                                        </a>
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col_one_third">
-                            <div style="display:inline" class="feature-box media-box">
-                                <a href="#vrfModal" data-lightbox="inline">
-                                    <img src="https://img.youtube.com/vi/v0fq_u5C1so/hqdefault.jpg">
-                                    <!-- <iframe width="180" height="100" src="https://www.youtube.com/embed/v0fq_u5C1so" frameborder="0" allowfullscreen></iframe> -->
-                                    <p style="text-align:center;">
-                                        <a target="_blank" href="#vrfModal" data-lightbox="inline">
-                                            {% t index.dfinity-vrf-video %}
-                                        </a>
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="modal1 mfp-hide" id="briefTourModal">
-                            <div class="block divcenter"
-                                 style="background-color: #282828;max-width:80%;max-height:80%;">
-                                <div class="center clearfix">
-                                    <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
-                                        <iframe src="https://www.youtube.com/embed/DP8X-NuG4z0" frameborder="0"
-                                                allowfullscreen></iframe>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal1 mfp-hide" id="randomBeaconModal">
-                            <div class="block divcenter"
-                                 style="background-color: #282828;max-width:80%;max-height:80%;">
-                                <div class="center clearfix">
-                                    <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
-                                        <iframe src="https://www.youtube.com/embed/xf1dql4Zoqw" frameborder="0"
-                                                allowfullscreen></iframe>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal1 mfp-hide" id="vrfModal">
-                            <div class="block divcenter"
-                                 style="background-color: #282828;max-width:80%;max-height:80%;">
-                                <div class="center clearfix">
-                                    <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
-                                        <iframe src="https://www.youtube.com/embed/v0fq_u5C1so" frameborder="0"
-                                                allowfullscreen></iframe>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal1 mfp-hide" id="phiDeckModal">
-                            <div class="block divcenter"
-                                 style="background-color: #282828;max-width:80%;max-height:80%;">
-                                <div class="center clearfix">
-                                    <div class="fluid-width-video-wrapper" style="padding-top: 62%;">
-
-                                        <script async class="speakerdeck-embed"
-                                                data-id="008bd5281af04adcaf50fafe76d64495" data-ratio="1.77777777777778"
-                                                src="//speakerdeck.com/assets/embed.js"></script>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal1 mfp-hide" id="phiDeckCnModal">
-                            <div class="block divcenter"
-                                 style="background-color: #282828;max-width:80%;max-height:80%;">
-                                <div class="center clearfix">
-                                    <div class="fluid-width-video-wrapper" style="padding-top: 62%;">
-                                        <script async class="speakerdeck-embed"
-                                                data-id="d8a106300b1843fa8b287ae54437ad1e" data-ratio="1.77777777777778"
-                                                src="//speakerdeck.com/assets/embed.js"></script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                    <a target="_blank" href="{{ site.baseurl_root }}/2016/09/14/threshold-relay-random-beacon.en/">
-                        <i class="icon-film"></i> Stanford Computer Forum: Application of Verifiable Random Function
-                    </a><br/>
-                    <a target="_blank" href="{{ site.baseurl_root }}/2016/09/14/threshold-relay-random-beacon.en/"><i class="icon-film"></i> A Brief Tour of DFINITY</a><br/>
-                 -->
-            </div>
-            <div class="clear"></div>
-            <a class="section-link" href="{{ base }}/{{ page.dfinity-link }}" data-href="#section-presentations-2">
-                <div>&darr;</div>
-            </a>
-        </section>
+<section id="section-hero" class="page-section section nomargin dark bg-stringlabs" data-href="#section-work">
+    <div class="heading-block">
+        <h2>{% t index.hero-title %}</h2>
+        <p>{% t index.hero-subtitle %}</p>
     </div>
 </section>
-<section id="section-presentations-2" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-    <a class="section-link" href="{{ base }}/{{ page.team-link }}" data-href="#section-team">
-        <div>&darr;</div>
-    </a>
+
+<section id="section-work" class="page-section section nomargin dark bg-stringlabs">
+    <a name="projects"></a>
+    <div class="heading-block center">
+        <h2>{% t index.projects-title %}</h2>
+    </div>
+    <div class="feature-list clearfix">
+        <div class="feature-item pull-left">
+            <div class="feature-box media-box">
+                <div class="fbox-media">
+                    <img src="{{ base }}/images/string/dfinity-logo.png" alt="DFINITY">
+                </div>
+                <div class="fbox-desc center">
+                    <h3>DFINITY</h3>
+                    <h4>{% t index.projects-dfinity-subtitle %}</h4>
+                    <p>{% t index.projects-dfinity-intro %}<br/>
+                        <a href="http://dfinity.network/">http://dfinity.network</a>
+                    </p>
+                </div>
+                <div class="subtitle link"></div>
+            </div>
+        </div>
+        <div class="feature-item pull-left">
+            <div class="feature-box media-box">
+                <div class="fbox-media">
+                    <img src="{{ base }}/images/string/phi-logo.png" alt="PHI">
+                </div>
+                <div class="fbox-desc center">
+                    <h3>PHI</h3>
+                    <h4>{% t index.projects-phi-subtitle %}</h4>
+                    <p>{% t index.projects-phi-intro %}<br/>
+                        <!--
+                            <a target="_blank" href="https://speakerdeck.com/stringlabs/phi-decentralized-commercial-banking-at-ethereum-devcon-2">
+                        -->
+                        <a href="{{ base }}/pdfs/viewer.html?file=../{{ base }}/library/PHI-DFINITY-Extended-17-12-16.pdf">PHI <i>extended</i> Edition (English only)</a><br/>
+                        <a target="_blank" class="popup" href="#phiDeckModal" data-lightbox="inline">
+                            {% t index.projects-phi-deck-en %}</a> (
+                        <a target="_blank" class="popup" href="#phiDeckModal" data-lightbox="inline">{% t
+                            global.english %}</a> |
+                        <a target="_blank" class="popup" href="#phiDeckCnModal" data-lightbox="inline">{% t
+                            global.chinese %}</a>) <br/>
+                        <a href="{{ site.baseurl_root }}/2016/09/21/phi-devcon2.en/"><i class="icon-film"></i>
+                            {% t index.projects-phi-video %}</a>
+                    </p>
+                </div>
+                <div class="subtitle link"></div>
+            </div>
+        </div>
+        <div class="feature-item pull-left">
+            <div class="feature-box media-box">
+                <div class="fbox-media">
+                    <img src="{{ base }}/images/string/other-logo.png" alt="Other" style="opacity:0.7">
+                </div>
+                <div class="fbox-desc center">
+                    <h3>{% t index.projects-other-title %}</h3>
+                    <h4>{% t index.projects-other-subtitle %}</h4>
+                    <p>{% t index.projects-other-intro %}</br/>
+                        <a href="#section-contact">{% t index.projects-other-contact %}</a><br/>
+                        <a target="_blank" href="https://legalese.com/">{% t index.projects-other-grant-legalese
+                            %}</a>
+                    </p>
+                </div>
+                <div class="subtitle link"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
 </section>
+
+<section id="section-work-2" class="page-section section nomargin dark bg-stringlabs">
+    [neuron]
+</section>
+
+<section id="section-work-3" class="page-section section nomargin dark bg-stringlabs">
+    [dfinity]
+</section>
+
+<section id="section-research" class="page-section section nomargin dark bg-stringlabs-dark full-height">
+    [research]
+</section>
+
+<section id="section-dfinity" class="page-section section nomargin bg-stringlabs-dark dark full-height">
+    <a name="dfinity"></a>
+    <div class="container clearfix">
+        <div class="heading-block center">
+            <h2>{% t index.dfinity-title %}</h2>
+        </div>
+        <div id="deck-container" class="fbox-media">
+            <div>
+                <div class="col_one_third">
+                    <div style="display:inline" class="feature-box media-box">
+                        <a target="_blank" href="#briefTourModal" data-lightbox="inline">
+                            <img src="https://img.youtube.com/vi/DP8X-NuG4z0/hqdefault.jpg">
+                            <p style="text-align:center;">
+                                <a href="#briefTourModal" data-lightbox="inline">
+                                    {% t index.dfinity-brief-tour-video %}
+                                </a>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col_one_third">
+                    <div style="display:inline" class="feature-box media-box">
+                        <a target="_blank" href="#randomBeaconModal" data-lightbox="inline">
+                            <img src="https://img.youtube.com/vi/xf1dql4Zoqw/hqdefault.jpg">
+                            <p style="text-align:center;">
+                                <a href="#randomBeaconModal" data-lightbox="inline">
+                                    {% t index.dfinity-random-beacon-video %}
+                                </a>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col_one_third">
+                    <div style="display:inline" class="feature-box media-box">
+                        <a href="#vrfModal" data-lightbox="inline">
+                            <img src="https://img.youtube.com/vi/v0fq_u5C1so/hqdefault.jpg">
+                            <p style="text-align:center;">
+                                <a target="_blank" href="#vrfModal" data-lightbox="inline">
+                                    {% t index.dfinity-vrf-video %}
+                                </a>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal1 mfp-hide" id="briefTourModal">
+                    <div class="block divcenter"
+                         style="background-color: #282828;max-width:80%;max-height:80%;">
+                        <div class="center clearfix">
+                            <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
+                                <iframe src="https://www.youtube.com/embed/DP8X-NuG4z0" frameborder="0"
+                                        allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal1 mfp-hide" id="randomBeaconModal">
+                    <div class="block divcenter"
+                         style="background-color: #282828;max-width:80%;max-height:80%;">
+                        <div class="center clearfix">
+                            <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
+                                <iframe src="https://www.youtube.com/embed/xf1dql4Zoqw" frameborder="0"
+                                        allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal1 mfp-hide" id="vrfModal">
+                    <div class="block divcenter"
+                         style="background-color: #282828;max-width:80%;max-height:80%;">
+                        <div class="center clearfix">
+                            <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
+                                <iframe src="https://www.youtube.com/embed/v0fq_u5C1so" frameborder="0"
+                                        allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal1 mfp-hide" id="phiDeckModal">
+                    <div class="block divcenter"
+                         style="background-color: #282828;max-width:80%;max-height:80%;">
+                        <div class="center clearfix">
+                            <div class="fluid-width-video-wrapper" style="padding-top: 62%;">
+
+                                <script async class="speakerdeck-embed"
+                                        data-id="008bd5281af04adcaf50fafe76d64495" data-ratio="1.77777777777778"
+                                        src="//speakerdeck.com/assets/embed.js"></script>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal1 mfp-hide" id="phiDeckCnModal">
+                    <div class="block divcenter"
+                         style="background-color: #282828;max-width:80%;max-height:80%;">
+                        <div class="center clearfix">
+                            <div class="fluid-width-video-wrapper" style="padding-top: 62%;">
+                                <script async class="speakerdeck-embed"
+                                        data-id="d8a106300b1843fa8b287ae54437ad1e" data-ratio="1.77777777777778"
+                                        src="//speakerdeck.com/assets/embed.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</section>
+
+<section id="section-presentations-2" class="page-section section nomargin dark bg-stringlabs-dark full-height">
+    [presentations]
+</section>
+
 <section id="section-team" class="page-section section nomargin dark bg-stringlabs-dark full-height">
 	<div class="heading-block center">
 		<h2>{% t index.team-title %}</h2>
@@ -375,15 +357,12 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
 		</div>
 		<div class="clear"></div>
 	</div>
-    <a class="section-link" href="{{ base }}/{{ page.investors-link }}" data-href="#section-investors">
-        <div>&darr;</div>
-    </a>
 </section>
+
 <section id="section-investors" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-    <a class="section-link" href="{{ base }}/{{ page.home-link }}" data-href="#section-hero">
-        <div>&uarr;</div>
-    </a>
+    [investors]
 </section>
+
 <script>
 
     let Page;
@@ -393,12 +372,14 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
         Page = {
 
             config: {
-              responsiveBreakpoint: 1000
+                responsiveBreakpoint: 1000,
+                sectionLinkArrowUp: 'Top',
+                sectionLinkArrowDown: '&darr;'
             },
 
             events: [
                 {
-                  listener: '.primary-menu-item > a > div, .section-link > div, #string-vector',
+                  listener: '.primary-menu-item > a > div, #string-vector',
                   type: 'click',
                   handler: 'didClickScrollToLink'
                 },
@@ -407,11 +388,47 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                   type: 'click',
                   handler: 'didClickProjectLink'
                 },
-
+                {
+                  listener: '#section-link',
+                  type: 'click',
+                  handler: 'didClickSectionLink'
+                }
             ],
+
+            state: {
+                sectionLinkArrowContent: '&darr;',
+                sections: [
+                    '#section-hero',
+                    '#section-work',
+                    '#section-work-2',
+                    '#section-work-3',
+                    '#section-research',
+                    '#section-dfinity',
+                    '#section-presentations-2',
+                    '#section-team',
+                    '#section-investors'
+                ]
+            },
 
             isMobile() {
                 return (window.innerWidth < this.config.responsiveBreakpoint);
+            },
+
+            scrollToPageY(pageY) {
+                return $('html, body').animate({ scrollTop: pageY }, 'slow');
+            },
+
+            didClickSectionLink(staticArgs, event) {
+                let href = $(event.target).attr('data-href');
+                let isFirstLink = (href === this.state.sections[0]);
+                let isLastLink = (href === this.state.sections[this.state.sections.length - 1]);
+                this.state.sectionLinkArrowContent = (isFirstLink || !isLastLink ? this.config.sectionLinkArrowDown : this.config.sectionLinkArrowUp);
+                $(event.target).attr({
+                    'data-href': (isLastLink ? this.state.sections[0] : this.state.sections[(this.state.sections.indexOf(href) + 1)])
+                });
+                $(event.target).html(this.state.sectionLinkArrowContent);
+                console.log($('[data-href="' + href + '"] > .scrollto-link'));
+                return $('[data-href="' + href + '"] > .scrollto-link').click();
             },
 
             didClickProjectLink(staticArgs, event) {
@@ -420,26 +437,28 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
 
             didClickScrollToLink(staticArgs, event) {
                 event.preventDefault();
-                $('html, body').animate({ scrollTop: $($(event.target).parent().data().href).offset().top }, 'slow');
+                this.scrollToPageY($($(event.target).parent().attr('data-href')).offset().top);
                 return false;
             },
 
             initDeckLang(lang) {
-                $(".dfinity-deck").hide();
-                console.log("#dfinity-deck-" + lang);
-                $("#dfinity-deck-" + lang).removeClass("hidden");
-                $("#dfinity-deck-" + lang).show();
+                console.log('#dfinity-deck-' + lang);
+                $('.dfinity-deck').hide();
+                $('#dfinity-deck-' + lang).removeClass('hidden');
+                $('#dfinity-deck-' + lang).show();
                 return window.dispatchEvent(new Event('resize'));
             },
 
             // must return `this`
             didLoad() {
-                setTimeout(function() { $('#header').addClass('expanded'); }, 1000);
                 this.events.forEach(event => {
                     document.querySelectorAll(event.listener).forEach(selector => {
                         selector['on' + event.type] = this[event.handler].bind(this, event.staticArgs);
                     }, this);
                 }, this);
+                $('#section-link').attr({ 'data-href': this.state.sections[1] });
+                requestAnimationFrame(function() { $('html, body').scrollTop(0); });
+                setTimeout(function() { $('#header').addClass('expanded'); }, 750);
                 return this;
             }
         }.didLoad();
