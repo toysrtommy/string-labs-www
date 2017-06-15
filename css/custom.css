@@ -49,6 +49,10 @@ html, body {
 
 /* 2. Theme Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.col-md-9 {
+	float: none;
+}
+
 .dark .feature-box p,
 .team-content p {
 	color: white;
@@ -173,7 +177,9 @@ html, body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .main > section {
+	position: relative;
 	padding-left: 25rem;
+	box-sizing: border-box;
 }
 
 .feature-list {
@@ -338,6 +344,21 @@ a,
 
 #section-work .feature-box.media-box.expanded .link:before {
 	content: "collapse";
+}
+
+#section-investors .investors-desc {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#section-investors .investors-desc h2,
+#section-investors .investors-desc p {
+	font-weight: 200;
+	font-size: 1.9em;
+}
+
+#section-investors .investors-desc p {
+	font-size: 1.1em;
 }
 
 #section-link {
