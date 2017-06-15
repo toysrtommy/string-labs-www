@@ -302,7 +302,7 @@ a,
   font-weight: 600;
   font-size: 6em;
   margin-left: 5rem;
-  transition: font-size 1s ease;
+  transition: font-size 0.2s ease;
 }
 
 @media(max-width:1144px) {
