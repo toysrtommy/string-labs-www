@@ -298,9 +298,17 @@ a,
 
 #section-hero.page-section.dark .heading-block h2 {
 	text-align: left;
-	width: 60%;
-	max-width: 70rem;
-	font-size: 4.2em;
+	max-width: calc(100% - 5rem);
+  font-weight: 600;
+  font-size: 6em;
+  margin-left: 5rem;
+  transition: font-size 1s ease;
+}
+
+@media(max-width:1144px) {
+	#section-hero.page-section.dark .heading-block h2 {
+		font-size: 4.5em;
+	}
 }
 
 #section-hero.page-section.dark .heading-block h2:before {
