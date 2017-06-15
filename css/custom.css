@@ -53,6 +53,10 @@ html, body {
 	float: none;
 }
 
+@media(min-width: 1200px) {
+	.container { width: auto; }
+}
+
 .dark .feature-box p,
 .team-content p {
 	color: white;
@@ -189,6 +193,17 @@ html, body {
 
 .feature-list > .feature-item {
 	width: 20rem;
+	margin: 2rem;
+}
+
+.media-list {
+	margin: 0 auto;
+	display: flex;
+	width: calc(100% - 25rem);
+}
+
+.media-list > .media-item {
+	flex: 1;
 	margin: 2rem;
 }
 

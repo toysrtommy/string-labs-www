@@ -36,6 +36,10 @@ index:
     projects-other-contact: "Contact us to chat."
     projects-other-grant-legalese: "1st String grant recipient: Legalese"
 
+    research-title: "BLS Threshold Cryptography"
+    research-intro: "DFINITY, especially Threshold Relay Chain consensus, extensively uses Stanford BLS signature as a cryptographic VRF (verifiable random function) to achieve incorruptible, unmanipulable and unpredictible randomness to select block maker and validator groups."
+    research-desc: "It's also used in PHI autonomous commercial banking system as a powerful way to randomly select validators for financial loans to prevent collusion."
+
     team-title: "The Team"
     team-subtitle: "Love cutting edge crypto? Join us, String Labs is a great place to be!"
     team-dominic-title: "President/CTO"

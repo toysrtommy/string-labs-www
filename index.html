@@ -26,7 +26,6 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
     </section>
 
     <section id="section-work" class="page-section section nomargin dark bg-stringlabs">
-        <a name="projects"></a>
         <div class="heading-block center">
             <h2>{% t index.projects-title %}</h2>
         </div>
@@ -55,9 +54,6 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                         <h3>PHI</h3>
                         <h4>{% t index.projects-phi-subtitle %}</h4>
                         <p>{% t index.projects-phi-intro %}<br/>
-                            <!--
-                                <a target="_blank" href="https://speakerdeck.com/stringlabs/phi-decentralized-commercial-banking-at-ethereum-devcon-2">
-                            -->
                             <a href="{{ base }}/pdfs/viewer.html?file=../{{ base }}/library/PHI-DFINITY-Extended-17-12-16.pdf">PHI <i>extended</i> Edition (English only)</a><br/>
                             <a target="_blank" class="popup" href="#phiDeckModal" data-lightbox="inline">
                                 {% t index.projects-phi-deck-en %}</a> (
@@ -97,120 +93,57 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
         <div class="heading-block center">
             <h2>{% t index.navbar-research %}</h2>
         </div>
-        <div id="research-desc"></div>
-        <div id="research-graphic"></div>
+        <div id="research-desc">
+            <h3>{% t index.research-intro %}</h3>
+            <p>{% t index.research-intro %}</p>
+            <p>{% t index.research-desc %}</p>
+        </div>
+        <table id="research-table">
+            [colorful table]
+        </table>
     </section>
 
     <section id="section-dfinity" class="page-section section nomargin bg-stringlabs-dark dark full-height">
-        <a name="dfinity"></a>
         <div class="container clearfix">
             <div class="heading-block center">
                 <h2>{% t index.dfinity-title %}</h2>
             </div>
-            <div id="deck-container" class="fbox-media">
-                <div>
-                    <div class="col_one_third">
-                        <div style="display:inline" class="feature-box media-box">
-                            <a target="_blank" href="#briefTourModal" data-lightbox="inline">
-                                <img src="https://img.youtube.com/vi/DP8X-NuG4z0/hqdefault.jpg">
-                                <p style="text-align:center;">
-                                    <a href="#briefTourModal" data-lightbox="inline">
-                                        {% t index.dfinity-brief-tour-video %}
-                                    </a>
-                                </p>
-                            </a>
+            <div class="media-list clearfix">
+                <div class="media-item pull-left">
+                    <div class="feature-box media-box">
+                        <div class="fbox-desc center">
+                            <h4>{% t index.dfinity-brief-tour-video %}</h4>
+                            <div>▶</div>
                         </div>
                     </div>
-                    <div class="col_one_third">
-                        <div style="display:inline" class="feature-box media-box">
-                            <a target="_blank" href="#randomBeaconModal" data-lightbox="inline">
-                                <img src="https://img.youtube.com/vi/xf1dql4Zoqw/hqdefault.jpg">
-                                <p style="text-align:center;">
-                                    <a href="#randomBeaconModal" data-lightbox="inline">
-                                        {% t index.dfinity-random-beacon-video %}
-                                    </a>
-                                </p>
-                            </a>
+                </div>
+                <div class="media-item pull-left">
+                    <div class="feature-box media-box">
+                        <div class="fbox-desc center">
+                            <h4>{% t index.dfinity-brief-tour-video %}</h4>
+                            <div>▶</div>
                         </div>
                     </div>
-                    <div class="col_one_third">
-                        <div style="display:inline" class="feature-box media-box">
-                            <a href="#vrfModal" data-lightbox="inline">
-                                <img src="https://img.youtube.com/vi/v0fq_u5C1so/hqdefault.jpg">
-                                <p style="text-align:center;">
-                                    <a target="_blank" href="#vrfModal" data-lightbox="inline">
-                                        {% t index.dfinity-vrf-video %}
-                                    </a>
-                                </p>
-                            </a>
+                </div>
+                <div class="media-item pull-left">
+                    <div class="feature-box media-box">
+                        <div class="fbox-desc center">
+                            <h4>{% t index.dfinity-brief-tour-video %}</h4>
+                            <div>▶</div>
                         </div>
                     </div>
-                    <div class="modal1 mfp-hide" id="briefTourModal">
-                        <div class="block divcenter"
-                             style="background-color: #282828;max-width:80%;max-height:80%;">
-                            <div class="center clearfix">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
-                                    <iframe src="https://www.youtube.com/embed/DP8X-NuG4z0" frameborder="0"
-                                            allowfullscreen></iframe>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal1 mfp-hide" id="randomBeaconModal">
-                        <div class="block divcenter"
-                             style="background-color: #282828;max-width:80%;max-height:80%;">
-                            <div class="center clearfix">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
-                                    <iframe src="https://www.youtube.com/embed/xf1dql4Zoqw" frameborder="0"
-                                            allowfullscreen></iframe>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal1 mfp-hide" id="vrfModal">
-                        <div class="block divcenter"
-                             style="background-color: #282828;max-width:80%;max-height:80%;">
-                            <div class="center clearfix">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
-                                    <iframe src="https://www.youtube.com/embed/v0fq_u5C1so" frameborder="0"
-                                            allowfullscreen></iframe>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal1 mfp-hide" id="phiDeckModal">
-                        <div class="block divcenter"
-                             style="background-color: #282828;max-width:80%;max-height:80%;">
-                            <div class="center clearfix">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 62%;">
-
-                                    <script async class="speakerdeck-embed"
-                                            data-id="008bd5281af04adcaf50fafe76d64495" data-ratio="1.77777777777778"
-                                            src="//speakerdeck.com/assets/embed.js"></script>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal1 mfp-hide" id="phiDeckCnModal">
-                        <div class="block divcenter"
-                             style="background-color: #282828;max-width:80%;max-height:80%;">
-                            <div class="center clearfix">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 62%;">
-                                    <script async class="speakerdeck-embed"
-                                            data-id="d8a106300b1843fa8b287ae54437ad1e" data-ratio="1.77777777777778"
-                                            src="//speakerdeck.com/assets/embed.js"></script>
-                                </div>
-                            </div>
+                </div>
+                <div class="media-item pull-left">
+                    <div class="feature-box media-box">
+                        <div class="fbox-desc center">
+                            <h4>{% t index.dfinity-brief-tour-video %}</h4>
+                            <div>▶</div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
     </section>
     <section id="section-team" class="page-section section nomargin dark bg-stringlabs-dark full-height">
     	<div class="heading-block center">
