@@ -270,6 +270,26 @@ html, body {
 	margin: 0 auto;
 }
 
+#research-desc {
+	width: 21rem;
+	margin: 20rem 0 0 -23rem;
+}
+
+#research-desc > h3 {
+	font-size: 1.6em;
+	font-weight: 200;
+	color: rgb(254, 254, 0);
+	margin: 2rem 0;
+}
+
+#research-desc > p {
+	margin: 1rem 0;
+}
+
+#research-table td {
+	padding: 1rem;
+}
+
 /* 4. Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
