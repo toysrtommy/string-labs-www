@@ -346,18 +346,18 @@ a,
 	content: "collapse";
 }
 
-#section-investors .investors-desc {
+#section-investment .investment-desc {
 	margin: 0 auto;
 	padding: 0;
 }
 
-#section-investors .investors-desc h2,
-#section-investors .investors-desc p {
+#section-investment .investment-desc h2,
+#section-investment .investment-desc p {
 	font-weight: 200;
 	font-size: 1.9em;
 }
 
-#section-investors .investors-desc p {
+#section-investment .investment-desc p {
 	font-size: 1.1em;
 }
 

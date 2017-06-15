@@ -2,7 +2,7 @@
 layout: blog-post-video
 projects-link: "#section-work"
 team-link: "#section-team"
-investors-link: "#section-investors"
+investment-link: "#section-investment"
 contact-link: "#section-contact"
 blog-format-video: true
 title: "How to Achieve Near-Instatnt Finality in Publick Blockchains using a VRF"
@@ -14,5 +14,5 @@ author-bio: Tomomi is a project coordinator at String Labs.
 tags: blockchain, decentralized network, fintech
 youtube: https://www.youtube.com/embed/o8HHM18PedU
 ---
-Threshold Relay: How to Achieve Near-Instant Finality in Public Blockchains using a VRF 
-Timo Hanke & Dominic Williams at BPASE '17 at Stanford University on January 27, 2017. 
+Threshold Relay: How to Achieve Near-Instant Finality in Public Blockchains using a VRF
+Timo Hanke & Dominic Williams at BPASE '17 at Stanford University on January 27, 2017.

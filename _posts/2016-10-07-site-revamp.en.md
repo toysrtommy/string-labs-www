@@ -2,7 +2,7 @@
 layout: blog-post-simple
 projects-link: "#section-work"
 team-link: "#section-team"
-investors-link: "#section-investors"
+investment-link: "#section-investment"
 contact-link: "#section-contact"
 blog-format-simple: true
 title: "Yay, new website format"

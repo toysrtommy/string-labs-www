@@ -2,7 +2,7 @@
 layout: blog-post-video
 projects-link: "#section-work"
 team-link: "#section-team"
-investors-link: "#section-investors"
+investment-link: "#section-investment"
 contact-link: "#section-contact"
 blog-format-video: true
 title: "Panel: What, Why and How of Smart Contracts - COALA's Blockchain Workshops - Sydney 2015"

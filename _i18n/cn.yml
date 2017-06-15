@@ -7,7 +7,7 @@ index:
     hero-subtitle: "String实验室一个密码学和分布式计算的研发、孵化和投资机构."
     navbar-projects: "我们的项目"
     navbar-team: "团队"
-    navbar-investors: "投资人"
+    navbar-investment: "投资人"
     navbar-contact: "联系我们"
     navbar-news: "新闻"
     projects-title: "我们的项目"
@@ -59,8 +59,8 @@ index:
     team-will-intro: "Will目前担任芝加哥大学Booth商学院的教授之外，之前还获得过斯坦福大学经济政策研究院的George Shultz学者奖，Shumel Kandel金融经济奖，以及多个国际和国家级的数学竞赛大奖等，金融经济界冉冉升起的巨星。"
     team-houman-intro: "作为纽约法学院教授以及金融法学的负责人，Houman教授是全世界知名的法学学者，尤其擅长前沿的金融科技领域，对冲基金以及资产证券化等。由于他的深厚学术功底，多次受邀在国会及CFTC（大宗商品期货监管委员会）作为专家提供证词和政策建议。"
 
-    investors-title: "我们的投资人"
-    investors-subtitle: "推动下一个互联网时代的风险投资家"
+    investment-title: "我们的投资人"
+    investment-subtitle: "推动下一个互联网时代的风险投资家"
 
 
     contact-title: "给我们发送邮件"

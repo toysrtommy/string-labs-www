@@ -2,7 +2,7 @@
 layout: default
 projects-link: "#section-work"
 team-link: "#section-team"
-investors-link: "#section-investors"
+investment-link: "#section-investment"
 contact-link: "#section-contact"
 disable-news-link: true
 hero: false
@@ -38,12 +38,12 @@ hero: false
 								{% endif %}
 
 								{% if post.blog-format-video %}
-									{% include blog-post-video.html %}							
+									{% include blog-post-video.html %}
 								{% endif %}
 
 								{% if post.blog-format-slides %}
-									{% include blog-post-slides.html %}									
-								{% endif %}							
+									{% include blog-post-slides.html %}
+								{% endif %}
 							</div>
 							{% endif %}
 
@@ -66,12 +66,12 @@ hero: false
 							{% endfor %}
 							<li {% unless paginator.next_page %} class="disabled" {% endunless %}><a href="{{ paginator.next_page_path }}">»</a></li>
 						</ul>
-						{% endif %}						
+						{% endif %}
 
 					</div><!-- #post content end -->
 
 				</div>
-			
+
 			</div>
 
 		</section><!-- #content end -->

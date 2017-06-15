@@ -2,7 +2,7 @@
 layout: blog-post-video
 projects-link: "#section-work"
 team-link: "#section-team"
-investors-link: "#section-investors"
+investment-link: "#section-investment"
 contact-link: "#section-contact"
 blog-format-video: true
 title: "Presentation on Verifiable Random Function (VRF) by Dominic at Stanford University."
@@ -14,11 +14,11 @@ author-bio: Tomomi is a project coordinator at String Labs.
 tags: &nbsp;fintech,&nbsp;smart-contract,&nbsp;autonomous-finance, &nbsp;threshold-relay
 youtube: https://www.youtube.com/embed/v0fq_u5C1so
 
----Dominic Williams, CTO of String Labs, was invited to present at Stanford Computer Forum on applications of Verifiable Random Function (VRF). 
+---Dominic Williams, CTO of String Labs, was invited to present at Stanford Computer Forum on applications of Verifiable Random Function (VRF).
 
 = Abstract =
-We argue that a source of non-manipulable and unpredictable random values provides the most effective means to drive and organize decentralized networks and their higher-level applications. 
+We argue that a source of non-manipulable and unpredictable random values provides the most effective means to drive and organize decentralized networks and their higher-level applications.
 
-We demonstrate this idea by introducing two ingenious systems. Firstly we review how a network can use a “Threshold Relay” system that applies unique deterministic threshold signature cryptography (Dan Boneh’s BLS signature scheme) as a VRF to produce such a sequence of random values, further exploring how a robust high performance blockchain can be built upon the framework. 
+We demonstrate this idea by introducing two ingenious systems. Firstly we review how a network can use a “Threshold Relay” system that applies unique deterministic threshold signature cryptography (Dan Boneh’s BLS signature scheme) as a VRF to produce such a sequence of random values, further exploring how a robust high performance blockchain can be built upon the framework.
 
-Then we review how a network created using Threshold Relay can host “smart contract” software implementing an autonomous commercial banking system that applies generated randomness to give out loans algorithmically. 
+Then we review how a network created using Threshold Relay can host “smart contract” software implementing an autonomous commercial banking system that applies generated randomness to give out loans algorithmically.
