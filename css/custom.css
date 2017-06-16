@@ -286,8 +286,45 @@ html, body {
 	margin: 1rem 0;
 }
 
+#research-table {
+	margin: 0 auto;
+}
+
 #research-table td {
-	padding: 1rem;
+	padding: 1rem 0.25rem;
+}
+
+#research-table tr > td > div {
+	background: rgb(190, 140, 20);
+	margin: 0 0.25rem;
+}
+
+#research-table tr.panels td > div {
+	display: inline-block;
+	height: 16rem;
+	line-height: 16rem;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#research-table .panels td:nth-of-type(1) > div {
+	width: calc(50% - 1rem);
+}
+
+#research-table .panels td:nth-of-type(2) > div {
+	width: calc(33% - 1rem);
+}
+
+#research-table .panels td:nth-of-type(3) > div {
+	width: calc(20% - 1rem);
+}
+
+#research-table tr.panels:last-of-type td > div {
+	background: rgb(210, 90, 40);
+	height: 6rem;
+	line-height: 6rem;
+	padding-top: 0;
 }
 
 /* 4. Typography
