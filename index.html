@@ -65,16 +65,6 @@
                                 </a>
                             </li>
                             <li class="primary-menu-item">
-                                <a href="#" data-href="#section-work-2">
-                                    <div class="scrollto-link">Neuron</div>
-                                </a>
-                            </li>
-                            <li class="primary-menu-item">
-                                <a href="#" data-href="#section-work-3">
-                                    <div class="scrollto-link">Dfinity</div>
-                                </a>
-                            </li>
-                            <li class="primary-menu-item">
                                 <a href="#" data-href="#section-research">
                                     <div class="scrollto-link">Research</div>
                                 </a>
@@ -85,17 +75,12 @@
                                 </a>
                             </li>
                             <li class="primary-menu-item">
-                                <a href="#" data-href="#section-presentations-2">
-                                    <div class="scrollto-link">Talks & Presentations</div>
-                                </a>
-                            </li>
-                            <li class="primary-menu-item">
                                 <a href="#" data-href="#section-team">
                                     <div class="scrollto-link">The Team</div>
                                 </a>
                             </li>
                             <li class="primary-menu-item">
-                                <a href="#" data-href="#section-investors">
+                                <a href="#" data-href="#section-investment">
                                     <div class="scrollto-link">Investment</div>
                                 </a>
                             </li>
@@ -144,7 +129,6 @@
     </section>
 
     <section id="section-work" class="page-section section nomargin dark bg-stringlabs">
-        <a name="projects"></a>
         <div class="heading-block center">
             <h2>Our projects</h2>
         </div>
@@ -173,9 +157,6 @@
                         <h3>PHI</h3>
                         <h4>Blockchain computer system</h4>
                         <p>Today's commercial banking system faces critical challenges that it cannot solve. These include the vast costs of branches, staff, infrastructure and compliance processes, chronic bad judgement when originating loans that leads to hugely costly bailouts, and a monopolistic tendency to impede desperately needed socially impactful financial innovation. Imagine then if commercial banks could be entirely replaced with autonomous smart contracts that use algorithms and open networks of human validators to give out loans more reliably, and if this created stable, fiat-like cryptocurrency as a side effect.<br/>
-                            <!--
-                                <a target="_blank" href="https://speakerdeck.com/stringlabs/phi-decentralized-commercial-banking-at-ethereum-devcon-2">
-                            -->
                             <a href="./pdfs/viewer.html?file=.././library/PHI-DFINITY-Extended-17-12-16.pdf">PHI <i>extended</i> Edition (English only)</a><br/>
                             <a target="_blank" class="popup" href="#phiDeckModal" data-lightbox="inline">
                                 Brief introduction to PHI</a> (
@@ -208,134 +189,132 @@
         </div>
     </section>
 
-    <section id="section-work-2" class="page-section section nomargin dark bg-stringlabs">
-        [neuron]
-    </section>
-
-    <section id="section-work-3" class="page-section section nomargin dark bg-stringlabs">
-        [dfinity]
-    </section>
-
     <section id="section-research" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-        [research]
+        <div class="heading-block center">
+            <h2>Research</h2>
+        </div>
+        <div id="research-desc" class="pull-left">
+            <h3>BLS Threshold Cryptography</h3>
+            <p>DFINITY, especially Threshold Relay Chain consensus, extensively uses Stanford BLS signature as a cryptographic VRF (verifiable random function) to achieve incorruptible, unmanipulable and unpredictible randomness to select block maker and validator groups.</p>
+            <p>It's also used in PHI autonomous commercial banking system as a powerful way to randomly select validators for financial loans to prevent collusion.</p>
+        </div>
+        <table id="research-table">
+            <colgroup>
+                <col width="200">
+                <col width="300">
+                <col width="100">
+                <col width="100">
+                <col width="100">
+                <col width="100">
+                <col width="100">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>Cryptography</div>
+                    </td>
+                    <td>
+                        <div>Distributed Computing</div>
+                    </td>
+                    <td>
+                        <div>Economics</div>
+                    </td>
+                    <td>
+                        <div>Programming Languages</div>
+                    </td>
+                    <td>
+                        <div>Virtual Machines</div>
+                    </td>
+                    <td>
+                        <div>Trusted Computing</div>
+                    </td>
+                    <td>
+                        <div>Computer Security</div>
+                    </td>
+                </tr>
+                <tr class="panels">
+                    <td>
+                        <div>Topic</div>
+                        <div>Topic</div>
+                    </td>
+                    <td>
+                        <div>Topic</div>
+                        <div>Topic</div>
+                        <div>Topic</div>
+                    </td>
+                    <td colspan="5">
+                        <div>Topic</div>
+                        <div>Topic</div>
+                        <div>Topic</div>
+                        <div>Topic</div>
+                        <div>Topic</div>
+                    </td>
+                </tr>
+                <tr class="panels">
+                    <td>
+                        <div>Goal</div>
+                        <div>Goal</div>
+                    </td>
+                    <td>
+                        <div>Goal</div>
+                        <div>Goal</div>
+                        <div>Goal</div>
+                    </td>
+                    <td colspan="5">
+                        <div>Goal</div>
+                        <div>Goal</div>
+                        <div>Goal</div>
+                        <div>Goal</div>
+                        <div>Goal</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="clearfix"></div>
     </section>
 
-    <section id="section-dfinity" class="page-section section nomargin bg-stringlabs-dark dark full-height">
-        <a name="dfinity"></a>
+    <section id="section-dfinity" class="page-section section nomargin bg-stringlabs dark full-height">
         <div class="container clearfix">
             <div class="heading-block center">
                 <h2>Talks & Presentations</h2>
             </div>
-            <div id="deck-container" class="fbox-media">
-                <div>
-                    <div class="col_one_third">
-                        <div style="display:inline" class="feature-box media-box">
-                            <a target="_blank" href="#briefTourModal" data-lightbox="inline">
-                                <img src="https://img.youtube.com/vi/DP8X-NuG4z0/hqdefault.jpg">
-                                <p style="text-align:center;">
-                                    <a href="#briefTourModal" data-lightbox="inline">
-                                        A Brief Tour of DFINITY
-                                    </a>
-                                </p>
-                            </a>
+            <div class="media-list clearfix">
+                <div class="media-item pull-left">
+                    <div class="feature-box media-box">
+                        <div class="fbox-desc center">
+                            <h4>A Brief Tour of DFINITY</h4>
+                            <div>▶</div>
                         </div>
                     </div>
-                    <div class="col_one_third">
-                        <div style="display:inline" class="feature-box media-box">
-                            <a target="_blank" href="#randomBeaconModal" data-lightbox="inline">
-                                <img src="https://img.youtube.com/vi/xf1dql4Zoqw/hqdefault.jpg">
-                                <p style="text-align:center;">
-                                    <a href="#randomBeaconModal" data-lightbox="inline">
-                                        Introduction to Random Beacon
-                                    </a>
-                                </p>
-                            </a>
+                </div>
+                <div class="media-item pull-left">
+                    <div class="feature-box media-box">
+                        <div class="fbox-desc center">
+                            <h4>A Brief Tour of DFINITY</h4>
+                            <div>▶</div>
                         </div>
                     </div>
-                    <div class="col_one_third">
-                        <div style="display:inline" class="feature-box media-box">
-                            <a href="#vrfModal" data-lightbox="inline">
-                                <img src="https://img.youtube.com/vi/v0fq_u5C1so/hqdefault.jpg">
-                                <p style="text-align:center;">
-                                    <a target="_blank" href="#vrfModal" data-lightbox="inline">
-                                        Stanford Computer Forum: Applications of Verifiable Random Function
-                                    </a>
-                                </p>
-                            </a>
+                </div>
+                <div class="media-item pull-left">
+                    <div class="feature-box media-box">
+                        <div class="fbox-desc center">
+                            <h4>A Brief Tour of DFINITY</h4>
+                            <div>▶</div>
                         </div>
                     </div>
-                    <div class="modal1 mfp-hide" id="briefTourModal">
-                        <div class="block divcenter"
-                             style="background-color: #282828;max-width:80%;max-height:80%;">
-                            <div class="center clearfix">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
-                                    <iframe src="https://www.youtube.com/embed/DP8X-NuG4z0" frameborder="0"
-                                            allowfullscreen></iframe>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal1 mfp-hide" id="randomBeaconModal">
-                        <div class="block divcenter"
-                             style="background-color: #282828;max-width:80%;max-height:80%;">
-                            <div class="center clearfix">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
-                                    <iframe src="https://www.youtube.com/embed/xf1dql4Zoqw" frameborder="0"
-                                            allowfullscreen></iframe>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal1 mfp-hide" id="vrfModal">
-                        <div class="block divcenter"
-                             style="background-color: #282828;max-width:80%;max-height:80%;">
-                            <div class="center clearfix">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 42%;">
-                                    <iframe src="https://www.youtube.com/embed/v0fq_u5C1so" frameborder="0"
-                                            allowfullscreen></iframe>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal1 mfp-hide" id="phiDeckModal">
-                        <div class="block divcenter"
-                             style="background-color: #282828;max-width:80%;max-height:80%;">
-                            <div class="center clearfix">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 62%;">
-
-                                    <script async class="speakerdeck-embed"
-                                            data-id="008bd5281af04adcaf50fafe76d64495" data-ratio="1.77777777777778"
-                                            src="//speakerdeck.com/assets/embed.js"></script>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal1 mfp-hide" id="phiDeckCnModal">
-                        <div class="block divcenter"
-                             style="background-color: #282828;max-width:80%;max-height:80%;">
-                            <div class="center clearfix">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 62%;">
-                                    <script async class="speakerdeck-embed"
-                                            data-id="d8a106300b1843fa8b287ae54437ad1e" data-ratio="1.77777777777778"
-                                            src="//speakerdeck.com/assets/embed.js"></script>
-                                </div>
-                            </div>
+                </div>
+                <div class="media-item pull-left">
+                    <div class="feature-box media-box">
+                        <div class="fbox-desc center">
+                            <h4>A Brief Tour of DFINITY</h4>
+                            <div>▶</div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
     </section>
-
-    <section id="section-presentations-2" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-        [presentations]
-    </section>
-
     <section id="section-team" class="page-section section nomargin dark bg-stringlabs-dark full-height">
     	<div class="heading-block center">
     		<h2>The Team</h2>
@@ -351,7 +330,7 @@
     					<div class="team-desc">
     						<div class="team-title"><h4>Dominic Williams</h4><span>President/CTO</span></div>
     						<div class="team-content">
-    							<p>Protocol geek, coder and serial technology entrepreneur who hails from the UK. Dominic's last venture was an MMO that grew to 3M users and allowed him to indulge his passion for scalable tech. Dominic is a bit of a hippy, but once won prizes in Computer Science at London University.</p>
+    						    <p>Protocol geek, coder and serial technology entrepreneur who hails from the UK. Dominic's last venture was an MMO that grew to 3M users and allowed him to indulge his passion for scalable tech. Dominic is a bit of a hippy, but once won prizes in Computer Science at London University.</p>
     						</div>
     						<a href="https://twitter.com/dominic_w" class="social-icon si-rounded si-small si-twitter">
     							<i class="icon-twitter"></i>
@@ -376,7 +355,7 @@
     					<div class="team-desc">
     						<div class="team-title"><h4>Tom Ding</h4><span>CEO</span></div>
     						<div class="team-content">
-    							<p>Serial entrepreneur, founder of Blockchain University and previously a senior manager at eBay who comes from Shanghai. Tom caught the blockchain wave in 2013 and hasn't looked back. Back in the day, he graduated in Computer Science at age 14 and from business school at 20. Tom's a regular startup and crypto pundit.</p>
+    							<p><p>Serial entrepreneur, founder of Blockchain University and previously a senior manager at eBay who comes from Shanghai. Tom caught the blockchain wave in 2013 and hasn't looked back. Back in the day, he graduated in Computer Science at age 14 and from business school at 20. Tom's a regular startup and crypto pundit.</p></p>
     						</div>
     						<a href="https://twitter.com/tom_ding" class="social-icon si-rounded si-small si-twitter">
     							<i class="icon-twitter"></i>
@@ -400,7 +379,7 @@
     					<div class="team-desc">
     						<div class="team-title"><h4>Timo Hanke</h4><span>Chief Cryptographer</span></div>
     						<div class="team-content">
-    							<p>Once an Aachen University mathematics and cryptography professor in Germany, Timo caught the decentralization bug. Timo has worked on numerous crypto products and prior to joining String Labs invented and patented the famous AsicBoost (http://asicboost.com/). At String he works on Third Generation crypto systems.</p>
+    							<p><p>Once an Aachen University mathematics and cryptography professor in Germany, Timo caught the decentralization bug. Timo has worked on numerous crypto products and prior to joining String Labs invented and patented the famous AsicBoost (http://asicboost.com/). At String he works on Third Generation crypto systems.</p></p>
     						</div>
     						<a href="https://twitter.com/timothanke" class="social-icon si-rounded si-small si-twitter">
     							<i class="icon-twitter"></i>
@@ -425,7 +404,7 @@
     					<div class="team-desc">
     						<div class="team-title"><h4>Enzo Haussecker</h4><span>Senior Software Engineer</span></div>
     						<div class="team-content">
-    							<p>Enzo has built and maintained high-throughput computing infrastructure for several high-growth startups in Silicon Valley. He is passionate about cloud computing, automation, and loves to share his knowledge and enthusiasm with others. Enzo holds a Bachelor of Science degree in Applied Mathematics from the University of California at San Diego.</p>
+    							<p><p></p></p>
     						</div>
     						<a href="https://www.linkedin.com/in/ehaussecker" class="social-icon si-rounded si-small si-linkedin">
     							<i class="icon-linkedin"></i>
@@ -462,7 +441,7 @@
     					<div class="team-desc">
     						<div class="team-title"><h4>Jon Ball</h4><span>Creative Lead</span></div>
     						<div class="team-content">
-    							<p>As an internationally renowned and influential designer, Jon has worked for many, many well known names, contributing a unique and highly original sense of style and stunning visions in print, digital and video. Jon also once worked with Dominic to create a "growth monster" MMO that reached 3M users. A rockstar of design!</p>
+    							<p>As an internationally renowned and influential designer, Jon has worked for many, many well known names, contributing a unique and highly original sense of style and stunning visions in print, digital and video. Jon also once worked with Dominic to create a 'growth monster' MMO that reached 3M users. A rockstar of design!</p>
     						</div>
     						<a href="http://www.pokedstudio.com/" class="social-icon si-rounded si-small si-github">
     							<i class="icon-github"></i>
@@ -476,8 +455,16 @@
     	</div>
     </section>
 
-    <section id="section-investors" class="page-section section nomargin dark bg-stringlabs-dark full-height">
-        [investors]
+    <section id="section-investment" class="page-section section nomargin dark bg-stringlabs full-height">
+        <div class="heading-block center">
+            <h2>Investment</h2>
+        </div>
+        <div class="investment-desc col-md-9">
+            <h2 class="investment-title">Decentralization is a massive movement and technology undertaking with so many fascinating pieces to it. There are already many startups, organizations and researchers working on different applications and advancing the core technology.</h2>
+            <div class="investment-content">
+                <p>We are blessed with a unique cross-disciplined team of leading cryptographers, distributed protocols researchers/engineers mathematicians and economists. What particularly interests us are those complex cross-disciplinary problems, that could become the biggest game-changer, common building blocks, and enablers massively accelerating the whole ecosystem.</p>
+            </div>
+        </div>
     </section>
 </div>
 <script>
@@ -522,13 +509,10 @@
                 sections: [
                     '#section-hero',
                     '#section-work',
-                    '#section-work-2',
-                    '#section-work-3',
                     '#section-research',
                     '#section-dfinity',
-                    '#section-presentations-2',
                     '#section-team',
-                    '#section-investors'
+                    '#section-investment'
                 ]
             },
 
@@ -559,16 +543,15 @@
                 this.state.sections.forEach(s => {
                     $('[data-href="' + s + '"]').removeClass('active');
                 }, this);
-                requestAnimationFrame(ev => {
+                return requestAnimationFrame(ev => {
                     $('[data-href="' + section + '"]').addClass('active');
+                    return this.updateSectionLink(section);
                 });
-                return this.updateSectionLink(section);
             },
 
             didClickSectionLink(staticArgs, event) {
                 let href = $('#section-link').attr('data-href');
-                $('[data-href="' + href + '"] > .scrollto-link').click();
-                return this.updateSectionLink(href);
+                return $('[data-href="' + href + '"] > .scrollto-link').click();
             },
 
             didClickProjectLink(staticArgs, event) {
@@ -597,7 +580,6 @@
                     }, this);
                 }, this);
                 $('#section-link').attr({ 'data-href': this.state.sections[1] });
-                requestAnimationFrame(event => { $('html, body').scrollTop(0); });
                 setTimeout(event => { $('#header').addClass('expanded'); }, 750);
                 return this;
             }

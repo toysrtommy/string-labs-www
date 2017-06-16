@@ -49,6 +49,14 @@ html, body {
 
 /* 2. Theme Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.col-md-9 {
+	float: none;
+}
+
+@media(min-width: 1200px) {
+	.container { width: auto; }
+}
+
 .dark .feature-box p,
 .team-content p {
 	color: white;
@@ -173,7 +181,9 @@ html, body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .main > section {
+	position: relative;
 	padding-left: 25rem;
+	box-sizing: border-box;
 }
 
 .feature-list {
@@ -183,6 +193,17 @@ html, body {
 
 .feature-list > .feature-item {
 	width: 20rem;
+	margin: 2rem;
+}
+
+.media-list {
+	margin: 0 auto;
+	display: flex;
+	width: calc(100% - 25rem);
+}
+
+.media-list > .media-item {
+	flex: 1;
 	margin: 2rem;
 }
 
@@ -249,6 +270,63 @@ html, body {
 	margin: 0 auto;
 }
 
+#research-desc {
+	width: 21rem;
+	margin: 20rem 0 0 -23rem;
+}
+
+#research-desc > h3 {
+	font-size: 1.6em;
+	font-weight: 200;
+	color: rgb(254, 254, 0);
+	margin: 2rem 0;
+}
+
+#research-desc > p {
+	margin: 1rem 0;
+}
+
+#research-table {
+	margin: 0 auto;
+}
+
+#research-table td {
+	padding: 1rem 0.25rem;
+}
+
+#research-table tr > td > div {
+	background: rgb(190, 140, 20);
+	margin: 0 0.25rem;
+}
+
+#research-table tr.panels td > div {
+	display: inline-block;
+	height: 16rem;
+	line-height: 16rem;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#research-table .panels td:nth-of-type(1) > div {
+	width: calc(50% - 1rem);
+}
+
+#research-table .panels td:nth-of-type(2) > div {
+	width: calc(33% - 1rem);
+}
+
+#research-table .panels td:nth-of-type(3) > div {
+	width: calc(20% - 1rem);
+}
+
+#research-table tr.panels:last-of-type td > div {
+	background: rgb(210, 90, 40);
+	height: 6rem;
+	line-height: 6rem;
+	padding-top: 0;
+}
+
 /* 4. Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -298,9 +376,17 @@ a,
 
 #section-hero.page-section.dark .heading-block h2 {
 	text-align: left;
-	width: 60%;
-	max-width: 70rem;
-	font-size: 4.2em;
+	max-width: calc(100% - 5rem);
+  font-weight: 600;
+  font-size: 6em;
+  margin-left: 5rem;
+  transition: font-size 0.2s ease;
+}
+
+@media(max-width:1144px) {
+	#section-hero.page-section.dark .heading-block h2 {
+		font-size: 4.5em;
+	}
 }
 
 #section-hero.page-section.dark .heading-block h2:before {
@@ -330,6 +416,21 @@ a,
 
 #section-work .feature-box.media-box.expanded .link:before {
 	content: "collapse";
+}
+
+#section-investment .investment-desc {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#section-investment .investment-desc h2,
+#section-investment .investment-desc p {
+	font-weight: 200;
+	font-size: 1.9em;
+}
+
+#section-investment .investment-desc p {
+	font-size: 1.1em;
 }
 
 #section-link {
