@@ -85,7 +85,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                     <div class="subtitle link"></div>
                 </div>
             </div>
-            <div class="clear"></div>
+            <div class="clearfix"></div>
         </div>
     </section>
 
@@ -141,23 +141,39 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                     </div>
                 </div>
             </div>
-            <div class="clear"></div>
+            <div class="clearfix"></div>
         </div>
     </section>
+
     <section id="section-team" class="page-section section nomargin dark bg-stringlabs-dark full-height">
     	<div class="heading-block center">
     		<h2>{% t index.team-title %}</h2>
     		<p>{% t index.team-subtitle %}</p>
     	</div>
-    	<div class="container clearfix">
+        <div id="team-desc" class="pull-left">
+            <h6>President/CTO</h6>
+            <h3>Dominic Williams</h3>
+            <p>{% t index.team-dominic-intro %}</p>
+        </div>
+        <div class="team-feature pull-left">
+            <div class="team team-list clearfix">
+                <div class="team-image">
+                    <img src="{{ base }}/images/team/dom-head2.jpg" alt="Dominic Williams">
+                </div>
+            </div>
+        </div>
+    	<div class="container pull-left">
     		<div class="row">
-    			<div class="col-md-6 bottommargin">
+    			<div class="team-item">
     				<div class="team team-list clearfix">
     					<div class="team-image">
     						<img src="{{ base }}/images/team/dom-head2.jpg" alt="Dominic Williams">
     					</div>
     					<div class="team-desc">
-    						<div class="team-title"><h4>Dominic Williams</h4><span>President/CTO</span></div>
+    						<div class="team-title">
+                                <h4>Dominic Williams</h4>
+                                <span>President/CTO</span>
+                            </div>
     						<div class="team-content">
     						    <p>{% t index.team-dominic-intro %}</p>
     						</div>
@@ -176,15 +192,18 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
     					</div>
     				</div>
     			</div>
-    			<div class="col-md-6 bottommargin">
+    			<div class="team-item">
     				<div class="team team-list clearfix">
     					<div class="team-image">
     						<img src="{{ base }}/images/team/tom-head1.jpg" alt="Tom Ding">
     					</div>
     					<div class="team-desc">
-    						<div class="team-title"><h4>Tom Ding</h4><span>CEO</span></div>
+    						<div class="team-title">
+                                <h4>Tom Ding</h4>
+                                <span>CEO</span>
+                            </div>
     						<div class="team-content">
-    							<p><p>{% t index.team-tom-intro %}</p></p>
+    							<p>{% t index.team-tom-intro %}</p>
     						</div>
     						<a href="https://twitter.com/tom_ding" class="social-icon si-rounded si-small si-twitter">
     							<i class="icon-twitter"></i>
@@ -197,18 +216,18 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
     					</div>
     				</div>
     			</div>
-    		</div>
-    		<div class="clear"></div>
-    		<div class="row">
-    			<div class="col-md-6 bottommargin">
+    			<div class="team-item">
     				<div class="team team-list clearfix">
     					<div class="team-image">
     						<img src="{{ base }}/images/team/timo-head1.jpg" alt="Timo Hanke">
     					</div>
     					<div class="team-desc">
-    						<div class="team-title"><h4>Timo Hanke</h4><span>Chief Cryptographer</span></div>
+    						<div class="team-title">
+                                <h4>Timo Hanke</h4>
+                                <span>Chief Cryptographer</span>
+                            </div>
     						<div class="team-content">
-    							<p><p>{% t index.team-timo-intro %}</p></p>
+    							<p>{% t index.team-timo-intro %}</p>
     						</div>
     						<a href="https://twitter.com/timothanke" class="social-icon si-rounded si-small si-twitter">
     							<i class="icon-twitter"></i>
@@ -225,15 +244,20 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
     					</div>
     				</div>
     			</div>
-    			<div class="col-md-6 bottommargin">
+            </div>
+            <div class="row">
+    			<div class="team-item">
     				<div class="team team-list clearfix">
     					<div class="team-image">
     						<img src="{{ base }}/images/team/enzo-head1.jpg" alt="Enzo Haussecker">
     					</div>
     					<div class="team-desc">
-    						<div class="team-title"><h4>Enzo Haussecker</h4><span>Senior Software Engineer</span></div>
+    						<div class="team-title">
+                                <h4>Enzo Haussecker</h4>
+                                <span>Senior Software Engineer</span>
+                            </div>
     						<div class="team-content">
-    							<p><p>{% t index.team-enzo-intro %}</p></p>
+    							<p>{% t index.team-enzo-intro %}</p>
     						</div>
     						<a href="https://www.linkedin.com/in/ehaussecker" class="social-icon si-rounded si-small si-linkedin">
     							<i class="icon-linkedin"></i>
@@ -242,16 +266,16 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
     					</div>
     				</div>
     			</div>
-    		</div>
-    		<div class="clear"></div>
-    		<div class="row">
-    			<div class="col-md-6 bottommargin">
+    			<div class="team-item">
     				<div class="team team-list clearfix">
     					<div class="team-image">
     						<img src="{{ base }}/images/team/tomomi-head1.jpg" alt="Tomomi Menjo">
     					</div>
     					<div class="team-desc">
-    						<div class="team-title"><h4>Tomomi Menjo</h4><span>Project Coordinator</span></div>
+    						<div class="team-title">
+                                <h4>Tomomi Menjo</h4>
+                                <span>Project Coordinator</span>
+                            </div>
     						<div class="team-content">
     							<p>{% t index.team-tomomi-intro %}</p>
     						</div>
@@ -262,13 +286,16 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
     					</div>
     				</div>
     			</div>
-    			<div class="col-md-6 bottommargin">
+    			<div class="team-item">
     				<div class="team team-list clearfix">
     					<div class="team-image">
     						<img src="{{ base }}/images/team/jon-head1.jpg" alt="Jon Ball">
     					</div>
     					<div class="team-desc">
-    						<div class="team-title"><h4>Jon Ball</h4><span>Creative Lead</span></div>
+    						<div class="team-title">
+                                <h4>Jon Ball</h4>
+                                <span>Creative Lead</span>
+                            </div>
     						<div class="team-content">
     							<p>{% t index.team-jon-intro %}</p>
     						</div>
@@ -280,8 +307,8 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
     				</div>
     			</div>
     		</div>
-    		<div class="clear"></div>
     	</div>
+        <div class="clearfix"></div>
     </section>
 
     <section id="section-investment" class="page-section section nomargin dark bg-stringlabs full-height">
