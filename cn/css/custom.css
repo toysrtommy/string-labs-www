@@ -56,6 +56,9 @@ html, body {
 @media(min-width: 1200px) {
 	.container { width: auto; }
 }
+@media (min-width: 992px) {
+	.container { width: auto; }
+}
 
 .dark .feature-box p,
 .team-content p {
@@ -68,9 +71,21 @@ html, body {
 	display: none;
 }
 
-.team-image img {
-	width: 25%;
-	height: 25%;
+.team.team-list .team-image {
+	width: auto;
+	margin: 0;
+}
+
+.team-list .team-image img {
+	width: 15rem;
+	height: 15rem;
+	margin: 1rem;
+	object-fit: cover;
+}
+
+.team-feature .team-list .team-image img {
+	height: 32rem;
+	width: 20rem;
 }
 
 .dark .heading-block:not(.not-dark):after {
@@ -204,7 +219,36 @@ html, body {
 
 .media-list > .media-item {
 	flex: 1;
-	margin: 2rem;
+	margin: 1rem;
+}
+
+.feature-box.media-box {
+	position: relative;
+	background: rgba(0, 0, 0, 0.25);
+	padding: 1rem;
+	height: 30rem;
+}
+
+.feature-box.media-box .fbox-desc h4,
+.feature-box.media-box .fbox-desc div {
+	font-size: 0.75em;
+	color: rgb(254, 254, 0);
+	font-weight: 200;
+	cursor: pointer;
+}
+
+.feature-box.media-box .fbox-desc div {
+	margin-top: 4rem;
+	font-size: 2.5em;
+	color: white;
+}
+
+.media-item .feature-box.media-box {
+	height: 17rem;
+}
+
+.team-item {
+	float: left;
 }
 
 .page-section.dark {
@@ -236,13 +280,6 @@ html, body {
 	padding-top: 13.75rem;
 }
 
-#section-work .feature-box.media-box {
-	position: relative;
-	background: rgba(0, 0, 0, 0.25);
-	padding: 1rem;
-	height: 30rem;
-}
-
 #section-work .feature-box.media-box.expanded {
 	height: 60rem;
 }
@@ -270,20 +307,41 @@ html, body {
 	margin: 0 auto;
 }
 
+#team-desc,
 #research-desc {
 	width: 21rem;
-	margin: 20rem 0 0 -23rem;
+	margin: 12rem 0 0 -23rem;
 }
 
+#team-desc > h6,
+#team-desc > h3,
 #research-desc > h3 {
 	font-size: 1.6em;
-	font-weight: 200;
-	color: rgb(254, 254, 0);
 	margin: 2rem 0;
+	font-weight: 200;
 }
 
+#team-desc > h6,
+#research-desc > h3 {
+	color: rgb(254, 254, 0);
+}
+
+#team-desc > h3 {
+	font-weight: 400;
+}
+
+#team-desc > h6 {
+	font-size: 1em;
+	margin: 0;
+}
+
+#team-desc > p,
 #research-desc > p {
 	margin: 1rem 0;
+}
+
+#team-desc > p {
+	font-size: 0.9em;
 }
 
 #research-table {
@@ -416,6 +474,11 @@ a,
 
 #section-work .feature-box.media-box.expanded .link:before {
 	content: "collapse";
+}
+
+#section-team > .container {
+	margin: 0 auto;
+	width: 51rem;
 }
 
 #section-investment .investment-desc {
