@@ -354,6 +354,11 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                     handler: 'didClickSectionLink'
                 },
                 {
+                    listener: '#section-team .container .team-image',
+                    type: 'click',
+                    handler: 'didClickTeamImage'
+                },
+                {
                     listener: 'html, body',
                     type: 'scroll',
                     handler: 'didScroll'
@@ -403,6 +408,17 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                     $('[data-href="' + section + '"]').addClass('active');
                     return this.updateSectionLink(section);
                 });
+            },
+
+            didClickTeamImage(staticArgs, event) {
+                let selector = event.target.localName === 'img' ? event.target : event.target.firstElementChild;
+                let name = $(selector).parent().next().find('.team-title > h4').html();
+                let title = $(selector).parent().next().find('.team-title > h4 + span').html();
+                let content = $(selector).parent().next().find('.team-content > p').html();
+                $('.team-feature .team-image').find('img').attr('src', $(selector).attr('src'));
+                $('#team-desc > h6').html(name);
+                $('#team-desc > h3').html(title);
+                $('#team-desc > p').html(content);
             },
 
             didClickSectionLink(staticArgs, event) {
