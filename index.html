@@ -404,6 +404,12 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                 this.state.sections.forEach(s => {
                     $('[data-href="' + s + '"]').removeClass('active');
                 }, this);
+                if($('#team-desc').get(0).getBoundingClientRect().top < $('#primary-menu').get(0).getBoundingClientRect().bottom) {
+                   $('#team-desc').attr('style', 'opacity: 0');
+                }
+                else {
+                    $('#team-desc').attr('style', 'opacity: 1');
+                }
                 return requestAnimationFrame(ev => {
                     $('[data-href="' + section + '"]').addClass('active');
                     return this.updateSectionLink(section);
