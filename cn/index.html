@@ -193,7 +193,7 @@
         <div class="heading-block center">
             <h2>Research</h2>
         </div>
-        <div id="research-desc" class="pull-left">
+        <div id="research-desc" class="sidebar-content pull-left">
             <h3>BLS Threshold Cryptography</h3>
             <p>DFINITY, especially Threshold Relay Chain consensus, extensively uses Stanford BLS signature as a cryptographic VRF (verifiable random function) to achieve incorruptible, unmanipulable and unpredictible randomness to select block maker and validator groups.</p>
             <p>It's also used in PHI autonomous commercial banking system as a powerful way to randomly select validators for financial loans to prevent collusion.</p>
@@ -207,36 +207,90 @@
             <div class="heading-block center">
                 <h2>迎接DFINITY</h2>
             </div>
+            <div id="video-filters" class="sidebar-content pull-left">
+                <h5 class="active">#tech</h5>
+                <h5 class="active">#business</h5>
+                <h5 class="active">#crypto</h5>
+                <h5 class="active">#startups</h5>
+                <h5 class="active">#culture</h5>
+                <h5 class="active">#dfinity</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+            </div>
             <div class="media-list clearfix">
-                <div class="media-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-desc center">
-                            <h4>DFINITY平台技术之旅</h4>
-                            <div>▶</div>
+                <div class="row">
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="media-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-desc center">
-                            <h4>DFINITY平台技术之旅</h4>
-                            <div>▶</div>
+                <div class="row">
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="media-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-desc center">
-                            <h4>DFINITY平台技术之旅</h4>
-                            <div>▶</div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="media-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-desc center">
-                            <h4>DFINITY平台技术之旅</h4>
-                            <div>▶</div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -250,7 +304,7 @@
     		<h2>团队</h2>
     		<p>热爱前沿的密码学和分布式技术吗？加入String推动区块链科学发展吧！</p>
     	</div>
-        <div id="team-desc" class="pull-left">
+        <div id="team-desc" class="sidebar-content pull-left">
             <h6>President/CTO</h6>
             <h3>Dominic Williams</h3>
             <p>热爱复杂协议和架构设计，来自英国的奇客、工程师和连环创业家。Dominic多米尼克踏入分布式计算领域来自他的上一个创业项目 - 一个迅速成长到超过3百万用户的大型游戏项目。年轻时热爱嬉皮文化，依旧不妨碍他在伦敦大学期间获得多个计算机工程学术大奖。</p>
@@ -502,16 +556,19 @@
             },
 
             didScroll(staticArgs, event) {
-                let section = this.getVisibleSection($(window).scrollTop());
+                let section;
+                $('.sidebar-content').each((i, el) => {
+                    if($(el).get(0).getBoundingClientRect().top < $('#primary-menu').get(0).getBoundingClientRect().bottom) {
+                       $(el).attr('style', 'opacity: 0');
+                    }
+                    else {
+                        $(el).attr('style', 'opacity: 1');
+                    }
+                });
+                section = this.getVisibleSection($(window).scrollTop());
                 this.state.sections.forEach(s => {
                     $('[data-href="' + s + '"]').removeClass('active');
                 }, this);
-                if($('#team-desc').get(0).getBoundingClientRect().top < $('#primary-menu').get(0).getBoundingClientRect().bottom) {
-                   $('#team-desc').attr('style', 'opacity: 0');
-                }
-                else {
-                    $('#team-desc').attr('style', 'opacity: 1');
-                }
                 return requestAnimationFrame(ev => {
                     $('[data-href="' + section + '"]').addClass('active');
                     return this.updateSectionLink(section);

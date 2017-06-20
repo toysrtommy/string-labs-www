@@ -124,7 +124,7 @@
     <section id="section-hero" class="page-section section nomargin dark bg-stringlabs" data-href="#section-work">
         <div class="heading-block">
             <h2>Advancing open protocols</h2>
-            <p>Cutting-edge crypto Labs & investor</p>
+            <p>cutting edge crypto Labs & investor</p>
         </div>
     </section>
 
@@ -193,7 +193,7 @@
         <div class="heading-block center">
             <h2>Research</h2>
         </div>
-        <div id="research-desc" class="pull-left">
+        <div id="research-desc" class="sidebar-content pull-left">
             <h3>BLS Threshold Cryptography</h3>
             <p>DFINITY, especially Threshold Relay Chain consensus, extensively uses Stanford BLS signature as a cryptographic VRF (verifiable random function) to achieve incorruptible, unmanipulable and unpredictible randomness to select block maker and validator groups.</p>
             <p>It's also used in PHI autonomous commercial banking system as a powerful way to randomly select validators for financial loans to prevent collusion.</p>
@@ -207,36 +207,90 @@
             <div class="heading-block center">
                 <h2>Talks & Presentations</h2>
             </div>
+            <div id="video-filters" class="sidebar-content pull-left">
+                <h5 class="active">#tech</h5>
+                <h5 class="active">#business</h5>
+                <h5 class="active">#crypto</h5>
+                <h5 class="active">#startups</h5>
+                <h5 class="active">#culture</h5>
+                <h5 class="active">#dfinity</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+            </div>
             <div class="media-list clearfix">
-                <div class="media-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-desc center">
-                            <h4>A Brief Tour of DFINITY</h4>
-                            <div>▶</div>
+                <div class="row">
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>A Brief Tour of DFINITY</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>A Brief Tour of DFINITY</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>A Brief Tour of DFINITY</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>A Brief Tour of DFINITY</h4>
+                                <div>▶</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="media-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-desc center">
-                            <h4>A Brief Tour of DFINITY</h4>
-                            <div>▶</div>
+                <div class="row">
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>A Brief Tour of DFINITY</h4>
+                                <div>▶</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="media-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-desc center">
-                            <h4>A Brief Tour of DFINITY</h4>
-                            <div>▶</div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>A Brief Tour of DFINITY</h4>
+                                <div>▶</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="media-item pull-left">
-                    <div class="feature-box media-box">
-                        <div class="fbox-desc center">
-                            <h4>A Brief Tour of DFINITY</h4>
-                            <div>▶</div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>A Brief Tour of DFINITY</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>A Brief Tour of DFINITY</h4>
+                                <div>▶</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -250,7 +304,7 @@
     		<h2>The Team</h2>
     		<p>Love cutting edge crypto? Join us, String Labs is a great place to be!</p>
     	</div>
-        <div id="team-desc" class="pull-left">
+        <div id="team-desc" class="sidebar-content pull-left">
             <h6>President/CTO</h6>
             <h3>Dominic Williams</h3>
             <p>Protocol geek, coder and serial technology entrepreneur who hails from the UK. Dominic's last venture was an MMO that grew to 3M users and allowed him to indulge his passion for scalable tech. Dominic is a bit of a hippy, but once won prizes in Computer Science at London University.</p>
@@ -502,16 +556,19 @@
             },
 
             didScroll(staticArgs, event) {
-                let section = this.getVisibleSection($(window).scrollTop());
+                let section;
+                $('.sidebar-content').each((i, el) => {
+                    if($(el).get(0).getBoundingClientRect().top < $('#primary-menu').get(0).getBoundingClientRect().bottom) {
+                       $(el).attr('style', 'opacity: 0');
+                    }
+                    else {
+                        $(el).attr('style', 'opacity: 1');
+                    }
+                });
+                section = this.getVisibleSection($(window).scrollTop());
                 this.state.sections.forEach(s => {
                     $('[data-href="' + s + '"]').removeClass('active');
                 }, this);
-                if($('#team-desc').get(0).getBoundingClientRect().top < $('#primary-menu').get(0).getBoundingClientRect().bottom) {
-                   $('#team-desc').attr('style', 'opacity: 0');
-                }
-                else {
-                    $('#team-desc').attr('style', 'opacity: 1');
-                }
                 return requestAnimationFrame(ev => {
                     $('[data-href="' + section + '"]').addClass('active');
                     return this.updateSectionLink(section);
