@@ -174,7 +174,7 @@ html, body {
 #header.full-header #primary-menu > ul li > a {
 	padding: 0.25em 0;
 	font-weight: 100;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	text-shadow: 0 1px 1rem rgba(0, 0, 20, 0.4);
 	color: white;
 }
@@ -304,6 +304,12 @@ html, body {
 	padding-top: 13.75rem;
 }
 
+#section-hero.bg-stringlabs {
+	background-image: linear-gradient(to bottom right, rgba(26, 20, 56, 0.85), rgba(58, 84, 111, 0.85)), url('../images/bg-stringlabs.png');
+	background-size: contain;
+	background-repeat: repeat;
+}
+
 #section-work .feature-box.media-box.expanded {
 	height: 60rem;
 }
@@ -333,6 +339,7 @@ html, body {
 
 .sidebar-content {
 	width: 21rem;
+	height: 28rem;
 	margin: 16rem 0 0 -23rem;
 	position: absolute;
 	z-index: 100;
@@ -343,7 +350,7 @@ html, body {
 
 #video-filters {
 	overflow-y: auto;
-	margin-left: -24.5rem;
+	margin: 18rem 0 0 -24.5rem;
 	cursor: pointer;
 }
 
@@ -443,7 +450,7 @@ a,
 .page-section.dark .heading-block h2 {
   font-weight: 100;
   line-height: 1em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .page-section.dark .heading-block p {
@@ -458,27 +465,17 @@ a,
 	font: 100 normal 1.1em 'Museo', sans-serif;
 	letter-spacing: 0.05em;
 	text-align: left;
-	text-transform: lowercase;
-	text-shadow: none;
-	opacity: 0.75;
-}
-
-#section-hero .heading-block p {
-	font: 100 normal 1.1em 'Museo', sans-serif;
-	letter-spacing: 0.05em;
-	text-align: left;
-	text-transform: lowercase;
 	text-shadow: none;
 	opacity: 0.75;
 }
 
 #section-hero.page-section.dark .heading-block h2 {
 	text-align: left;
+	font: 400 normal 7em 'Raleway', sans-serif;
 	max-width: calc(100% - 5rem);
-  font-weight: 600;
-  font-size: 6em;
   margin-left: 5rem;
   transition: font-size 0.2s ease;
+  word-spacing: 100vw;
 }
 
 @media(max-width:1200px) {
@@ -491,8 +488,8 @@ a,
 	content: "";
 	float: left;
 	width: 0.25rem;
-	height: 20rem;
-	background: linear-gradient(to bottom, rgb(254, 254, 0), transparent);
+	height: 42rem;
+	background: linear-gradient(to bottom, rgb(254, 254, 0), transparent 50%);
 	margin-right: 4rem;
 }
 
