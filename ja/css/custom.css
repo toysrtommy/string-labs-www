@@ -90,12 +90,6 @@ html, body {
 	opacity: 1;
 }
 
-.team-feature .team-list .team-image img {
-	height: 32rem;
-	width: 20rem;
-	opacity: 1;
-}
-
 .team-list-container {
 	margin: 0 auto;
 	width: 73rem;
@@ -357,6 +351,11 @@ html, body {
 	overflow-y: auto;
 	margin: 18rem 0 0 -24.5rem;
 	cursor: pointer;
+}
+
+#team-desc {
+	width: 20rem;
+	padding: 1rem;
 }
 
 #team-desc > h6,

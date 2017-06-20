@@ -303,24 +303,17 @@
     		<h2>The Team</h2>
     		<p>Love cutting edge crypto? Join us, String Labs is a great place to be!</p>
     	</div>
-        <div id="team-desc" class="sidebar-content pull-left">
-            <h6>President/CTO</h6>
-            <h3>Dominic Williams</h3>
-            <p>Protocol geek, coder and serial technology entrepreneur who hails from the UK. Dominic's last venture was an MMO that grew to 3M users and allowed him to indulge his passion for scalable tech. Dominic is a bit of a hippy, but once won prizes in Computer Science at London University.</p>
-        </div>
         <div class="team-list-container">
-            <div class="team-feature pull-left">
-                <div class="team team-list clearfix">
-                    <div class="team-image">
-                        <img src="./images/team/dom-head2.jpg" alt="Dominic Williams">
-                    </div>
-                </div>
+            <div id="team-desc" class="pull-left">
+                <h6>President/CTO</h6>
+                <h3>Dominic Williams</h3>
+                <p>Protocol geek, coder and serial technology entrepreneur who hails from the UK. Dominic's last venture was an MMO that grew to 3M users and allowed him to indulge his passion for scalable tech. Dominic is a bit of a hippy, but once won prizes in Computer Science at London University.</p>
             </div>
         	<div class="container pull-left">
         		<div class="row">
         			<div class="team-item">
         				<div class="team team-list clearfix">
-        					<div class="team-image">
+        					<div class="team-image active">
         						<img src="./images/team/dom-head2.jpg" alt="Dominic Williams">
         					</div>
         					<div class="team-desc">
@@ -579,8 +572,7 @@
                 let name = $(selector).parent().next().find('.team-title > h4').html();
                 let title = $(selector).parent().next().find('.team-title > h4 + span').html();
                 let content = $(selector).parent().next().find('.team-content > p').html();
-                $('.team-list-container .team-image').removeClass('active');
-                $('.team-feature .team-image').find('img').attr('src', $(selector).attr('src'));
+                $('.team-item .team-image').removeClass('active');
                 $('#team-desc > h6').html(name);
                 $('#team-desc > h3').html(title);
                 $('#team-desc > p').html(content);

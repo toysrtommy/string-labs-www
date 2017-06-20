@@ -303,24 +303,17 @@
     		<h2>团队</h2>
     		<p>热爱前沿的密码学和分布式技术吗？加入String推动区块链科学发展吧！</p>
     	</div>
-        <div id="team-desc" class="sidebar-content pull-left">
-            <h6>President/CTO</h6>
-            <h3>Dominic Williams</h3>
-            <p>热爱复杂协议和架构设计，来自英国的奇客、工程师和连环创业家。Dominic多米尼克踏入分布式计算领域来自他的上一个创业项目 - 一个迅速成长到超过3百万用户的大型游戏项目。年轻时热爱嬉皮文化，依旧不妨碍他在伦敦大学期间获得多个计算机工程学术大奖。</p>
-        </div>
         <div class="team-list-container">
-            <div class="team-feature pull-left">
-                <div class="team team-list clearfix">
-                    <div class="team-image">
-                        <img src="./images/team/dom-head2.jpg" alt="Dominic Williams">
-                    </div>
-                </div>
+            <div id="team-desc" class="pull-left">
+                <h6>President/CTO</h6>
+                <h3>Dominic Williams</h3>
+                <p>热爱复杂协议和架构设计，来自英国的奇客、工程师和连环创业家。Dominic多米尼克踏入分布式计算领域来自他的上一个创业项目 - 一个迅速成长到超过3百万用户的大型游戏项目。年轻时热爱嬉皮文化，依旧不妨碍他在伦敦大学期间获得多个计算机工程学术大奖。</p>
             </div>
         	<div class="container pull-left">
         		<div class="row">
         			<div class="team-item">
         				<div class="team team-list clearfix">
-        					<div class="team-image">
+        					<div class="team-image active">
         						<img src="./images/team/dom-head2.jpg" alt="Dominic Williams">
         					</div>
         					<div class="team-desc">
@@ -579,8 +572,7 @@
                 let name = $(selector).parent().next().find('.team-title > h4').html();
                 let title = $(selector).parent().next().find('.team-title > h4 + span').html();
                 let content = $(selector).parent().next().find('.team-content > p').html();
-                $('.team-list-container .team-image').removeClass('active');
-                $('.team-feature .team-image').find('img').attr('src', $(selector).attr('src'));
+                $('.team-item .team-image').removeClass('active');
                 $('#team-desc > h6').html(name);
                 $('#team-desc > h3').html(title);
                 $('#team-desc > p').html(content);
