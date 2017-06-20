@@ -304,10 +304,15 @@ html, body {
 	padding-top: 13.75rem;
 }
 
-#section-hero.bg-stringlabs {
+#section-hero.bg-stringlabs,
+#section-work.bg-stringlabs {
 	background-image: linear-gradient(to bottom right, rgba(26, 20, 56, 0.85), rgba(58, 84, 111, 0.85)), url('../images/bg-stringlabs.png');
 	background-size: contain;
 	background-repeat: repeat;
+}
+
+#section-work.bg-stringlabs {
+	background-image: linear-gradient(to bottom right, rgba(56, 20, 26, 0.85), rgba(111, 84, 58, 0.85)), url('../images/bg-stringlabs.png');
 }
 
 #section-work .feature-box.media-box.expanded {
@@ -448,9 +453,9 @@ a,
 }
 
 .page-section.dark .heading-block h2 {
-  font-weight: 100;
+  font-weight: 900;
   line-height: 1em;
-  color: rgba(255, 255, 255, 0.75);
+  color: white;
 }
 
 .page-section.dark .heading-block p {
@@ -471,7 +476,7 @@ a,
 
 #section-hero.page-section.dark .heading-block h2 {
 	text-align: left;
-	font: 400 normal 7em 'Raleway', sans-serif;
+	font: 400 normal 7em 'Anivers', sans-serif;
 	max-width: calc(100% - 5rem);
   margin-left: 5rem;
   transition: font-size 0.2s ease;
