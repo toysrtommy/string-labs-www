@@ -300,13 +300,13 @@ html, body {
 
 #section-hero.bg-stringlabs,
 #section-work.bg-stringlabs {
-	background-image: linear-gradient(to bottom right, rgba(26, 20, 56, 0.85), rgba(58, 84, 111, 0.85)), url('../images/bg-stringlabs.png');
-	background-size: contain;
+	background-image: linear-gradient(to bottom right, rgba(26, 20, 56, 0.85), rgba(58, 84, 111, 0.85)), url('../images/bg-stringlabs.svg');
+	background-size: 1820px;
 	background-repeat: repeat;
 }
 
 #section-work.bg-stringlabs {
-	background-image: linear-gradient(to bottom right, rgba(56, 20, 26, 0.85), rgba(111, 84, 58, 0.85)), url('../images/bg-stringlabs.png');
+	background-image: linear-gradient(to bottom right, rgba(56, 20, 26, 0.85), rgba(111, 84, 58, 0.85)), url('../images/bg-stringlabs.svg');
 }
 
 #section-work .feature-box.media-box.expanded {
