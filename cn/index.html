@@ -1,0 +1,764 @@
+<!DOCTYPE html> 
+
+
+<html dir="ltr" lang="en-US">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="String Labs is a crypto studio, incubator and investor based in Palo Alto">
+        <meta name="keywords" content="Ethereum,Dfinity,PHI,DApps,decentralized,decentralization,cryptography,consensus,distributed computing,incubator,investor,lab">
+        <meta name="author" content="String Labs" />
+
+        <!-- Stylesheets
+    	============================================= -->
+        <link rel="stylesheet" href="./css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="./style.css" type="text/css" />
+        <link rel="stylesheet" href="./css/dark.css" type="text/css" />
+        <link rel="stylesheet" href="./css/font-icons.css" type="text/css" />
+        <link rel="stylesheet" href="./css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="./css/magnific-popup.css" type="text/css" />
+
+        <link rel="stylesheet" href="./css/responsive.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lt IE 9]>
+    		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    	<![endif]-->
+
+        <link rel="stylesheet" href="./css/custom.css" type="text/css" />
+
+        <!-- Document Title
+    	============================================= -->
+        <title>String Labs | Crypto studio, investor and incubator</title>
+        <script type="text/javascript">
+            function email() {
+                var form = document.getElementById("template-contactform").elements;
+                var name = form.namedItem("template-contactform-name").value;
+                var email = form.namedItem("template-contactform-email").value;
+                var subject = form.namedItem("template-contactform-subject").value + " (From: " + name + ", " + email + ")";
+                var message = form.namedItem("template-contactform-message").value;
+                window.open("mailto:hello@string.technology?subject=" + subject + "&body=" + message);
+            }
+        </script>
+    </head>
+    <body class="bg-stringlabs-dark" data-loader-timeout="1000">
+
+        <!-- Header
+		============================================= -->
+        <header id="header" class="full-header pull-left">
+
+            <div id="header-wrap">
+
+                <div class="col-xs-12 container">
+
+                    <!-- Logo
+					============================================= -->
+                    <div id="logo"><a href="#" data-href="#section-hero"<div><svg id="string-vector" class="scrollto-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.78 36.32" width="70"><title>Vector Smart Object</title><path d="M198.1,618.47l-0.56-.16c-1.83-.5-4.59-1.26-4.59-4,0-2.92,1.73-4.27,5.46-4.27a13,13,0,0,1,4.28.78L203,611l0.28-.13a1.28,1.28,0,0,0,.59-1.33l-0.09-.35-0.33-.13a15.31,15.31,0,0,0-5.05-.87c-6.07,0-7.34,3.37-7.34,6.2,0,4.21,4,5.32,6.45,6l0.37,0.1c2.75,0.78,5.12,1.45,5.12,4.44,0,2.81-1.86,4.24-5.54,4.24a11.59,11.59,0,0,1-5.17-1.07l-0.31-.15-0.31.15a1.23,1.23,0,0,0-.58,1.34l0.09,0.26,0.24,0.13A13.85,13.85,0,0,0,197.5,631c4.69,0,7.39-2.25,7.39-6.16C204.89,620.43,201,619.3,198.1,618.47Z" transform="translate(-191.02 -604.16)" style="fill:#fff"/><path d="M218.64,628.77l-0.48.11a12.41,12.41,0,0,1-2.35.22c-3,0-4-1.45-4-5.73v-12.9h6.29l0.2-.2a1.18,1.18,0,0,0,0-1.53l-0.2-.19h-6.29v-4.37h-0.69a1.24,1.24,0,0,0-1.14.57l-0.1.16v3.64h-2.51a0.82,0.82,0,0,0-.77,1,1.25,1.25,0,0,0,.2.66l0.2,0.31h2.87v12.9c0,3.79.7,7.66,5.89,7.66a9,9,0,0,0,2.8-.35l0.37-.11,0.09-.38a1.34,1.34,0,0,0-.17-1Z" transform="translate(-191.02 -604.16)" style="fill:#fff"/><path d="M229.71,608.14a6.53,6.53,0,0,0-5.69,3.18v-2.48l-0.38-.19a1.4,1.4,0,0,0-1.17,0l-0.38.19v21.49l0.38,0.19a1.37,1.37,0,0,0,1.17,0l0.38-.19V615.53c1.38-3.68,3.18-5.47,5.5-5.47a5,5,0,0,1,2.68.65l0.32,0.19,0.34-.16a1.49,1.49,0,0,0,.72-1l0.09-.46-0.4-.25A6.62,6.62,0,0,0,229.71,608.14Z" transform="translate(-191.02 -604.16)" style="fill:#fff"/><path d="M237.63,608.53a0.92,0.92,0,0,0-.89.46l0,0.09,0,20.88,0.08,0.22a1.1,1.1,0,0,0,1.78,0l0-.09,0-20.88-0.08-.21A0.9,0.9,0,0,0,237.63,608.53Z" transform="translate(-191.02 -604.16)" style="fill:#fff"/><path d="M252.84,608.14a8.61,8.61,0,0,0-7.07,3.48V609l-0.28-.21a1.22,1.22,0,0,0-1.38,0l-0.27.21v21.25l0.28,0.21a1.23,1.23,0,0,0,1.38,0l0.28-.21V615.42c1.48-3.56,3.83-5.36,7-5.36s4.79,1.67,4.79,4.59v15.55l0.27,0.2a1.13,1.13,0,0,0,.68.23,1.16,1.16,0,0,0,.69-0.22l0.28-.21V614.62C259.47,610.62,256.93,608.14,252.84,608.14Z" transform="translate(-191.02 -604.16)" style="fill:#fff"/><path d="M272.26,627.73c-3.7-.41-5.25-0.82-5.25-2.32a4.43,4.43,0,0,1,1.55-3.13,9.56,9.56,0,0,0,2.62.35c4.7,0,7.5-2.7,7.5-7.23a7.45,7.45,0,0,0-1.75-5.08l-0.26-.21h3.11a1,1,0,1,0,0-2H272l-0.14,0h-0.09c-0.2,0-.4,0-0.61,0-4.7,0-7.5,2.72-7.5,7.27a6.83,6.83,0,0,0,3,6.08,6.12,6.12,0,0,0-1.65,4,3.23,3.23,0,0,0,.83,2.22,7.8,7.8,0,0,0-3.11,6.25c0,3.15,2.14,6.52,8.13,6.52,7.31,0,9.9-3.7,9.9-6.87C280.8,628.67,275.86,628.13,272.26,627.73Zm-1.09-17.62c3.52,0,5.54,1.93,5.54,5.3s-2,5.26-5.54,5.26-5.54-1.92-5.54-5.26S267.65,610.1,271.17,610.1Zm7.66,23.54c0,2.91-3.21,4.87-8,4.87-3.84,0-6.13-1.72-6.13-4.59a6.4,6.4,0,0,1,2.87-5.09,18.85,18.85,0,0,0,4.38.81C275.66,630,278.84,630.4,278.84,633.64Z" transform="translate(-191.02 -604.16)" style="fill:#fff"/></svg></div></a></div>
+
+                    <!-- Primary Navigation
+					============================================= -->
+                    <nav id="primary-menu" class="not-dark one-page-menu">
+
+                        <ul>
+                            <li class="primary-menu-item">
+                                <a href="#" data-href="#section-work">
+                                    <div class="scrollto-link">我们的项目</div>
+                                </a>
+                            </li>
+                            <li class="primary-menu-item">
+                                <a href="#" data-href="#section-research">
+                                    <div class="scrollto-link">Research</div>
+                                </a>
+                            </li>
+                            <li class="primary-menu-item">
+                                <a href="#" data-href="#section-dfinity">
+                                    <div class="scrollto-link">迎接DFINITY</div>
+                                </a>
+                            </li>
+                            <li class="primary-menu-item">
+                                <a href="#" data-href="#section-team">
+                                    <div class="scrollto-link">团队</div>
+                                </a>
+                            </li>
+                            <li class="primary-menu-item">
+                                <a href="#" data-href="#section-investment">
+                                    <div class="scrollto-link">投资人</div>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                               <a href="#">
+                                   <div class="subtitle">language&nbsp;&bull;&nbsp;English</div>
+                               </a>
+                               <ul>
+                                    <li class="sub-menu-content">
+                                        <a href="/#"> English</a>
+                                    </li>
+                                    <li class="sub-menu-content">
+                                        <a href="/cn"> 中文</a>
+                                    </li>
+                                    <li class="sub-menu-content">
+                                        <a href="/ja"> 日本語</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- #primary-menu end -->
+                </div>
+            </div>
+        </header>
+        <!-- #header end -->
+
+        
+
+
+
+        
+
+
+
+<!-- Content
+============================================= -->
+
+<div role="main" class="main">
+
+    <section id="section-hero" class="page-section section nomargin dark bg-stringlabs" data-href="#section-work">
+        <div class="heading-block">
+            <h2>高级分布式协议与应用</h2>
+            <p>String实验室一个密码学和分布式计算的研发、孵化和投资机构.</p>
+        </div>
+    </section>
+
+    <section id="section-work" class="page-section section nomargin dark bg-stringlabs">
+        <div class="heading-block center">
+            <h2>我们的项目</h2>
+        </div>
+        <div class="feature-list clearfix">
+            <div class="feature-item pull-left">
+                <div class="feature-box media-box">
+                    <div class="fbox-media">
+                        <img src="./images/string/dfinity-logo.png" alt="DFINITY">
+                    </div>
+                    <div class="fbox-desc center">
+                        <h3>DFINITY</h3>
+                        <h4>无限度可信任计算</h4>
+                        <p>DFINITY 是一个开放式的虚拟区块链计算机和技术。她延伸了Etheruem 以太坊生态链到广泛的商业应用场景中。我们的创新包括公链上首创的智能治理机制 - “区块链神经系统”，私链智能合约可直接调用公链合约，以及第三代区块链协议技术 - 比上一代（以太坊）提升二十倍以上的确认速度和无限吞吐扩容能力。<br/>
+                            <a href="http://dfinity.network/">http://dfinity.network</a>
+                        </p>
+                    </div>
+                    <div class="subtitle link"></div>
+                </div>
+            </div>
+            <div class="feature-item pull-left">
+                <div class="feature-box media-box">
+                    <div class="fbox-media">
+                        <img src="./images/string/phi-logo.png" alt="PHI">
+                    </div>
+                    <div class="fbox-desc center">
+                        <h3>PHI</h3>
+                        <h4>去中心化商业银行与稳定货币</h4>
+                        <p>今天的商业银行面临着严峻的结构性挑战，实体运营基础设施、大量冗余员工以及合规流程等有着天然的高昂成本，现有的银行机制又屡屡产生大量的不良贷款对经济产生巨大冲击，乃至引发08年的次贷危机。不仅如此，许多商业银行更利用其垄断地位阻碍其他金融创新的步伐。Phi系统重新架构了一个由智能合约系统构成的自治借贷系统 - 这个系统依赖算法和一个开放式的贷款验证人网络来进行放贷，其可靠度放远超传统借贷机制。同时，类似于传统商业银行创造货币一样，Phi自治借贷系统能够在区块链上创造原生的稳定货币（如美元，欧元，人民币等）供所有用户使用。<br/>
+                            <a href="./pdfs/viewer.html?file=.././library/PHI-DFINITY-Extended-17-12-16.pdf">PHI <i>extended</i> Edition (English only)</a><br/>
+                            <a target="_blank" class="popup" href="#phiDeckModal" data-lightbox="inline">
+                                Phi 发布会幻灯片-英文</a> (
+                            <a target="_blank" class="popup" href="#phiDeckModal" data-lightbox="inline">English</a> |
+                            <a target="_blank" class="popup" href="#phiDeckCnModal" data-lightbox="inline">中文</a>) <br/>
+                            <a href="/2016/09/21/phi-devcon2.en/"><i class="icon-film"></i>
+                                Phi发布会视频 (以太坊DevCon开发者大会)</a>
+                        </p>
+                    </div>
+                    <div class="subtitle link"></div>
+                </div>
+            </div>
+            <div class="feature-item pull-left">
+                <div class="feature-box media-box">
+                    <div class="fbox-media">
+                        <img src="./images/string/other-logo.png" alt="Other" style="opacity:0.7">
+                    </div>
+                    <div class="fbox-desc center">
+                        <h3>其他项目</h3>
+                        <h4>合资项目、矿力支持和私有区块链云</h4>
+                        <p>除了DFINITY和PHI等开放协议项目之外，我们同时与多个业内和世界领先的公司在区块链不同应用领域拥有合作及合资项目，并对多个相关开源项目进行研发资助。我们同时深度参与我们研发的各个开放协议的商业化运作，例如DFINITY公有链的矿力支持，DFINITY企业私有链云计算服务等。</br/>
+                            <a href="#section-contact">与我们取得联系。</a><br/>
+                            <a target="_blank" href="https://legalese.com/">String研发奖励项目: Legalese 范式化合约</a>
+                        </p>
+                    </div>
+                    <div class="subtitle link"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="section-research" class="page-section section nomargin dark bg-stringlabs-dark full-height">
+        <div class="heading-block center">
+            <h2>Research</h2>
+        </div>
+        <div id="research-desc" class="sidebar-content pull-left">
+            <h3>BLS Threshold Cryptography</h3>
+            <p>DFINITY, especially Threshold Relay Chain consensus, extensively uses Stanford BLS signature as a cryptographic VRF (verifiable random function) to achieve incorruptible, unmanipulable and unpredictible randomness to select block maker and validator groups.</p>
+            <p>It's also used in PHI autonomous commercial banking system as a powerful way to randomly select validators for financial loans to prevent collusion.</p>
+        </div>
+        <div class="center">[ research infographic ]</div>
+        <div class="clearfix"></div>
+    </section>
+
+    <section id="section-dfinity" class="page-section section nomargin bg-stringlabs dark full-height">
+        <div class="container clearfix">
+            <div class="heading-block center">
+                <h2>迎接DFINITY</h2>
+            </div>
+            <div id="video-filters" class="sidebar-content pull-left">
+                <h5 class="active">#tech</h5>
+                <h5 class="active">#business</h5>
+                <h5 class="active">#crypto</h5>
+                <h5 class="active">#startups</h5>
+                <h5 class="active">#culture</h5>
+                <h5 class="active">#dfinity</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+                <h5 class="active">#anothertag</h5>
+            </div>
+            <div class="media-list clearfix">
+                <div class="row">
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item pull-left">
+                        <div class="feature-box media-box">
+                            <div class="fbox-desc center">
+                                <h4>DFINITY平台技术之旅</h4>
+                                <div>▶</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="section-team" class="page-section section nomargin dark bg-stringlabs-dark full-height">
+    	<div class="heading-block center">
+    		<h2>团队</h2>
+    		<p>热爱前沿的密码学和分布式技术吗？加入String推动区块链科学发展吧！</p>
+    	</div>
+        <div class="team-list-container">
+            <div id="team-desc" class="pull-left">
+                <h6>President/CTO</h6>
+                <h3>Dominic Williams</h3>
+                <p>热爱复杂协议和架构设计，来自英国的奇客、工程师和连环创业家。Dominic多米尼克踏入分布式计算领域来自他的上一个创业项目 - 一个迅速成长到超过3百万用户的大型游戏项目。年轻时热爱嬉皮文化，依旧不妨碍他在伦敦大学期间获得多个计算机工程学术大奖。</p>
+            </div>
+        	<div class="container pull-left">
+        		<div class="row">
+        			<div class="team-item">
+        				<div class="team team-list clearfix">
+        					<div class="team-image active">
+        						<img src="./images/team/dom-head2.jpg" alt="Dominic Williams">
+        					</div>
+        					<div class="team-desc">
+        						<div class="team-title">
+                                    <h4>Dominic Williams</h4>
+                                    <span>President/CTO</span>
+                                </div>
+        						<div class="team-content">
+        						    <p>热爱复杂协议和架构设计，来自英国的奇客、工程师和连环创业家。Dominic多米尼克踏入分布式计算领域来自他的上一个创业项目 - 一个迅速成长到超过3百万用户的大型游戏项目。年轻时热爱嬉皮文化，依旧不妨碍他在伦敦大学期间获得多个计算机工程学术大奖。</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="team-item">
+        				<div class="team team-list clearfix">
+        					<div class="team-image">
+        						<img src="./images/team/tom-head1.jpg" alt="Tom Ding">
+        					</div>
+        					<div class="team-desc">
+        						<div class="team-title">
+                                    <h4>Tom Ding</h4>
+                                    <span>CEO</span>
+                                </div>
+        						<div class="team-content">
+        							<p>连续创业者、区块链大学(Blockchain University) 创始人、以及之前在eBay担任高级经理，来自上海的Tom (丁磊) 从2013年踏上了区块链行业大潮后一无反顾的开始了他的创业征程。更早之前，他14岁成为最年轻的获得计算机专业学士学位者之一，并在20岁获得商学院MBA学位。Tom时常受邀在各个创业及区块链论坛进行演讲。</p>
+        						</div>
+        						<a href="https://twitter.com/tom_ding" class="social-icon si-rounded si-small si-twitter">
+        							<i class="icon-twitter"></i>
+        							<i class="icon-twitter"></i>
+        						</a>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="team-item">
+        				<div class="team team-list clearfix">
+        					<div class="team-image">
+        						<img src="./images/team/timo-head1.jpg" alt="Timo Hanke">
+        					</div>
+        					<div class="team-desc">
+        						<div class="team-title">
+                                    <h4>Timo Hanke</h4>
+                                    <span>Chief Cryptographer</span>
+                                </div>
+        						<div class="team-content">
+        							<p>曾经在德国Aachen大学担任数学及密码学教授多年，Timo在比特币和以太坊等去中心化系统崛起后，彻底的迷上了这个新的技术浪潮。之前他曾在多个领先的区块链产品和公司担任技术负责人，之前前他曾发明了著名的AsicBoost(http://asicboost.com)技术并获得专利。在String, 他目前负责第三代密码学分布式系统的研发。</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+                </div>
+                <div class="row">
+        			<div class="team-item">
+        				<div class="team team-list clearfix">
+        					<div class="team-image">
+        						<img src="./images/team/enzo-head1.jpg" alt="Enzo Haussecker">
+        					</div>
+        					<div class="team-desc">
+        						<div class="team-title">
+                                    <h4>Enzo Haussecker</h4>
+                                    <span>Senior Software Engineer</span>
+                                </div>
+        						<div class="team-content">
+        							<p>Enzo has built and maintained high-throughput computing infrastructure for several high-growth startups in Silicon Valley. He is passionate about cloud computing, automation, and loves to share his knowledge and enthusiasm with others. Enzo holds a Bachelor of Science degree in Applied Mathematics from the University of California at San Diego.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="team-item">
+        				<div class="team team-list clearfix">
+        					<div class="team-image">
+        						<img src="./images/team/tomomi-head1.jpg" alt="Tomomi Menjo">
+        					</div>
+        					<div class="team-desc">
+        						<div class="team-title">
+                                    <h4>Tomomi Menjo</h4>
+                                    <span>Project Coordinator</span>
+                                </div>
+        						<div class="team-content">
+        							<p>充满活力的Tomomi是String的项目协调负责人，游刃有余地穿梭在String多个大型技术工程和商务拓展活动之间。她之前工作位于硅谷Menlo Park的女性创业实验室，并能流利的说英语和日语。她以优等生的荣誉毕业于Santa Clara大学的通讯专业。</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="team-item">
+        				<div class="team team-list clearfix">
+        					<div class="team-image">
+        						<img src="./images/team/jon-head1.jpg" alt="Jon Ball">
+        					</div>
+        					<div class="team-desc">
+        						<div class="team-title">
+                                    <h4>Jon Ball</h4>
+                                    <span>Creative Lead</span>
+                                </div>
+        						<div class="team-content">
+        							<p>作为一名享誉国际和拥有高度影响力的设计师，Jon之前为无数个国际著名顶尖品牌创造过一系列具有独特原创风格的设计作品，从印刷品，数字设计到视频创作。Jon和Dominic在之前的大型游戏项目中就有过成功合作创造了一款爆发性增长的产品。</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+                <div class="row">
+                    <div class="team-item">
+                        <div class="team team-list clearfix">
+                            <div class="team-image">
+                                <img src="./images/team/shigeo-head1.jpg" alt="Shigeo Mitsunari">
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <h4>Shigeo Mitsunari</h4>
+                                    <span>Staff Cryptographer</span>
+                                </div>
+                                <div class="team-content">
+                                    <p>Shigeo是一名高级密码学研究者和工程师，擅长包括配对(Pairing)实现，x86/x64优化及机器学习等，并发表了多篇学术作品。他目前与Timo合作开发基于BLS阀值签名算法库，这个算法库也是DFINITY阀值接力链（ Threshold Relay Chain)的核心。毫无争议的C++之星！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team team-list clearfix">
+                            <div class="team-image">
+                                <img src="./images/team/will-head1.jpg" alt="Will Cong">
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <h4>Will Cong</h4>
+                                    <span>Economics Advisor</span>
+                                </div>
+                                <div class="team-content">
+                                    <p>Will目前担任芝加哥大学Booth商学院的教授之外，之前还获得过斯坦福大学经济政策研究院的George Shultz学者奖，Shumel Kandel金融经济奖，以及多个国际和国家级的数学竞赛大奖等，金融经济界冉冉升起的巨星。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team team-list clearfix">
+                            <div class="team-image">
+                                <img src="./images/team/houman-head1.jpg" alt="Houman Shadab">
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <h4>Houman Shadab</h4>
+                                    <span>Legal Advisor</span>
+                                </div>
+                                <div class="team-content">
+                                    <p>作为纽约法学院教授以及金融法学的负责人，Houman教授是全世界知名的法学学者，尤其擅长前沿的金融科技领域，对冲基金以及资产证券化等。由于他的深厚学术功底，多次受邀在国会及CFTC（大宗商品期货监管委员会）作为专家提供证词和政策建议。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="team-item">
+                        <div class="team team-list clearfix">
+                            <div class="team-image">
+                                <img src="./images/team/mahnush-head1.jpg" alt="Mahnush Movahedi">
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <h4>Mahnush Movahedi</h4>
+                                    <span>Senior Researcher and Engineer</span>
+                                </div>
+                                <div class="team-content">
+                                    <p>Mahnush joined DFINITY from a postdoctoral postition at Yale Univesity working on scalable and fault-tolerant distributed algorithms for consensus and secure multi-party computation, secret sharing, and interactive communication over noisy channels. She writes many papers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        	</div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="section-investment" class="page-section section nomargin dark bg-stringlabs full-height">
+        <div class="heading-block center">
+            <h2>投资人</h2>
+        </div>
+        <div class="investment-desc col-md-9">
+            <h2 class="investment-title">我们的投资人</h2>
+            <div class="investment-content">
+                <p>We are blessed with a unique cross-disciplined team of leading cryptographers, distributed protocols researchers/engineers mathematicians and economists. What particularly interests us are those complex cross-disciplinary problems, that could become the biggest game-changer, common building blocks, and enablers massively accelerating the whole ecosystem.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+
+    let Page;
+
+    // Implement a Page component to manage the state of the page when the DOM is ready
+    document.addEventListener('DOMContentLoaded', (e) => {
+        Page = {
+
+            config: {
+                responsiveBreakpoint: 1000,
+                sectionLinkArrowUp: 'Top',
+                sectionLinkArrowDown: '&darr;'
+            },
+
+            events: [
+                {
+                    listener: '.primary-menu-item > a > div, #string-vector',
+                    type: 'click',
+                    handler: 'didClickScrollToLink'
+                },
+                {
+                    listener: '.feature-box .subtitle.link',
+                    type: 'click',
+                    handler: 'didClickProjectLink'
+                },
+                {
+                    listener: '#section-link',
+                    type: 'click',
+                    handler: 'didClickSectionLink'
+                },
+                {
+                    listener: '#section-team .container .team-image',
+                    type: 'mouseover',
+                    handler: 'didClickTeamImage'
+                },
+                {
+                    listener: 'html, body',
+                    type: 'scroll',
+                    handler: 'didScroll'
+                }
+            ],
+
+            state: {
+                sectionLinkArrowContent: '&darr;',
+                sections: [
+                    '#section-hero',
+                    '#section-work',
+                    '#section-research',
+                    '#section-dfinity',
+                    '#section-team',
+                    '#section-investment'
+                ]
+            },
+
+            isMobile() {
+                return (window.innerWidth < this.config.responsiveBreakpoint);
+            },
+
+            getVisibleSection(pageY) {
+                return this.state.sections.filter(s => { return (pageY > ($(s).offset().top - 1)); }).pop();
+            },
+
+            scrollToPageY(pageY) {
+                return $('html, body').animate({ scrollTop: pageY }, 'slow');
+            },
+
+            updateSectionLink(href) {
+                let isFirstLink = (href === this.state.sections[0]);
+                let isLastLink = (href === this.state.sections[this.state.sections.length - 1]);
+                this.state.sectionLinkArrowContent = (isFirstLink || !isLastLink ? this.config.sectionLinkArrowDown : this.config.sectionLinkArrowUp);
+                $('#section-link').attr({
+                    'data-href': (isLastLink ? this.state.sections[0] : this.state.sections[(this.state.sections.indexOf(href) + 1)])
+                });
+                return $('#section-link').html(this.state.sectionLinkArrowContent);
+            },
+
+            didScroll(staticArgs, event) {
+                let section;
+                $('.sidebar-content').each((i, el) => {
+                    if($(el).get(0).getBoundingClientRect().top < $('#primary-menu').get(0).getBoundingClientRect().bottom) {
+                       $(el).attr('style', 'opacity: 0');
+                    }
+                    else {
+                        $(el).attr('style', 'opacity: 1');
+                    }
+                });
+                section = this.getVisibleSection($(window).scrollTop());
+                this.state.sections.forEach(s => {
+                    $('[data-href="' + s + '"]').removeClass('active');
+                }, this);
+                return requestAnimationFrame(ev => {
+                    $('[data-href="' + section + '"]').addClass('active');
+                    return this.updateSectionLink(section);
+                });
+            },
+
+            didClickTeamImage(staticArgs, event) {
+                let selector = event.target.localName === 'img' ? event.target : event.target.firstElementChild;
+                let name = $(selector).parent().next().find('.team-title > h4').html();
+                let title = $(selector).parent().next().find('.team-title > h4 + span').html();
+                let content = $(selector).parent().next().find('.team-content > p').html();
+                $('.team-item .team-image').removeClass('active');
+                $('#team-desc > h6').html(name);
+                $('#team-desc > h3').html(title);
+                $('#team-desc > p').html(content);
+                return $(selector).parent().addClass('active');
+            },
+
+            didClickSectionLink(staticArgs, event) {
+                let href = $('#section-link').attr('data-href');
+                return $('[data-href="' + href + '"] > .scrollto-link').click();
+            },
+
+            didClickProjectLink(staticArgs, event) {
+                return $(event.target).parent().toggleClass('expanded');
+            },
+
+            didClickScrollToLink(staticArgs, event) {
+                event.preventDefault();
+                this.scrollToPageY($($(event.target).parent().attr('data-href')).offset().top);
+                return false;
+            },
+
+            initDeckLang(lang) {
+                console.log('#dfinity-deck-' + lang);
+                $('.dfinity-deck').hide();
+                $('#dfinity-deck-' + lang).removeClass('hidden');
+                $('#dfinity-deck-' + lang).show();
+                return window.dispatchEvent(new Event('resize'));
+            },
+
+            // must return `this`
+            didLoad() {
+                this.events.forEach(event => {
+                    document.querySelectorAll(event.listener).forEach(selector => {
+                        selector['on' + event.type] = this[event.handler].bind(this, event.staticArgs);
+                    }, this);
+                }, this);
+                $('#section-link').attr({ 'data-href': this.state.sections[1] });
+                setTimeout(event => { $('#header').addClass('expanded'); }, 750);
+                return this;
+            }
+        }.didLoad();
+
+        // Moved a rogue function `dfinityDeckLang` to the page component
+        dfinityDeckLang = Page.initDeckLang;
+    });
+</script>
+<!-- #content end -->
+
+
+
+        <!-- Footer
+		============================================= -->
+        <footer id="footer">
+            <!-- scrollTo navigation
+            ============================================= -->
+            <div id="section-link">&darr;</div>
+            <!-- Copyrights
+			============================================= -->
+            <div id="copyrights">
+                <div class="container clearfix">
+                    <div class="col_half">
+                        <span>Copyrights &copy; 2016 All Rights Reserved by String Labs Inc.</span>
+                        <div><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- #copyrights end -->
+
+        </footer>
+        <!-- #footer end -->
+
+        <!-- External JavaScripts
+    	============================================= -->
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script src="https://use.typekit.net/hdz0duz.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <!-- Footer Scripts
+        ============================================= -->
+        <script>
+
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-75586701-1', 'auto');
+    ga('send', 'pageview');
+
+
+
+    
+</script>
+
+
+        <script>
+
+// function currLang() {
+// 	var url = window.location.href;
+// 	results = url.split("?")
+// 	if (!results) {
+// 		results.split("/");
+// 	}
+
+    
+// }
+function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+    
+    var userLang = navigator.language || navigator.userLanguage; 
+
+            console.log(userLang);
+
+    if (userLang == null)
+        userLang = "";
+    userLang = userLang.toLowerCase();
+
+    var url = window.location.href;
+    
+
+    // Detect if there's any target. Make sure we don't redirect language if there's a target specified.
+    var targetSpecified = true;
+    var isRoot = location.pathname == "/"; //Equals true if we're at the root
+    if (isRoot && !url.includes("#")) {
+        targetSpecified = false;
+        console.log("targetSpecified = false");
+    }
+
+    if (!targetSpecified) {
+        // window.alert(userLang);
+        console.log(userLang);
+     if (userLang == "zh-cn" || userLang=="zh-tw" || userLang=="zh-hk")
+        window.location.replace("/cn");
+     else if (userLang == "ja-jp")
+    	window.location.replace("/ja");
+    }
+    
+
+
+</script>
+
+    </body>
+</html>
