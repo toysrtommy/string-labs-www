@@ -524,19 +524,19 @@ a,
 
 #section-research .sidebar-content,
 #section-team .sidebar-content {
-	width: 12rem;
-	opacity: 0;
-	transition: width 0.25s ease, opacity 0.25s ease;
-}
-
-#section-research .sidebar-content.expanded {
 	margin-right: 4rem;
+	opacity: 0;
+	transition: opacity 0.25s ease;
 }
 
 #section-research .sidebar-content.expanded,
 #section-team .sidebar-content.expanded {
 	opacity: 1;
-	width: 20rem;
+}
+
+#section-team .sidebar-content {
+	margin-right: 4rem;
+	width: 18rem;
 }
 
 #research-infographic {
