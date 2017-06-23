@@ -91,8 +91,8 @@ html, body {
 	opacity: 1;
 }
 
-.team-list-container {
-	margin: 0 auto;
+.list-container {
+	margin: 10rem auto;
 	width: 73rem;
 }
 
@@ -184,7 +184,8 @@ html, body {
 	z-index: 100;
 	width: 100%;
 	height: 10rem;
-	background: #39464c;
+	background: #222;
+	border-color: #222;
 }
 
 #copyrights {
@@ -263,6 +264,7 @@ html, body {
 	height: 20rem;
   max-width: 15rem;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .feature-box.media-box .fbox-desc h4,
@@ -518,6 +520,28 @@ a,
 #section-team > .container {
 	margin: 0 auto;
 	width: 51rem;
+}
+
+#section-research .sidebar-content,
+#section-team .sidebar-content {
+	width: 12rem;
+	opacity: 0;
+	transition: width 0.25s ease, opacity 0.25s ease;
+}
+
+#section-research .sidebar-content.expanded {
+	margin-right: 4rem;
+}
+
+#section-research .sidebar-content.expanded,
+#section-team .sidebar-content.expanded {
+	opacity: 1;
+	width: 20rem;
+}
+
+#research-infographic {
+	margin: 0 0 0 2.5rem;
+	cursor: pointer;
 }
 
 #section-investment .investment-desc {

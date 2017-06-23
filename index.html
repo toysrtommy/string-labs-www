@@ -193,7 +193,7 @@
         <div class="heading-block center">
             <h2>Research</h2>
         </div>
-        <div class="team-list-container">
+        <div class="list-container">
             <div class="sidebar-content pull-left">
                 <h3>BLS Threshold Cryptography</h3>
                 <p>DFINITY, especially Threshold Relay Chain consensus, extensively uses Stanford BLS signature as a cryptographic VRF (verifiable random function) to achieve incorruptible, unmanipulable and unpredictible randomness to select block maker and validator groups.</p>
@@ -213,7 +213,7 @@
             <div class="heading-block center">
                 <h2>Talks & Presentations</h2>
             </div>
-            <div class="team-list-container">
+            <div class="list-container">
                 <div class="sidebar-content pull-left">
                     <h5 class="active">#tech</h5>
                     <h5 class="active">#business</h5>
@@ -291,11 +291,11 @@
     		<h2>The Team</h2>
     		<p>Love cutting edge crypto? Join us, String Labs is a great place to be!</p>
     	</div>
-        <div class="team-list-container">
+        <div class="list-container">
             <div class="sidebar-content pull-left">
-                <h6>President/CTO</h6>
-                <h3>Dominic Williams</h3>
-                <p>Protocol geek, coder and serial technology entrepreneur who hails from the UK. Dominic's last venture was an MMO that grew to 3M users and allowed him to indulge his passion for scalable tech. Dominic is a bit of a hippy, but once won prizes in Computer Science at London University.</p>
+                <h6></h6>
+                <h3></h3>
+                <p></p>
             </div>
         	<div class="container pull-left">
         		<div class="row">
@@ -633,9 +633,24 @@ function getParameterByName(name, url) {
                             handler: 'didClickSectionLink'
                         },
                         {
+                            listener: '#section-dfinity .feature-box.media-box',
+                            type: 'click',
+                            handler: 'didClickPresentationBox'
+                        },
+                        {
                             listener: '#section-team .container .team-image',
                             type: 'mouseover',
-                            handler: 'didClickTeamImage'
+                            handler: 'didMouseoverTeamImage'
+                        },
+                        {
+                            listener: '#research-infographic',
+                            type: 'mouseover',
+                            handler: 'didMouseoverResearchFigure'
+                        },
+                        {
+                            listener: '#research-infographic',
+                            type: 'mouseout',
+                            handler: 'didMouseoutResearchFigure'
                         },
                         {
                             listener: '#page-wrap',
@@ -689,16 +704,29 @@ function getParameterByName(name, url) {
                         });
                     },
 
-                    didClickTeamImage(staticArgs, event) {
+                    didMouseoutResearchFigure(staticArgs, event) {
+                        return $('#section-research .list-container > .sidebar-content').removeClass('expanded');
+                    },
+
+                    didMouseoverResearchFigure(staticArgs, event) {
+                        return $('#section-research .list-container > .sidebar-content').addClass('expanded');
+                    },
+
+                    didMouseoverTeamImage(staticArgs, event) {
                         let selector = event.target.localName === 'img' ? event.target : event.target.firstElementChild;
                         let name = $(selector).parent().next().find('.team-title > h4').html();
                         let title = $(selector).parent().next().find('.team-title > h4 + span').html();
                         let content = $(selector).parent().next().find('.team-content > p').html();
                         $('.team-item .team-image').removeClass('active');
+                        $('#section-team .list-container > .sidebar-content').addClass('expanded');
                         $('#section-team .sidebar-content > h6').html(name);
                         $('#section-team .sidebar-content > h3').html(title);
                         $('#section-team .sidebar-content > p').html(content);
                         return $(selector).parent().addClass('active');
+                    },
+
+                    didClickPresentationBox(staticArgs, event) {
+                        this.$(event.target).data().videoURL
                     },
 
                     didClickSectionLink(staticArgs, event) {
