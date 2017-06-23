@@ -239,6 +239,12 @@ html, body {
 	margin: 7rem;
 }
 
+@media(max-width: 1200px) {
+	.feature-list > .feature-item {
+		margin: 5rem;
+	}
+}
+
 .media-list > .row {
 	margin: 0 auto;
 	display: flex;
@@ -256,7 +262,7 @@ html, body {
 	padding: 1rem;
 	height: 20rem;
   max-width: 15rem;
-  min-width: 10rem;
+  margin: 0 auto;
 }
 
 .feature-box.media-box .fbox-desc h4,
@@ -343,6 +349,11 @@ html, body {
 #section-work .feature-box.media-box .fbox-media img {
 	width: 100px;
 	margin: 0 auto;
+}
+
+#section-work .feature-box.media-box {
+	min-width: 15rem;
+	max-width: 25rem;
 }
 
 .sidebar-content {
