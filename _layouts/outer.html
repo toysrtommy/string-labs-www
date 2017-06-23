@@ -176,7 +176,7 @@
                         {
                             listener: '#section-team .container .team-image',
                             type: 'mouseover',
-                            handler: 'didClickTeamImage'
+                            handler: 'didMouseoverTeamImage'
                         },
                         {
                             listener: '#page-wrap',
@@ -230,12 +230,13 @@
                         });
                     },
 
-                    didClickTeamImage(staticArgs, event) {
+                    didMouseoverTeamImage(staticArgs, event) {
                         let selector = event.target.localName === 'img' ? event.target : event.target.firstElementChild;
                         let name = $(selector).parent().next().find('.team-title > h4').html();
                         let title = $(selector).parent().next().find('.team-title > h4 + span').html();
                         let content = $(selector).parent().next().find('.team-content > p').html();
                         $('.team-item .team-image').removeClass('active');
+                        $('#section-team .list-container > .sidebar-content').addClass('expanded');
                         $('#section-team .sidebar-content > h6').html(name);
                         $('#section-team .sidebar-content > h3').html(title);
                         $('#section-team .sidebar-content > p').html(content);
