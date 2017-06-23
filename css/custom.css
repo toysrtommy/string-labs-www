@@ -203,6 +203,23 @@ html, body {
 /* 3. Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+#background,
+#page-wrap {
+	position: fixed;
+	z-index: 1;
+	background-image: linear-gradient(to bottom right, rgba(26, 20, 56, 0.85), rgba(58, 84, 111, 0.85)), url('../images/bg-stringlabs.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+}
+
+#page-wrap {
+	overflow-y: auto;
+	background: transparent;
+	z-index: 2;
+}
+
 .main > section {
 	position: relative;
 	padding-left: 25rem;
@@ -272,17 +289,13 @@ html, body {
 
 .page-section.dark {
 	border-bottom: solid 1rem #222;
+	background: inherit;
 }
 
 .bg-stringlabs,
 .bg-stringlabs-dark.full-height {
-	background: linear-gradient(to bottom right, rgb(48, 48, 88), rgb(0, 252, 252));
+	background: transparent;
 	min-height: 100vh;
-}
-
-.bg-stringlabs-dark,
-.bg-stringlabs-dark.full-height {
-	background: linear-gradient(to bottom right, rgb(4, 16, 48), rgb(40, 172, 172));
 }
 
 #section-dfinity .col_one_third {
@@ -297,17 +310,6 @@ html, body {
 
 #section-hero {
 	padding-top: 13.75rem;
-}
-
-#section-hero.bg-stringlabs,
-#section-work.bg-stringlabs {
-	background-image: linear-gradient(to bottom right, rgba(26, 20, 56, 0.85), rgba(58, 84, 111, 0.85)), url('../images/bg-stringlabs.svg');
-	background-size: 1820px;
-	background-repeat: repeat;
-}
-
-#section-work.bg-stringlabs {
-	background-image: linear-gradient(to bottom right, rgba(56, 20, 26, 0.85), rgba(111, 84, 58, 0.85)), url('../images/bg-stringlabs.svg');
 }
 
 #section-work .feature-box.media-box.expanded {
