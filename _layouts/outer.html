@@ -142,5 +142,146 @@
         ============================================= -->
         {% include analytics.html %}
         {% include i18n.html %}
+
+        <script>
+
+            let Page;
+
+            // Implement a Page component to manage the state of the page when the DOM is ready
+            document.addEventListener('DOMContentLoaded', (e) => {
+                Page = {
+
+                    config: {
+                        responsiveBreakpoint: 1000,
+                        sectionLinkArrowUp: 'Top',
+                        sectionLinkArrowDown: '&darr;'
+                    },
+
+                    events: [
+                        {
+                            listener: '.primary-menu-item > a > div, #string-vector',
+                            type: 'click',
+                            handler: 'didClickScrollToLink'
+                        },
+                        {
+                            listener: '.feature-box .subtitle.link',
+                            type: 'click',
+                            handler: 'didClickProjectLink'
+                        },
+                        {
+                            listener: '#section-link',
+                            type: 'click',
+                            handler: 'didClickSectionLink'
+                        },
+                        {
+                            listener: '#section-team .container .team-image',
+                            type: 'mouseover',
+                            handler: 'didClickTeamImage'
+                        },
+                        {
+                            listener: '#page-wrap',
+                            type: 'scroll',
+                            handler: 'didScroll'
+                        }
+                    ],
+
+                    state: {
+                        sectionLinkArrowContent: '&darr;',
+                        sections: [
+                            '#section-hero',
+                            '#section-work',
+                            '#section-research',
+                            '#section-dfinity',
+                            '#section-team',
+                            '#section-investment'
+                        ]
+                    },
+
+                    isMobile() {
+                        return (window.innerWidth < this.config.responsiveBreakpoint);
+                    },
+
+                    getVisibleSection(pageY) {
+                        return this.state.sections.filter(s => { return (pageY > ($(s).offset().top - 1)); }).pop();
+                    },
+
+                    scrollToPageY(pageY) {
+                        return $('#page-wrap').animate({ scrollTop: ($('#page-wrap').scrollTop() + pageY) }, 'slow');
+                    },
+
+                    updateSectionLink(href) {
+                        let isFirstLink = (href === this.state.sections[0]);
+                        let isLastLink = (href === this.state.sections[this.state.sections.length - 1]);
+                        this.state.sectionLinkArrowContent = (isFirstLink || !isLastLink ? this.config.sectionLinkArrowDown : this.config.sectionLinkArrowUp);
+                        $('#section-link').attr({
+                            'data-href': (isLastLink ? this.state.sections[0] : this.state.sections[(this.state.sections.indexOf(href) + 1)])
+                        });
+                        return $('#section-link').html(this.state.sectionLinkArrowContent);
+                    },
+
+                    didScroll(staticArgs, event) {
+                        let section = this.getVisibleSection($(window).scrollTop());
+                        this.state.sections.forEach(s => {
+                            $('[data-href="' + s + '"]').removeClass('active');
+                        }, this);
+                        return requestAnimationFrame(ev => {
+                            $('[data-href="' + section + '"]').addClass('active');
+                            return this.updateSectionLink(section);
+                        });
+                    },
+
+                    didClickTeamImage(staticArgs, event) {
+                        let selector = event.target.localName === 'img' ? event.target : event.target.firstElementChild;
+                        let name = $(selector).parent().next().find('.team-title > h4').html();
+                        let title = $(selector).parent().next().find('.team-title > h4 + span').html();
+                        let content = $(selector).parent().next().find('.team-content > p').html();
+                        $('.team-item .team-image').removeClass('active');
+                        $('#section-team .sidebar-content > h6').html(name);
+                        $('#section-team .sidebar-content > h3').html(title);
+                        $('#section-team .sidebar-content > p').html(content);
+                        return $(selector).parent().addClass('active');
+                    },
+
+                    didClickSectionLink(staticArgs, event) {
+                        let href = $('#section-link').attr('data-href');
+                        return $('[data-href="' + href + '"] > .scrollto-link').click();
+                    },
+
+                    didClickProjectLink(staticArgs, event) {
+                        return $(event.target).parent().toggleClass('expanded');
+                    },
+
+                    didClickScrollToLink(staticArgs, event) {
+                        event.preventDefault();
+                        this.scrollToPageY($($(event.target).parent().attr('data-href')).offset().top);
+                        return false;
+                    },
+
+                    initDeckLang(lang) {
+                        console.log('#dfinity-deck-' + lang);
+                        $('.dfinity-deck').hide();
+                        $('#dfinity-deck-' + lang).removeClass('hidden');
+                        $('#dfinity-deck-' + lang).show();
+                        return window.dispatchEvent(new Event('resize'));
+                    },
+
+                    // must return `this`
+                    didLoad() {
+                        this.events.forEach(event => {
+                            document.querySelectorAll(event.listener).forEach(selector => {
+                                selector['on' + event.type] = this[event.handler].bind(this, event.staticArgs);
+                            }, this);
+                        }, this);
+                        $('#section-link').attr({ 'data-href': this.state.sections[1] });
+                        setTimeout(event => { $('#header').addClass('expanded'); }, 750);
+                        return this;
+                    }
+                }.didLoad();
+
+                // Moved a rogue function `dfinityDeckLang` to the page component
+                dfinityDeckLang = Page.initDeckLang;
+            });
+        </script>
+
     </body>
 </html>

@@ -48,6 +48,21 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
             <div class="feature-item pull-left">
                 <div class="feature-box media-box">
                     <div class="fbox-media">
+                        <img src="{{ base }}/images/string/other-logo.png" alt="Neuron">
+                    </div>
+                    <div class="fbox-desc center">
+                        <h3>{% t index.projects-neuron-title %}</h3>
+                        <h4>{% t index.projects-neuron-subtitle %}</h4>
+                        <p>{% t index.projects-neuron-intro %}</br/>
+                            <a href="#section-contact">{% t index.projects-neuron-contact %}</a>
+                        </p>
+                    </div>
+                    <div class="subtitle link"></div>
+                </div>
+            </div>
+            <div class="feature-item pull-left">
+                <div class="feature-box media-box">
+                    <div class="fbox-media">
                         <img src="{{ base }}/images/string/phi-logo.png" alt="PHI">
                     </div>
                     <div class="fbox-desc center">
@@ -63,23 +78,6 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                                 global.chinese %}</a>) <br/>
                             <a href="{{ site.baseurl_root }}/2016/09/21/phi-devcon2.en/"><i class="icon-film"></i>
                                 {% t index.projects-phi-video %}</a>
-                        </p>
-                    </div>
-                    <div class="subtitle link"></div>
-                </div>
-            </div>
-            <div class="feature-item pull-left">
-                <div class="feature-box media-box">
-                    <div class="fbox-media">
-                        <img src="{{ base }}/images/string/other-logo.png" alt="Other" style="opacity:0.7">
-                    </div>
-                    <div class="fbox-desc center">
-                        <h3>{% t index.projects-other-title %}</h3>
-                        <h4>{% t index.projects-other-subtitle %}</h4>
-                        <p>{% t index.projects-other-intro %}</br/>
-                            <a href="#section-contact">{% t index.projects-other-contact %}</a><br/>
-                            <a target="_blank" href="https://legalese.com/">{% t index.projects-other-grant-legalese
-                                %}</a>
                         </p>
                     </div>
                     <div class="subtitle link"></div>
@@ -101,9 +99,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
             </div>
             <div class="container pull-left">
                 <div class="row">
-                    <div class="center">
-                        [research infographic]
-                    </div>
+                    <div id="research-infographic"></div>
                 </div>
             </div>
         </div>
@@ -115,68 +111,70 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
             <div class="heading-block center">
                 <h2>{% t index.dfinity-title %}</h2>
             </div>
-            <div class="sidebar-content pull-left">
-                <h5 class="active">#tech</h5>
-                <h5 class="active">#business</h5>
-                <h5 class="active">#crypto</h5>
-                <h5 class="active">#startups</h5>
-                <h5 class="active">#culture</h5>
-                <h5 class="active">#dfinity</h5>
-                <h5 class="active">#anothertag</h5>
-                <h5 class="active">#anothertag</h5>
-                <h5 class="active">#anothertag</h5>
-                <h5 class="active">#anothertag</h5>
-                <h5 class="active">#anothertag</h5>
-            </div>
-            <div class="media-list clearfix">
-                <div class="row">
-                    <div class="media-item pull-left">
-                        <div class="feature-box media-box">
-                            <div class="fbox-desc center">
-                                <h4>{% t index.dfinity-brief-tour-video %}</h4>
-                                <div>▶</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="media-item pull-left">
-                        <div class="feature-box media-box">
-                            <div class="fbox-desc center">
-                                <h4>{% t index.dfinity-brief-tour-video %}</h4>
-                                <div>▶</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="media-item pull-left">
-                        <div class="feature-box media-box">
-                            <div class="fbox-desc center">
-                                <h4>{% t index.dfinity-brief-tour-video %}</h4>
-                                <div>▶</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="team-list-container">
+                <div class="sidebar-content pull-left">
+                    <h5 class="active">#tech</h5>
+                    <h5 class="active">#business</h5>
+                    <h5 class="active">#crypto</h5>
+                    <h5 class="active">#startups</h5>
+                    <h5 class="active">#culture</h5>
+                    <h5 class="active">#dfinity</h5>
+                    <h5 class="active">#anothertag</h5>
+                    <h5 class="active">#anothertag</h5>
+                    <h5 class="active">#anothertag</h5>
+                    <h5 class="active">#anothertag</h5>
+                    <h5 class="active">#anothertag</h5>
                 </div>
-                <div class="row">
-                    <div class="media-item pull-left">
-                        <div class="feature-box media-box">
-                            <div class="fbox-desc center">
-                                <h4>{% t index.dfinity-brief-tour-video %}</h4>
-                                <div>▶</div>
+                <div class="container pull-left">
+                    <div class="row">
+                        <div class="media-item pull-left">
+                            <div class="feature-box media-box">
+                                <div class="fbox-desc center">
+                                    <h4>{% t index.dfinity-brief-tour-video %}</h4>
+                                    <div>▶</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-item pull-left">
+                            <div class="feature-box media-box">
+                                <div class="fbox-desc center">
+                                    <h4>{% t index.dfinity-brief-tour-video %}</h4>
+                                    <div>▶</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-item pull-left">
+                            <div class="feature-box media-box">
+                                <div class="fbox-desc center">
+                                    <h4>{% t index.dfinity-brief-tour-video %}</h4>
+                                    <div>▶</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="media-item pull-left">
-                        <div class="feature-box media-box">
-                            <div class="fbox-desc center">
-                                <h4>{% t index.dfinity-brief-tour-video %}</h4>
-                                <div>▶</div>
+                    <div class="row">
+                        <div class="media-item pull-left">
+                            <div class="feature-box media-box">
+                                <div class="fbox-desc center">
+                                    <h4>{% t index.dfinity-brief-tour-video %}</h4>
+                                    <div>▶</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="media-item pull-left">
-                        <div class="feature-box media-box">
-                            <div class="fbox-desc center">
-                                <h4>{% t index.dfinity-brief-tour-video %}</h4>
-                                <div>▶</div>
+                        <div class="media-item pull-left">
+                            <div class="feature-box media-box">
+                                <div class="fbox-desc center">
+                                    <h4>{% t index.dfinity-brief-tour-video %}</h4>
+                                    <div>▶</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-item pull-left">
+                            <div class="feature-box media-box">
+                                <div class="fbox-desc center">
+                                    <h4>{% t index.dfinity-brief-tour-video %}</h4>
+                                    <div>▶</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -387,152 +385,4 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
         </div>
     </section>
 </div>
-<script>
-
-    let Page;
-
-    // Implement a Page component to manage the state of the page when the DOM is ready
-    document.addEventListener('DOMContentLoaded', (e) => {
-        Page = {
-
-            config: {
-                responsiveBreakpoint: 1000,
-                sectionLinkArrowUp: 'Top',
-                sectionLinkArrowDown: '&darr;'
-            },
-
-            events: [
-                {
-                    listener: '.primary-menu-item > a > div, #string-vector',
-                    type: 'click',
-                    handler: 'didClickScrollToLink'
-                },
-                {
-                    listener: '.feature-box .subtitle.link',
-                    type: 'click',
-                    handler: 'didClickProjectLink'
-                },
-                {
-                    listener: '#section-link',
-                    type: 'click',
-                    handler: 'didClickSectionLink'
-                },
-                {
-                    listener: '#section-team .container .team-image',
-                    type: 'mouseover',
-                    handler: 'didClickTeamImage'
-                },
-                {
-                    listener: 'html, body',
-                    type: 'scroll',
-                    handler: 'didScroll'
-                }
-            ],
-
-            state: {
-                sectionLinkArrowContent: '&darr;',
-                sections: [
-                    '#section-hero',
-                    '#section-work',
-                    '#section-research',
-                    '#section-dfinity',
-                    '#section-team',
-                    '#section-investment'
-                ]
-            },
-
-            isMobile() {
-                return (window.innerWidth < this.config.responsiveBreakpoint);
-            },
-
-            getVisibleSection(pageY) {
-                return this.state.sections.filter(s => { return (pageY > ($(s).offset().top - 1)); }).pop();
-            },
-
-            scrollToPageY(pageY) {
-                return $('html, body').animate({ scrollTop: pageY }, 'slow');
-            },
-
-            updateSectionLink(href) {
-                let isFirstLink = (href === this.state.sections[0]);
-                let isLastLink = (href === this.state.sections[this.state.sections.length - 1]);
-                this.state.sectionLinkArrowContent = (isFirstLink || !isLastLink ? this.config.sectionLinkArrowDown : this.config.sectionLinkArrowUp);
-                $('#section-link').attr({
-                    'data-href': (isLastLink ? this.state.sections[0] : this.state.sections[(this.state.sections.indexOf(href) + 1)])
-                });
-                return $('#section-link').html(this.state.sectionLinkArrowContent);
-            },
-
-            didScroll(staticArgs, event) {
-                let section;
-                $('.sidebar-content').each((i, el) => {
-                    if($(el).get(0).getBoundingClientRect().top < $('#primary-menu').get(0).getBoundingClientRect().bottom) {
-                       $(el).attr('style', 'opacity: 0');
-                    }
-                    else {
-                        $(el).attr('style', 'opacity: 1');
-                    }
-                });
-                section = this.getVisibleSection($(window).scrollTop());
-                this.state.sections.forEach(s => {
-                    $('[data-href="' + s + '"]').removeClass('active');
-                }, this);
-                return requestAnimationFrame(ev => {
-                    $('[data-href="' + section + '"]').addClass('active');
-                    return this.updateSectionLink(section);
-                });
-            },
-
-            didClickTeamImage(staticArgs, event) {
-                let selector = event.target.localName === 'img' ? event.target : event.target.firstElementChild;
-                let name = $(selector).parent().next().find('.team-title > h4').html();
-                let title = $(selector).parent().next().find('.team-title > h4 + span').html();
-                let content = $(selector).parent().next().find('.team-content > p').html();
-                $('.team-item .team-image').removeClass('active');
-                $('#team-desc > h6').html(name);
-                $('#team-desc > h3').html(title);
-                $('#team-desc > p').html(content);
-                return $(selector).parent().addClass('active');
-            },
-
-            didClickSectionLink(staticArgs, event) {
-                let href = $('#section-link').attr('data-href');
-                return $('[data-href="' + href + '"] > .scrollto-link').click();
-            },
-
-            didClickProjectLink(staticArgs, event) {
-                return $(event.target).parent().toggleClass('expanded');
-            },
-
-            didClickScrollToLink(staticArgs, event) {
-                event.preventDefault();
-                this.scrollToPageY($($(event.target).parent().attr('data-href')).offset().top);
-                return false;
-            },
-
-            initDeckLang(lang) {
-                console.log('#dfinity-deck-' + lang);
-                $('.dfinity-deck').hide();
-                $('#dfinity-deck-' + lang).removeClass('hidden');
-                $('#dfinity-deck-' + lang).show();
-                return window.dispatchEvent(new Event('resize'));
-            },
-
-            // must return `this`
-            didLoad() {
-                this.events.forEach(event => {
-                    document.querySelectorAll(event.listener).forEach(selector => {
-                        selector['on' + event.type] = this[event.handler].bind(this, event.staticArgs);
-                    }, this);
-                }, this);
-                $('#section-link').attr({ 'data-href': this.state.sections[1] });
-                setTimeout(event => { $('#header').addClass('expanded'); }, 750);
-                return this;
-            }
-        }.didLoad();
-
-        // Moved a rogue function `dfinityDeckLang` to the page component
-        dfinityDeckLang = Page.initDeckLang;
-    });
-</script>
 <!-- #content end -->
