@@ -107,7 +107,7 @@ html, body {
 #header.full-header {
 	background: rgba(0, 0, 0, 0.25);
 	width: 25rem;
-	z-index: 1;
+	z-index: 100;
 	border: none;
 	transition: none;
 }
@@ -227,12 +227,15 @@ html, body {
 }
 
 .feature-list {
-	width: 87rem;
+	width: 100%;
 	margin: 0 auto;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .feature-list > .feature-item {
-	width: 15rem;
+	-ms-flex: 1;
+	flex: 1;
 	margin: 7rem;
 }
 
@@ -340,61 +343,29 @@ html, body {
 }
 
 .sidebar-content {
-	width: 21rem;
-	height: 28rem;
-	margin: 16rem 0 0 -23rem;
-	position: absolute;
-	z-index: 100;
-	max-height: 32rem;
-	overflow-y: auto;
-	transition: opacity 1s ease;
-}
-
-#video-filters {
-	overflow-y: auto;
-	margin: 18rem 0 0 -24.5rem;
-	cursor: pointer;
-}
-
-#team-desc {
 	width: 20rem;
 	padding: 1rem;
 }
 
-#team-desc > h6,
-#team-desc > h3,
-#video-filters > h6,
-#video-filters > h3,
-#research-desc > h3 {
+.sidebar-content > h6,
+.sidebar-content > h3 {
 	font-size: 1.6em;
 	margin: 2rem 0;
 	font-weight: 100;
-}
-
-#team-desc > h6,
-#video-filters > h6,
-#research-desc > h3 {
 	color: rgb(254, 254, 0);
 }
 
-#video-filters > h3
-#team-desc > h3 {
+.sidebar-content > h3 {
 	font-weight: 400;
 }
 
-#video-filters > h6,
-#team-desc > h6 {
+.sidebar-content > h6 {
 	font-size: 1em;
 	margin: 0;
 }
 
-#video-filters > p,
-#team-desc > p,
-#research-desc > p {
+.sidebar-content > p {
 	margin: 1rem 0;
-}
-
-#team-desc > p {
 	font-size: 0.9em;
 }
 

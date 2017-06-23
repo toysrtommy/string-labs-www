@@ -93,12 +93,20 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
         <div class="heading-block center">
             <h2>{% t index.navbar-research %}</h2>
         </div>
-        <div id="research-desc" class="sidebar-content pull-left">
-            <h3>{% t index.research-title %}</h3>
-            <p>{% t index.research-intro %}</p>
-            <p>{% t index.research-desc %}</p>
+        <div class="team-list-container">
+            <div class="sidebar-content pull-left">
+                <h3>{% t index.research-title %}</h3>
+                <p>{% t index.research-intro %}</p>
+                <p>{% t index.research-desc %}</p>
+            </div>
+            <div class="container pull-left">
+                <div class="row">
+                    <div class="center">
+                        [research infographic]
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="center">[ research infographic ]</div>
         <div class="clearfix"></div>
     </section>
 
@@ -107,18 +115,13 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
             <div class="heading-block center">
                 <h2>{% t index.dfinity-title %}</h2>
             </div>
-            <div id="video-filters" class="sidebar-content pull-left">
+            <div class="sidebar-content pull-left">
                 <h5 class="active">#tech</h5>
                 <h5 class="active">#business</h5>
                 <h5 class="active">#crypto</h5>
                 <h5 class="active">#startups</h5>
                 <h5 class="active">#culture</h5>
                 <h5 class="active">#dfinity</h5>
-                <h5 class="active">#anothertag</h5>
-                <h5 class="active">#anothertag</h5>
-                <h5 class="active">#anothertag</h5>
-                <h5 class="active">#anothertag</h5>
-                <h5 class="active">#anothertag</h5>
                 <h5 class="active">#anothertag</h5>
                 <h5 class="active">#anothertag</h5>
                 <h5 class="active">#anothertag</h5>
@@ -151,24 +154,8 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
                             </div>
                         </div>
                     </div>
-                    <div class="media-item pull-left">
-                        <div class="feature-box media-box">
-                            <div class="fbox-desc center">
-                                <h4>{% t index.dfinity-brief-tour-video %}</h4>
-                                <div>▶</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="media-item pull-left">
-                        <div class="feature-box media-box">
-                            <div class="fbox-desc center">
-                                <h4>{% t index.dfinity-brief-tour-video %}</h4>
-                                <div>▶</div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="media-item pull-left">
                         <div class="feature-box media-box">
                             <div class="fbox-desc center">
@@ -205,7 +192,7 @@ hero-subtitle: String Labs is a crypto studio, incubator and investor.
     		<p>{% t index.team-subtitle %}</p>
     	</div>
         <div class="team-list-container">
-            <div id="team-desc" class="pull-left">
+            <div class="sidebar-content pull-left">
                 <h6>President/CTO</h6>
                 <h3>Dominic Williams</h3>
                 <p>{% t index.team-dominic-intro %}</p>
