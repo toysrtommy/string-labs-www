@@ -398,9 +398,14 @@ function getParameterByName(name, url) {
                             handler: 'didClickSectionLink'
                         },
                         {
-                            listener: '#section-dfinity .feature-box.media-box',
+                            listener: '#section-dfinity .media-item',
                             type: 'click',
                             handler: 'didClickPresentationBox'
+                        },
+                        {
+                            listener: '#overlay, #close-overlay',
+                            type: 'click',
+                            handler: 'didClickCloseOverlay'
                         },
                         {
                             listener: '#section-team .container .team-image',
@@ -490,8 +495,21 @@ function getParameterByName(name, url) {
                         return $(selector).parent().addClass('active');
                     },
 
+                    didClickCloseOverlay(staticArgs, event) {
+                        if(event.target.localName !== 'iframe') {
+                            $(document.body).removeClass('no-scroll');
+                            return $('#overlay').html('').removeClass('show');
+                        }
+                    },
+
                     didClickPresentationBox(staticArgs, event) {
-                        this.$(event.target).data().videoURL
+                        let videoURL = (
+                            $(event.target).data('video-url') ||
+                            $(event.target).parent().data('video-url') ||
+                            $(event.target).parent().parent().data('video-url')
+                        );
+                        $(document.body).addClass('no-scroll');
+                        return $('#overlay').html('<iframe src="' + videoURL + '" frameborder="0" allowfullscreen></iframe>').addClass('show');
                     },
 
                     didClickSectionLink(staticArgs, event) {
@@ -530,7 +548,7 @@ function getParameterByName(name, url) {
                     }
                 }.didLoad();
 
-                // Moved a rogue function `dfinityDeckLang` to the page component
+                // JSON-P callbacks
                 dfinityDeckLang = Page.initDeckLang;
             });
         </script>

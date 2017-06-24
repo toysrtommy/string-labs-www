@@ -122,6 +122,8 @@
 
 <div role="main" class="main">
 
+    <div id="overlay"></div>
+
     <section id="section-hero" class="page-section section nomargin dark bg-stringlabs" data-href="#section-work">
         <div class="heading-block">
             <h2>先進分散プロトコル＆分散アプリケーション</h2>
@@ -230,7 +232,7 @@
                 <div class="container pull-left">
                     <div class="row">
                         <div class="media-item pull-left">
-                            <div class="feature-box media-box">
+                            <div class="feature-box media-box" data-video-url="https://www.youtube.com/embed/DP8X-NuG4z0">
                                 <div class="fbox-desc center">
                                     <h4>A Brief Tour of DFINITY</h4>
                                     <div>▶</div>
@@ -238,7 +240,7 @@
                             </div>
                         </div>
                         <div class="media-item pull-left">
-                            <div class="feature-box media-box">
+                            <div class="feature-box media-box" data-video-url="https://www.youtube.com/embed/DP8X-NuG4z0">
                                 <div class="fbox-desc center">
                                     <h4>A Brief Tour of DFINITY</h4>
                                     <div>▶</div>
@@ -246,7 +248,7 @@
                             </div>
                         </div>
                         <div class="media-item pull-left">
-                            <div class="feature-box media-box">
+                            <div class="feature-box media-box" data-video-url="https://www.youtube.com/embed/DP8X-NuG4z0">
                                 <div class="fbox-desc center">
                                     <h4>A Brief Tour of DFINITY</h4>
                                     <div>▶</div>
@@ -256,7 +258,7 @@
                     </div>
                     <div class="row">
                         <div class="media-item pull-left">
-                            <div class="feature-box media-box">
+                            <div class="feature-box media-box" data-video-url="https://www.youtube.com/embed/DP8X-NuG4z0">
                                 <div class="fbox-desc center">
                                     <h4>A Brief Tour of DFINITY</h4>
                                     <div>▶</div>
@@ -264,7 +266,7 @@
                             </div>
                         </div>
                         <div class="media-item pull-left">
-                            <div class="feature-box media-box">
+                            <div class="feature-box media-box" data-video-url="https://www.youtube.com/embed/DP8X-NuG4z0">
                                 <div class="fbox-desc center">
                                     <h4>A Brief Tour of DFINITY</h4>
                                     <div>▶</div>
@@ -272,7 +274,7 @@
                             </div>
                         </div>
                         <div class="media-item pull-left">
-                            <div class="feature-box media-box">
+                            <div class="feature-box media-box" data-video-url="https://www.youtube.com/embed/DP8X-NuG4z0">
                                 <div class="fbox-desc center">
                                     <h4>A Brief Tour of DFINITY</h4>
                                     <div>▶</div>
@@ -633,9 +635,14 @@ function getParameterByName(name, url) {
                             handler: 'didClickSectionLink'
                         },
                         {
-                            listener: '#section-dfinity .feature-box.media-box',
+                            listener: '#section-dfinity .media-item',
                             type: 'click',
                             handler: 'didClickPresentationBox'
+                        },
+                        {
+                            listener: '#overlay, #close-overlay',
+                            type: 'click',
+                            handler: 'didClickCloseOverlay'
                         },
                         {
                             listener: '#section-team .container .team-image',
@@ -725,8 +732,21 @@ function getParameterByName(name, url) {
                         return $(selector).parent().addClass('active');
                     },
 
+                    didClickCloseOverlay(staticArgs, event) {
+                        if(event.target.localName !== 'iframe') {
+                            $(document.body).removeClass('no-scroll');
+                            return $('#overlay').html('').removeClass('show');
+                        }
+                    },
+
                     didClickPresentationBox(staticArgs, event) {
-                        this.$(event.target).data().videoURL
+                        let videoURL = (
+                            $(event.target).data('video-url') ||
+                            $(event.target).parent().data('video-url') ||
+                            $(event.target).parent().parent().data('video-url')
+                        );
+                        $(document.body).addClass('no-scroll');
+                        return $('#overlay').html('<iframe src="' + videoURL + '" frameborder="0" allowfullscreen></iframe>').addClass('show');
                     },
 
                     didClickSectionLink(staticArgs, event) {
@@ -765,7 +785,7 @@ function getParameterByName(name, url) {
                     }
                 }.didLoad();
 
-                // Moved a rogue function `dfinityDeckLang` to the page component
+                // JSON-P callbacks
                 dfinityDeckLang = Page.initDeckLang;
             });
         </script>
