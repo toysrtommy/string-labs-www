@@ -47,6 +47,10 @@ html, body {
 	overflow-x: hidden;
 }
 
+body.no-scroll {
+	overflow: hidden;
+}
+
 /* 2. Theme Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .col-md-9 {
@@ -219,6 +223,43 @@ html, body {
 	overflow-y: auto;
 	background: transparent;
 	z-index: 2;
+}
+
+#overlay {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 1000;
+	display: none;
+}
+
+#overlay.show {
+	display: block;
+}
+
+#overlay > iframe {
+	display: block;
+	width: 75%;
+	height: 60%;
+	box-shadow: 0 0.2rem 4rem black;
+	margin: 10% auto 0;
+	background: #222;
+	border-radius: 0.2rem;
+}
+
+@media(min-width: 1400px) {
+	#overlay > iframe {
+		margin: 5% auto 0;
+		height: 70%;
+	}
+}
+
+@media(max-width: 1200px) {
+	#overlay > iframe {
+		margin: 25% auto 0;
+		height: 40%;
+	}
 }
 
 .main > section {
